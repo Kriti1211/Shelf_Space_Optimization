@@ -1,0 +1,222 @@
+Product_ID,Product_Name,Width_cm,Height_cm,Sales_Last_30_Days,Profit_Per_Unit,Category,Season_Used,Expiry_Date,Quantity_In_Stock
+P004,Whole Grain Cereal,20,30,179,9,Breakfast,Winter,02-08-2025,10
+P017,Oatmeal Cookies,17,11,227,8.1,Snacks,All Season,26-10-2025,1
+P007,Protein Bars (Box),18,10,242,9.5,Snacks,All Season,25-07-2025,1
+P011,Cheddar Cheese Cubes,14,12,187,8,Dairy,Spring,21-04-2025,51
+P003,Coconut Water 500ml,8,25,313,6,Beverages,Summer,29-06-2025,1
+P015,Cold Brew Coffee,7,26,294,6.5,Beverages,Summer,20-06-2025,58
+P005,Organic Face Wipes,10,8,405,5.5,Personal Care,All Season,02-05-2025,33
+P018,Fruit & Nut Bar,10,14,283,6.9,Snacks,All Season,14-08-2025,1
+P008,Lavender Hand Soap,10,15,235,6.8,Personal Care,All Season,13-08-2025,40
+P002,Aloe Vera Shampoo,12,22,153,10,Personal Care,All Season,12-08-2026,28
+P014,Gluten-Free Crackers,16,12,217,7.2,Snacks,All Season,29-06-2025,63
+P001,Crunchy Trail Mix,15,20,243,8.5,Snacks,All Season,30-07-2025,35
+P020,Micellar Water,13,20,185,9.4,Personal Care,All Season,27-04-2026,9
+P019,Vegetable Juice,9,24,259,6.3,Beverages,Summer,11-05-2025,37
+P010,Baby Diapers (M),25,40,132,12.5,Baby Care,All Season,20-08-2025,41
+P016,Baby Lotion,12,18,150,7.9,Baby Care,All Season,13-09-2025,47
+P009,Sparkling Juice,8,25,267,6.2,Beverages,Summer,19-06-2025,50
+P013,Herbal Toothpaste,11,6,265,4.8,Personal Care,All Season,10-04-2026,65
+P012,Greek Yogurt Cup,9,10,339,5.5,Dairy,Spring,14-05-2025,3
+P006,Energy Drink Max,7,24,304,7.5,Beverages,Summer,04-05-2025,28
+P004,Whole Grain Cereal,20,30,144,9,Breakfast,Winter,24-07-2025,67
+P017,Oatmeal Cookies,17,11,193,8.1,Snacks,All Season,12-10-2025,1
+P007,Protein Bars (Box),18,10,197,9.5,Snacks,All Season,16-07-2025,67
+P011,Cheddar Cheese Cubes,14,12,210,8,Dairy,Spring,22-04-2025,72
+P003,Coconut Water 500ml,8,25,304,6,Beverages,Summer,15-06-2025,5
+P015,Cold Brew Coffee,7,26,318,6.5,Beverages,Summer,13-06-2025,1
+P005,Organic Face Wipes,10,8,408,5.5,Personal Care,All Season,22-05-2025,24
+P018,Fruit & Nut Bar,10,14,286,6.9,Snacks,All Season,23-07-2025,58
+P008,Lavender Hand Soap,10,15,241,6.8,Personal Care,All Season,04-08-2025,20
+P002,Aloe Vera Shampoo,12,22,197,10,Personal Care,All Season,13-08-2026,1
+P014,Gluten-Free Crackers,16,12,223,7.2,Snacks,All Season,20-06-2025,10
+P001,Crunchy Trail Mix,15,20,253,8.5,Snacks,All Season,27-07-2025,47
+P020,Micellar Water,13,20,184,9.4,Personal Care,All Season,14-04-2026,60
+P019,Vegetable Juice,9,24,281,6.3,Beverages,Summer,11-05-2025,12
+P010,Baby Diapers (M),25,40,112,12.5,Baby Care,All Season,17-08-2025,1
+P016,Baby Lotion,12,18,155,7.9,Baby Care,All Season,07-09-2025,1
+P009,Sparkling Juice,8,25,276,6.2,Beverages,Summer,10-06-2025,6
+P013,Herbal Toothpaste,11,6,254,4.8,Personal Care,All Season,23-03-2026,66
+P012,Greek Yogurt Cup,9,10,339,5.5,Dairy,Spring,04-05-2025,39
+P006,Energy Drink Max,7,24,321,7.5,Beverages,Summer,01-06-2025,35
+P004,Whole Grain Cereal,20,30,151,9,Breakfast,Winter,14-08-2025,1
+P017,Oatmeal Cookies,17,11,206,8.1,Snacks,All Season,07-10-2025,1
+P007,Protein Bars (Box),18,10,234,9.5,Snacks,All Season,16-07-2025,1
+P011,Cheddar Cheese Cubes,14,12,188,8,Dairy,Spring,27-04-2025,27
+P003,Coconut Water 500ml,8,25,301,6,Beverages,Summer,11-07-2025,41
+P015,Cold Brew Coffee,7,26,310,6.5,Beverages,Summer,01-07-2025,66
+P005,Organic Face Wipes,10,8,371,5.5,Personal Care,All Season,07-05-2025,25
+P018,Fruit & Nut Bar,10,14,336,6.9,Snacks,All Season,12-08-2025,1
+P008,Lavender Hand Soap,10,15,257,6.8,Personal Care,All Season,23-08-2025,30
+P002,Aloe Vera Shampoo,12,22,179,10,Personal Care,All Season,25-07-2026,36
+P014,Gluten-Free Crackers,16,12,257,7.2,Snacks,All Season,12-07-2025,65
+P001,Crunchy Trail Mix,15,20,248,8.5,Snacks,All Season,01-07-2025,23
+P020,Micellar Water,13,20,150,9.4,Personal Care,All Season,11-05-2026,22
+P019,Vegetable Juice,9,24,301,6.3,Beverages,Summer,06-05-2025,42
+P010,Baby Diapers (M),25,40,112,12.5,Baby Care,All Season,20-08-2025,49
+P016,Baby Lotion,12,18,156,7.9,Baby Care,All Season,30-09-2025,1
+P009,Sparkling Juice,8,25,286,6.2,Beverages,Summer,14-06-2025,94
+P013,Herbal Toothpaste,11,6,281,4.8,Personal Care,All Season,06-04-2026,20
+P012,Greek Yogurt Cup,9,10,294,5.5,Dairy,Spring,07-05-2025,21
+P006,Energy Drink Max,7,24,321,7.5,Beverages,Summer,27-05-2025,79
+P004,Whole Grain Cereal,20,30,160,9,Breakfast,Winter,01-08-2025,48
+P017,Oatmeal Cookies,17,11,218,8.1,Snacks,All Season,20-10-2025,18
+P007,Protein Bars (Box),18,10,201,9.5,Snacks,All Season,07-07-2025,18
+P011,Cheddar Cheese Cubes,14,12,162,8,Dairy,Spring,01-05-2025,47
+P003,Coconut Water 500ml,8,25,328,6,Beverages,Summer,16-06-2025,1
+P015,Cold Brew Coffee,7,26,287,6.5,Beverages,Summer,26-06-2025,34
+P005,Organic Face Wipes,10,8,406,5.5,Personal Care,All Season,25-04-2025,79
+P018,Fruit & Nut Bar,10,14,280,6.9,Snacks,All Season,14-08-2025,4
+P008,Lavender Hand Soap,10,15,231,6.8,Personal Care,All Season,15-08-2025,39
+P002,Aloe Vera Shampoo,12,22,175,10,Personal Care,All Season,20-07-2026,6
+P014,Gluten-Free Crackers,16,12,231,7.2,Snacks,All Season,10-07-2025,41
+P001,Crunchy Trail Mix,15,20,220,8.5,Snacks,All Season,27-07-2025,17
+P020,Micellar Water,13,20,166,9.4,Personal Care,All Season,05-05-2026,33
+P019,Vegetable Juice,9,24,249,6.3,Beverages,Summer,03-05-2025,63
+P010,Baby Diapers (M),25,40,131,12.5,Baby Care,All Season,28-08-2025,1
+P016,Baby Lotion,12,18,145,7.9,Baby Care,All Season,09-09-2025,64
+P009,Sparkling Juice,8,25,309,6.2,Beverages,Summer,01-06-2025,56
+P013,Herbal Toothpaste,11,6,255,4.8,Personal Care,All Season,16-03-2026,69
+P012,Greek Yogurt Cup,9,10,299,5.5,Dairy,Spring,19-04-2025,21
+P006,Energy Drink Max,7,24,308,7.5,Beverages,Summer,06-05-2025,73
+P004,Whole Grain Cereal,20,30,138,9,Breakfast,Winter,22-07-2025,16
+P017,Oatmeal Cookies,17,11,221,8.1,Snacks,All Season,08-10-2025,1
+P007,Protein Bars (Box),18,10,228,9.5,Snacks,All Season,13-07-2025,61
+P011,Cheddar Cheese Cubes,14,12,160,8,Dairy,Spring,12-05-2025,2
+P003,Coconut Water 500ml,8,25,326,6,Beverages,Summer,02-07-2025,59
+P015,Cold Brew Coffee,7,26,282,6.5,Beverages,Summer,03-07-2025,11
+P005,Organic Face Wipes,10,8,411,5.5,Personal Care,All Season,01-05-2025,82
+P018,Fruit & Nut Bar,10,14,339,6.9,Snacks,All Season,10-08-2025,1
+P008,Lavender Hand Soap,10,15,277,6.8,Personal Care,All Season,20-08-2025,46
+P002,Aloe Vera Shampoo,12,22,151,10,Personal Care,All Season,30-07-2026,1
+P014,Gluten-Free Crackers,16,12,211,7.2,Snacks,All Season,22-06-2025,42
+P001,Crunchy Trail Mix,15,20,241,8.5,Snacks,All Season,09-07-2025,1
+P020,Micellar Water,13,20,184,9.4,Personal Care,All Season,27-04-2026,14
+P019,Vegetable Juice,9,24,260,6.3,Beverages,Summer,17-05-2025,1
+P010,Baby Diapers (M),25,40,133,12.5,Baby Care,All Season,05-09-2025,33
+P016,Baby Lotion,12,18,162,7.9,Baby Care,All Season,20-09-2025,1
+P009,Sparkling Juice,8,25,260,6.2,Beverages,Summer,30-05-2025,69
+P013,Herbal Toothpaste,11,6,277,4.8,Personal Care,All Season,12-04-2026,60
+P012,Greek Yogurt Cup,9,10,314,5.5,Dairy,Spring,18-04-2025,51
+P006,Energy Drink Max,7,24,314,7.5,Beverages,Summer,21-05-2025,76
+P004,Whole Grain Cereal,20,30,165,9,Breakfast,Winter,17-07-2025,78
+P017,Oatmeal Cookies,17,11,223,8.1,Snacks,All Season,16-10-2025,1
+P007,Protein Bars (Box),18,10,230,9.5,Snacks,All Season,06-07-2025,79
+P011,Cheddar Cheese Cubes,14,12,163,8,Dairy,Spring,28-04-2025,24
+P003,Coconut Water 500ml,8,25,290,6,Beverages,Summer,04-07-2025,18
+P015,Cold Brew Coffee,7,26,315,6.5,Beverages,Summer,10-06-2025,1
+P005,Organic Face Wipes,10,8,372,5.5,Personal Care,All Season,25-04-2025,1
+P018,Fruit & Nut Bar,10,14,327,6.9,Snacks,All Season,11-08-2025,61
+P008,Lavender Hand Soap,10,15,280,6.8,Personal Care,All Season,26-08-2025,72
+P002,Aloe Vera Shampoo,12,22,171,10,Personal Care,All Season,20-07-2026,4
+P014,Gluten-Free Crackers,16,12,237,7.2,Snacks,All Season,09-07-2025,24
+P001,Crunchy Trail Mix,15,20,217,8.5,Snacks,All Season,27-07-2025,1
+P020,Micellar Water,13,20,183,9.4,Personal Care,All Season,11-05-2026,16
+P019,Vegetable Juice,9,24,277,6.3,Beverages,Summer,12-05-2025,1
+P010,Baby Diapers (M),25,40,142,12.5,Baby Care,All Season,09-09-2025,48
+P016,Baby Lotion,12,18,177,7.9,Baby Care,All Season,04-09-2025,1
+P009,Sparkling Juice,8,25,284,6.2,Beverages,Summer,12-06-2025,61
+P013,Herbal Toothpaste,11,6,256,4.8,Personal Care,All Season,10-04-2026,20
+P012,Greek Yogurt Cup,9,10,309,5.5,Dairy,Spring,29-04-2025,55
+P006,Energy Drink Max,7,24,342,7.5,Beverages,Summer,06-05-2025,1
+P004,Whole Grain Cereal,20,30,179,9,Breakfast,Winter,08-08-2025,33
+P017,Oatmeal Cookies,17,11,198,8.1,Snacks,All Season,21-10-2025,6
+P007,Protein Bars (Box),18,10,220,9.5,Snacks,All Season,02-08-2025,78
+P011,Cheddar Cheese Cubes,14,12,192,8,Dairy,Spring,13-05-2025,54
+P003,Coconut Water 500ml,8,25,290,6,Beverages,Summer,07-07-2025,2
+P015,Cold Brew Coffee,7,26,292,6.5,Beverages,Summer,21-06-2025,47
+P005,Organic Face Wipes,10,8,394,5.5,Personal Care,All Season,16-05-2025,78
+P018,Fruit & Nut Bar,10,14,337,6.9,Snacks,All Season,23-07-2025,52
+P008,Lavender Hand Soap,10,15,275,6.8,Personal Care,All Season,21-08-2025,10
+P002,Aloe Vera Shampoo,12,22,181,10,Personal Care,All Season,05-08-2026,21
+P014,Gluten-Free Crackers,16,12,222,7.2,Snacks,All Season,14-07-2025,39
+P001,Crunchy Trail Mix,15,20,251,8.5,Snacks,All Season,26-07-2025,1
+P020,Micellar Water,13,20,166,9.4,Personal Care,All Season,20-04-2026,28
+P019,Vegetable Juice,9,24,287,6.3,Beverages,Summer,04-05-2025,13
+P010,Baby Diapers (M),25,40,138,12.5,Baby Care,All Season,04-09-2025,21
+P016,Baby Lotion,12,18,155,7.9,Baby Care,All Season,18-09-2025,66
+P009,Sparkling Juice,8,25,274,6.2,Beverages,Summer,08-06-2025,21
+P013,Herbal Toothpaste,11,6,299,4.8,Personal Care,All Season,07-04-2026,1
+P012,Greek Yogurt Cup,9,10,315,5.5,Dairy,Spring,05-05-2025,7
+P006,Energy Drink Max,7,24,290,7.5,Beverages,Summer,17-05-2025,1
+P004,Whole Grain Cereal,20,30,135,9,Breakfast,Winter,27-07-2025,10
+P017,Oatmeal Cookies,17,11,220,8.1,Snacks,All Season,15-10-2025,47
+P007,Protein Bars (Box),18,10,217,9.5,Snacks,All Season,07-07-2025,77
+P011,Cheddar Cheese Cubes,14,12,191,8,Dairy,Spring,06-05-2025,78
+P003,Coconut Water 500ml,8,25,320,6,Beverages,Summer,10-07-2025,1
+P015,Cold Brew Coffee,7,26,281,6.5,Beverages,Summer,29-06-2025,38
+P005,Organic Face Wipes,10,8,391,5.5,Personal Care,All Season,14-05-2025,32
+P018,Fruit & Nut Bar,10,14,321,6.9,Snacks,All Season,30-07-2025,55
+P008,Lavender Hand Soap,10,15,283,6.8,Personal Care,All Season,08-08-2025,46
+P002,Aloe Vera Shampoo,12,22,182,10,Personal Care,All Season,04-08-2026,1
+P014,Gluten-Free Crackers,16,12,259,7.2,Snacks,All Season,24-06-2025,1
+P001,Crunchy Trail Mix,15,20,213,8.5,Snacks,All Season,13-07-2025,1
+P020,Micellar Water,13,20,181,9.4,Personal Care,All Season,26-04-2026,89
+P019,Vegetable Juice,9,24,279,6.3,Beverages,Summer,05-05-2025,20
+P010,Baby Diapers (M),25,40,161,12.5,Baby Care,All Season,25-08-2025,1
+P016,Baby Lotion,12,18,179,7.9,Baby Care,All Season,19-09-2025,1
+P009,Sparkling Juice,8,25,266,6.2,Beverages,Summer,14-06-2025,60
+P013,Herbal Toothpaste,11,6,267,4.8,Personal Care,All Season,05-04-2026,34
+P012,Greek Yogurt Cup,9,10,305,5.5,Dairy,Spring,06-05-2025,52
+P006,Energy Drink Max,7,24,312,7.5,Beverages,Summer,15-05-2025,1
+P004,Whole Grain Cereal,20,30,172,9,Breakfast,Winter,10-08-2025,1
+P017,Oatmeal Cookies,17,11,227,8.1,Snacks,All Season,15-10-2025,1
+P007,Protein Bars (Box),18,10,223,9.5,Snacks,All Season,04-08-2025,75
+P011,Cheddar Cheese Cubes,14,12,213,8,Dairy,Spring,09-05-2025,39
+P003,Coconut Water 500ml,8,25,309,6,Beverages,Summer,30-06-2025,1
+P015,Cold Brew Coffee,7,26,298,6.5,Beverages,Summer,08-06-2025,44
+P005,Organic Face Wipes,10,8,391,5.5,Personal Care,All Season,17-05-2025,76
+P018,Fruit & Nut Bar,10,14,282,6.9,Snacks,All Season,10-08-2025,61
+P008,Lavender Hand Soap,10,15,245,6.8,Personal Care,All Season,08-08-2025,37
+P002,Aloe Vera Shampoo,12,22,171,10,Personal Care,All Season,12-08-2026,31
+P014,Gluten-Free Crackers,16,12,213,7.2,Snacks,All Season,22-06-2025,65
+P001,Crunchy Trail Mix,15,20,256,8.5,Snacks,All Season,14-07-2025,55
+P020,Micellar Water,13,20,201,9.4,Personal Care,All Season,23-04-2026,64
+P019,Vegetable Juice,9,24,260,6.3,Beverages,Summer,23-05-2025,55
+P010,Baby Diapers (M),25,40,157,12.5,Baby Care,All Season,19-08-2025,64
+P016,Baby Lotion,12,18,165,7.9,Baby Care,All Season,30-09-2025,1
+P009,Sparkling Juice,8,25,279,6.2,Beverages,Summer,21-06-2025,20
+P013,Herbal Toothpaste,11,6,249,4.8,Personal Care,All Season,17-03-2026,45
+P012,Greek Yogurt Cup,9,10,313,5.5,Dairy,Spring,25-04-2025,14
+P006,Energy Drink Max,7,24,347,7.5,Beverages,Summer,29-05-2025,2
+P004,Whole Grain Cereal,20,30,151,9,Breakfast,Winter,08-08-2025,1
+P017,Oatmeal Cookies,17,11,174,8.1,Snacks,All Season,16-10-2025,1
+P007,Protein Bars (Box),18,10,213,9.5,Snacks,All Season,28-07-2025,59
+P011,Cheddar Cheese Cubes,14,12,161,8,Dairy,Spring,11-05-2025,83
+P003,Coconut Water 500ml,8,25,289,6,Beverages,Summer,26-06-2025,1
+P015,Cold Brew Coffee,7,26,309,6.5,Beverages,Summer,01-07-2025,15
+P005,Organic Face Wipes,10,8,402,5.5,Personal Care,All Season,23-05-2025,16
+P018,Fruit & Nut Bar,10,14,330,6.9,Snacks,All Season,20-07-2025,28
+P008,Lavender Hand Soap,10,15,241,6.8,Personal Care,All Season,04-08-2025,53
+P002,Aloe Vera Shampoo,12,22,182,10,Personal Care,All Season,24-07-2026,14
+P014,Gluten-Free Crackers,16,12,242,7.2,Snacks,All Season,16-07-2025,17
+P001,Crunchy Trail Mix,15,20,222,8.5,Snacks,All Season,14-07-2025,1
+P020,Micellar Water,13,20,151,9.4,Personal Care,All Season,04-05-2026,30
+P019,Vegetable Juice,9,24,261,6.3,Beverages,Summer,05-05-2025,55
+P010,Baby Diapers (M),25,40,138,12.5,Baby Care,All Season,22-08-2025,5
+P016,Baby Lotion,12,18,155,7.9,Baby Care,All Season,19-09-2025,1
+P009,Sparkling Juice,8,25,290,6.2,Beverages,Summer,30-05-2025,4
+P013,Herbal Toothpaste,11,6,297,4.8,Personal Care,All Season,11-04-2026,51
+P012,Greek Yogurt Cup,9,10,335,5.5,Dairy,Spring,10-05-2025,1
+P006,Energy Drink Max,7,24,310,7.5,Beverages,Summer,13-05-2025,19
+P020,Herbal Winter Tea,16,5,63,20,Breakfast,Winter,07-05-2025,8
+P020,Herbal Winter Tea,16,9,231,7.26,Breakfast,Winter,23-05-2025,5
+P020,Herbal Winter Tea,18,5,92,9.51,Breakfast,Winter,12-08-2025,9
+P021,Moisturizing Cold Cream,18,13,233,10.41,Breakfast,Winter,25-06-2025,11
+P021,Moisturizing Cold Cream,14,6,113,17.55,Breakfast,Winter,06-08-2025,20
+P021,Moisturizing Cold Cream,11,15,110,8.01,Breakfast,Winter,05-08-2025,15
+P021,Moisturizing Cold Cream,13,8,220,5.18,Breakfast,Winter,27-07-2025,25
+P022,Winter Wellness Soup Pack,10,11,208,11.82,Breakfast,Winter,08-06-2025,20
+P022,Winter Wellness Soup Pack,10,7,145,13.02,Breakfast,Winter,10-07-2025,10
+P022,Winter Wellness Soup Pack,17,13,84,9.71,Breakfast,Winter,03-08-2025,30
+P023,Thermal Socks,14,5,143,14.72,Breakfast,Winter,13-07-2025,10
+P023,Thermal Socks,13,12,138,15.9,Breakfast,Winter,13-05-2025,20
+P023,Thermal Socks,17,5,64,17.01,Breakfast,Winter,10-08-2025,25
+P024,Vitamin D Supplement,15,5,151,14.56,Breakfast,Winter,05-05-2025,32
+P024,Vitamin D Supplement,17,8,151,14.12,Breakfast,Winter,02-08-2025,27
+P025,Strawberry Yogurt Cups,10,12,120,4.5,Dairy,Spring,19-05-2025,35
+P025,Strawberry Yogurt Cups,10,12,120,4.5,Dairy,Spring,18-07-2025,35
+P026,Spring Vegetable Mix,20,15,85,6.2,Produce,Spring,19-05-2025,29
+P026,Spring Vegetable Mix,20,15,85,6.2,Produce,Spring,18-07-2025,35
+P027,Lemon Herb Crackers,12,18,150,5,Snacks,Spring,19-05-2025,40
+P027,Lemon Herb Crackers,12,18,150,5,Snacks,Spring,18-07-2025,23
