@@ -86,4 +86,36 @@ html, body, [data-testid="stAppViewContainer"] {
   .back-btn:hover {
     background: #f0f0f0;
   }
-  
+
+  /* Style Streamlit buttons to match the original menu button design */
+div.stButton > button {
+    display: block;
+    width: 200px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-align: center;
+    border: 2px solid #444444 !important;
+    border-radius: 999px !important; /* Pill shape */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.2s ease-in-out !important;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+div.stButton > button:hover {
+    background-color: #f0f0f0 !important;
+    color: #000000 !important;
+    transform: scale(1.02) !important;
+}
+
+/* Make Total Sales, units, and choose category white */
+.total-sales,
+.sales-units,
+.choose-category {
+    color: #ffffff !important;
+}

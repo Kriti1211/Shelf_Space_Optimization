@@ -8,14 +8,9 @@ def load_css():
 st.set_page_config(layout="wide", page_title="Retail Shelf Optimization")
 load_css()
 
-# ─── routing helpers ────────────────────────────────────────────────
-def get_current_page() -> str:
-    return st.query_params.get("page", "home")
-
-def set_query(page: str) -> str:
-    """Returns href string that sets ?page=page in the URL."""
-    # preserve other params if you have any:
-    return f"?page={page}"
+# ─── initialize session state ───────────────────────────────────────
+if "current_page" not in st.session_state:
+    st.session_state["current_page"] = "home"
 
 # ─── menu labels ────────────────────────────────────────────────────
 MENU_ITEMS = {
@@ -24,19 +19,17 @@ MENU_ITEMS = {
     "Optimize" : "🧮 Shelf Optimization",
 }
 
-# ─── determine page ─────────────────────────────────────────────────
-current_page = get_current_page()
+# ─── determine page (using only session state) ──────────────────────
+current_page = st.session_state["current_page"]
 
 # ─── HOME / MENU ────────────────────────────────────────────────────
 if current_page == "home":
     st.markdown("<h1 class='title'>🛍️ Retail Shelf Optimization System</h1><hr>", unsafe_allow_html=True)
     st.markdown('<div class="menu-container">', unsafe_allow_html=True)
     for key, label in MENU_ITEMS.items():
-        href = set_query(key)
-        st.markdown(
-            f'<a class="menu-btn" href="{href}">{label}</a>',
-            unsafe_allow_html=True
-        )
+        # Using st.button preserves your UI styling
+        if st.button(label, key=f"btn_{key}"):
+            st.session_state["current_page"] = key 
     st.markdown('</div>', unsafe_allow_html=True)
 
 # ─── DASHBOARD ─────────────────────────────────────────────────────
@@ -54,10 +47,7 @@ elif current_page == "Optimize":
     from pages.optimization import show_optimization
     show_optimization()
 
-# ─── BACK LINK ─────────────────────────────────────────────────────
+# ─── BACK LINK (to go back to home) ──────────────────────────────────
 if current_page != "home":
-    st.markdown("---")
-    st.markdown(
-        f'<a class="back-btn" href="{set_query("home")}">⬅️ Home</a>',
-        unsafe_allow_html=True
-    )
+    if st.button("⬅️ Home", key="back"):
+        st.session_state["current_page"] = "home"
