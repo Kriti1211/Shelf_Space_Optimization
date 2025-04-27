@@ -1,162 +1,153 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from prophet import Prophet
 import plotly.graph_objects as go
+import plotly.express as px
 from utils.helpers import upload_and_preview_data, filter_by_season
-from Pages.dashboard import show_dashboard  # Note the capital P
-
-def show_forecast():
-    st.title("📈 Supply Forecast")
-    st.markdown("""
-    This tool predicts daily sales for your chosen product over the next 15 days.
-
-    **Steps**  
-    1. Upload your dataset (needs “Product_Name”, “Season”, “Sales_Last_30_Days”).  
-    2. Filter by season.  
-    3. Pick a product.  
-    4. See the last 30 days (synthetic) and a 15-day forecast.  
-    """)
-
-    # 1️⃣ Upload & validate
-    df = upload_and_preview_data()
-    if df is None or df.empty:
-        st.info("Please upload a dataset first.")
-        return
-    df = df.reset_index(drop=True)
-
-    # 2️⃣ Filter by season
-    st.subheader("1️⃣ Filter by season")
-    season = st.selectbox("Choose a season", ["All", "Winter", "Summer", "Monsoon", "Spring", "Autumn"])
-    seasonal_df = filter_by_season(df, season).reset_index(drop=True)
-    if seasonal_df.empty:
-        st.warning(f"No products found for: **{season}**")
-        return
-
-    # 3️⃣ Select product
-    st.subheader("2️⃣ Select a product")
-    products = seasonal_df["Product_Name"].unique().tolist()
-    product = st.selectbox("Product", ["-- pick one --"] + products)
-    if product == "-- pick one --":
-        return
-
-    # 4️⃣ Generate synthetic daily history
-    st.subheader("3️⃣ Last 30 days (synthetic)")
-    subset = seasonal_df[seasonal_df["Product_Name"] == product]
-    total_sales = subset["Sales_Last_30_Days"].sum()
-    base_daily = total_sales / 30.0
-
-    # Use product+season as seed so series changes when either changes
-    seed = abs(hash(f"{product}-{season}")) % (2**32)
-    rng = np.random.default_rng(seed)
-    noise = rng.normal(loc=0, scale=base_daily*0.1, size=30)
-    daily_sales = np.clip(base_daily + noise, 0, None).round(2)
-
-    dates = pd.date_range(end=pd.Timestamp.today().normalize(), periods=30, freq="D")
-    ts = pd.DataFrame({"ds": dates, "y": daily_sales})
-    fig_hist = go.Figure()
-    fig_hist.add_trace(go.Scatter(x=ts["ds"], y=ts["y"], mode="lines+markers", name="Historical"))
-    fig_hist.update_layout(
-        title="Last 30 Days Sales",
-        xaxis_title="Date",
-        yaxis_title="Daily Sales"
-    )
-    st.plotly_chart(fig_hist, use_container_width=True)
-
-    # 5️⃣ Forecast next 15 days
-    st.subheader("4️⃣ 15-day forecast")
-    with st.spinner("Calculating forecast..."):
-        model = Prophet()
-        model.fit(ts.rename(columns={"ds":"ds","y":"y"}))
-        future = model.make_future_dataframe(periods=15)
-        forecast = model.predict(future)
-
-    fig_fc = go.Figure()
-    fig_fc.add_trace(go.Scatter(
-        x=ts["ds"], y=ts["y"], mode="markers", name="Historical"
-    ))
-    fig_fc.add_trace(go.Scatter(
-        x=forecast["ds"], y=forecast["yhat"], mode="lines", name="Forecast"
-    ))
-    fig_fc.update_layout(
-        title="Forecast vs. Historical",
-        xaxis_title="Date",
-        yaxis_title="Daily Sales"
-    )
-    st.plotly_chart(fig_fc, use_container_width=True)
-
-    # Why it matters
-    st.subheader("Why this helps")
-    st.markdown("""
-    - **Seasonal filter** ensures you only model relevant data.  
-    - **Synthetic history** varies per product and season (seeded), so you see different patterns.  
-    - **Seeded randomness** makes each product/season combination unique and repeatable.  
-    - **15-day horizon** gives a quick view to avoid stockouts or overstock.  
-    """)
 
 def show_dashboard():
-    st.title("📊 Sales Dashboard")
-    
-    # Upload data
+    st.title("📊 Interactive Sales Dashboard & Insights")
+    st.markdown(
+        """
+        **Upload** your sales data → **filter** by season & category →  
+        **explore** metrics, chart types, top-N products →  
+        **drill into** synthetic daily trends → **download** your view.  
+        """
+    )
+
+    # ── STEP 1: Upload & preview ─────────────────────────────
+    st.header("1️⃣ Upload your dataset")
+    st.markdown("- Needs **Product_Name**, **Season**, **Category**, **Sales_Last_30_Days**, **Profit_Per_Unit**")
     df = upload_and_preview_data()
     if df is None or df.empty:
-        st.info("Please upload a dataset first.")
+        st.warning("No data uploaded yet.")
         return
-        
     df = df.reset_index(drop=True)
-    
-    # Filter by season
-    st.subheader("Filter by Season")
-    season = st.selectbox("Choose season", ["All", "Winter", "Summer", "Monsoon", "Spring", "Autumn"])
-    seasonal_df = filter_by_season(df, season)
-    
-    if seasonal_df.empty:
-        st.warning(f"No data available for {season} season")
-        return
-        
-    # Display key metrics
-    col1, col2, col3 = st.columns(3)
-    
-    with col1:
-        total_sales = seasonal_df["Sales_Last_30_Days"].sum()
-        st.metric("Total Sales", f"{total_sales:,.0f} units")
-        
-    with col2:
-        avg_profit = seasonal_df["Profit_Per_Unit"].mean()
-        st.metric("Avg Profit/Unit", f"${avg_profit:.2f}")
-        
-    with col3:
-        total_profit = (seasonal_df["Sales_Last_30_Days"] * seasonal_df["Profit_Per_Unit"]).sum()
-        st.metric("Total Profit", f"${total_profit:,.2f}")
-    
-    # Category breakdown
-    st.subheader("Sales by Category")
-    cat_sales = seasonal_df.groupby("Category")["Sales_Last_30_Days"].sum().sort_values(ascending=True)
-    
-    fig = go.Figure(go.Bar(
-        x=cat_sales.values,
-        y=cat_sales.index,
-        orientation='h',
-        text=cat_sales.values.round(0),
-        textposition='outside',
-    ))
-    
-    fig.update_layout(
-        title="Sales Volume by Category",
-        xaxis_title="Total Units Sold",
-        yaxis_title="Category",
-        showlegend=False
+
+    # ── STEP 2: Filters ───────────────────────────────────────
+    st.header("2️⃣ Apply filters")
+    season = st.selectbox(
+        "Choose season to analyze",
+        ["Select season", "Winter", "Summer", "Monsoon", "Spring", "Autumn"],
+        key="dashboard_season"
     )
-    
+    if season == "Select season":
+        st.info("Please select a season to analyze.")
+        return
+    seasonal_df = filter_by_season(df, season)
+
+    cats = st.multiselect(
+        "• Category (multi-select)",
+        sorted(df["Category"].unique().tolist()),
+        default=sorted(df["Category"].unique().tolist())
+    )
+    df = df[df["Category"].isin(cats)]
+    if df.empty:
+        st.warning("No data after filtering — tweak season/category.")
+        return
+
+    min_p, max_p = float(df["Profit_Per_Unit"].min()), float(df["Profit_Per_Unit"].max())
+    profit_range = st.slider(
+        f"• Profit per unit (${min_p:.2f}–${max_p:.2f})",
+        min_value=min_p, max_value=max_p, value=(min_p, max_p)
+    )
+    df = df[
+        df["Profit_Per_Unit"].between(profit_range[0], profit_range[1])
+    ]
+    if df.empty:
+        st.warning("No records in that profit range.")
+        return
+
+    # ── STEP 3: Key Metrics ───────────────────────────────────
+    st.header("3️⃣ Key Metrics (filtered)")
+    total_sales = df["Sales_Last_30_Days"].sum()
+    avg_profit = df["Profit_Per_Unit"].mean()
+    total_profit = (df["Sales_Last_30_Days"] * df["Profit_Per_Unit"]).sum()
+
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Total Sales (30d)", f"{total_sales:,.0f} units")
+    c2.metric("Avg Profit/Unit", f"${avg_profit:.2f}")
+    c3.metric("Total Profit (30d)", f"${total_profit:,.2f}")
+
+    # ── STEP 4: Sales by Category ────────────────────────────
+    st.header("4️⃣ Sales by Category")
+    chart_type = st.selectbox("Chart Type", ["Horizontal Bar", "Pie Chart"])
+    cat_sales = df.groupby("Category")["Sales_Last_30_Days"].sum().sort_values()
+
+    if chart_type == "Horizontal Bar":
+        fig = go.Figure(go.Bar(
+            x=cat_sales.values,
+            y=cat_sales.index,
+            orientation='h',
+            text=cat_sales.values.round(0),
+            textposition='outside'
+        ))
+        fig.update_layout(xaxis_title="Units Sold", yaxis_title="Category")
+    else:
+        fig = px.pie(
+            names=cat_sales.index,
+            values=cat_sales.values,
+            title="Sales Share by Category"
+        )
     st.plotly_chart(fig, use_container_width=True)
-    
-    # Top selling products
-    st.subheader("Top 10 Products")
-    top_products = seasonal_df.nlargest(10, "Sales_Last_30_Days")[
+
+    # ── STEP 5: Sales vs Profit Scatter ───────────────────────
+    st.header("5️⃣ Sales vs. Profit per Unit")
+    st.markdown("Check if higher-profit products sell more or less.")
+    fig2 = px.scatter(
+        df,
+        x="Profit_Per_Unit",
+        y="Sales_Last_30_Days",
+        hover_data=["Product_Name", "Category"],
+        trendline="ols"
+    )
+    fig2.update_layout(xaxis_title="Profit per Unit ($)", yaxis_title="Sales (30d)")
+    st.plotly_chart(fig2, use_container_width=True)
+
+    # ── STEP 6: Top-N Products ───────────────────────────────
+    st.header("6️⃣ Top-N Products by Sales")
+    top_n = st.slider("Choose N", min_value=3, max_value=20, value=10)
+    top_df = df.nlargest(top_n, "Sales_Last_30_Days")[
         ["Product_Name", "Category", "Sales_Last_30_Days", "Profit_Per_Unit"]
     ]
-    st.dataframe(top_products)
+    st.dataframe(top_df, use_container_width=True)
+
+    # ── STEP 7: Synthetic Daily Trend ─────────────────────────
+    if st.checkbox("7️⃣ Show synthetic daily trend for a product"):
+        prod = st.selectbox("Pick product for trend", df["Product_Name"].unique())
+        subset = df[df["Product_Name"] == prod]
+        base = float(subset["Sales_Last_30_Days"].iloc[0]) / 30.0
+        seed = abs(hash(prod)) % 2**32
+        rng = np.random.default_rng(seed)
+        noise = rng.normal(loc=0, scale=base*0.1, size=30)
+        series = np.clip(base + noise, 0, None).round(2)
+        dates = pd.date_range(end=pd.Timestamp.today(), periods=30)
+        trend_df = pd.DataFrame({"Date": dates, "Sales": series})
+
+        st.markdown(f"**30-day synthetic sales for:** {prod}")
+        fig3 = px.line(trend_df, x="Date", y="Sales", markers=True)
+        fig3.update_layout(yaxis_title="Units Sold")
+        st.plotly_chart(fig3, use_container_width=True)
+
+    # ── STEP 8: Download filtered data ────────────────────────
+    st.header("8️⃣ Download your filtered data")
+    csv = df.to_csv(index=False).encode('utf-8')
+    st.download_button(
+        "Download as CSV",
+        csv,
+        file_name="filtered_sales.csv",
+        mime="text/csv"
+    )
+
+    st.markdown(
+        """
+        ---
+        👉 Use the **season**, **category**, and **profit** filters to zero-in on products you care about.  
+        👉 Switch chart types or drill into individual product trends.  
+        👉 Download your exact view for sharing or further analysis!
+        """
+    )
+
 
 if __name__ == "__main__":
-    show_forecast()
     show_dashboard()

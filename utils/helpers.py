@@ -18,6 +18,8 @@ def upload_and_preview_data():
     return None
 
 def filter_by_season(df, current_season):
+    if current_season == "Select season":
+        return pd.DataFrame()  # Return empty DataFrame if no season selected
     if current_season == "All":
         return df[df['Season_Used'].str.lower() == "all season"]
     return df[df['Season_Used'].str.contains(current_season, case=False) |
