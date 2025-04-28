@@ -38,25 +38,27 @@ def show_dashboard():
 
     cats = st.multiselect(
         "• Category (multi-select)",
-        sorted(df["Category"].unique().tolist()),
-        default=sorted(df["Category"].unique().tolist())
+        sorted(seasonal_df["Category"].unique().tolist()),
+        default=sorted(seasonal_df["Category"].unique().tolist())
     )
-    df = df[df["Category"].isin(cats)]
-    if df.empty:
+    filtered_df = seasonal_df[seasonal_df["Category"].isin(cats)]
+    if filtered_df.empty:
         st.warning("No data after filtering — tweak season/category.")
         return
 
-    min_p, max_p = float(df["Profit_Per_Unit"].min()), float(df["Profit_Per_Unit"].max())
+    min_p, max_p = float(filtered_df["Profit_Per_Unit"].min()), float(filtered_df["Profit_Per_Unit"].max())
     profit_range = st.slider(
         f"• Profit per unit (${min_p:.2f}–${max_p:.2f})",
         min_value=min_p, max_value=max_p, value=(min_p, max_p)
     )
-    df = df[
-        df["Profit_Per_Unit"].between(profit_range[0], profit_range[1])
+    filtered_df = filtered_df[
+        filtered_df["Profit_Per_Unit"].between(profit_range[0], profit_range[1])
     ]
-    if df.empty:
+    if filtered_df.empty:
         st.warning("No records in that profit range.")
         return
+
+    df = filtered_df
 
     # ── STEP 3: Key Metrics ───────────────────────────────────
     st.header("3️⃣ Key Metrics (filtered)")
@@ -71,7 +73,7 @@ def show_dashboard():
 
     # ── STEP 4: Sales by Category ────────────────────────────
     st.header("4️⃣ Sales by Category")
-    chart_type = st.selectbox("Chart Type", ["Horizontal Bar", "Pie Chart"])
+    chart_type = st.selectbox("Chart Type", ["Horizontal Bar", "Pie Chart"], key="cat_chart_type")
     cat_sales = df.groupby("Category")["Sales_Last_30_Days"].sum().sort_values()
 
     if chart_type == "Horizontal Bar":
@@ -106,15 +108,16 @@ def show_dashboard():
 
     # ── STEP 6: Top-N Products ───────────────────────────────
     st.header("6️⃣ Top-N Products by Sales")
-    top_n = st.slider("Choose N", min_value=3, max_value=20, value=10)
+    top_n = st.slider("Choose N", min_value=3, max_value=20, value=10, key="top_n")
     top_df = df.nlargest(top_n, "Sales_Last_30_Days")[
         ["Product_Name", "Category", "Sales_Last_30_Days", "Profit_Per_Unit"]
     ]
     st.dataframe(top_df, use_container_width=True)
 
     # ── STEP 7: Synthetic Daily Trend ─────────────────────────
-    if st.checkbox("7️⃣ Show synthetic daily trend for a product"):
-        prod = st.selectbox("Pick product for trend", df["Product_Name"].unique())
+    st.header("7️⃣ Show synthetic daily trend for a product")
+    if st.checkbox("Enable trend view", key="daily_trend"):
+        prod = st.selectbox("Pick product for trend", df["Product_Name"].unique(), key="trend_prod")
         subset = df[df["Product_Name"] == prod]
         base = float(subset["Sales_Last_30_Days"].iloc[0]) / 30.0
         seed = abs(hash(prod)) % 2**32
@@ -147,7 +150,6 @@ def show_dashboard():
         👉 Download your exact view for sharing or further analysis!
         """
     )
-
 
 if __name__ == "__main__":
     show_dashboard()
