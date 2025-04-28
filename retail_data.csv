@@ -1,0 +1,7 @@
+Product_ID,Product_Name,Category,Sales_Last_30_Days,Width_cm,Height_cm,Depth_cm,Profit_Per_Unit
+P001,Toothpaste,Personal Care,150,5,10,3,10
+P002,Shampoo,Personal Care,120,7,15,4,12
+P003,Chips,Snacks,200,10,15,5,5
+P004,Chocolate,Snacks,250,8,10,2,6
+P005,Soap,Personal Care,180,6,8,3,8
+P006,Biscuits,Snacks,160,9,12,4,4

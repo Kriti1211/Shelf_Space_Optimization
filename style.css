@@ -1,0 +1,121 @@
+/* ─── Global dark background & white text ─── */
+html, body, [data-testid="stAppViewContainer"] {
+    background-color: #121212 !important;
+    color: #f1f1f1 !important;
+    margin: 0;
+    height: 100%;
+  }
+  
+  /* ─── Hide Streamlit sidebar & toolbar ─── */
+ /* ─── Hide ALL Streamlit headers, toolbars, and status bar ─── */
+[data-testid="stSidebar"],
+[data-testid="collapsedControl"],
+[data-testid="stHeader"],
+[data-testid="stToolbar"],
+[data-testid="stStatusWidget"],       /* <--- this hides that top line */
+.viewerBadge_container__1QSob {       /* also hide "made with Streamlit" footer */
+  display: none !important;
+}
+
+  
+  /* ─── Centered menu container ─── */
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical centering */
+    align-items: center;       /* horizontal centering */
+    height: 10vh;             /* full viewport height */
+    gap: 20px;                 /* space between buttons */
+  }
+  
+  /* ─── Menu buttons (white pills with black text) ─── */
+  .menu-btn {
+    display: block;            /* allows margin auto centering */
+    width: 240px;              /* you can adjust this */
+    height: 60px;              /* increased height */
+    line-height: 60px;         /* vertically center text */
+    margin: 0 auto;            
+    padding: 0 24px;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border: 2px solid #444444 !important;
+    border-radius: 999px !important;   /* pill shape */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3) !important;
+    transition: all 0.2s ease-in-out !important;
+    cursor: pointer !important;
+  }
+  
+  /* ─── Hover: subtle light‑gray background ─── */
+  .menu-btn:hover {
+    background-color: #f0f0f0 !important;
+    color: #000000 !important;
+    transform: scale(1.02) !important;
+  }
+  
+  /* ─── Title styling ─── */
+  h1.title {
+    color: #ffffff !important;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* ─── Divider line ─── */
+  hr {
+    border: 1px solid #333 !important;
+    margin-bottom: 2rem;
+  }
+  
+  /* ─── Back button (if used) ─── */
+  .back-btn {
+    display: inline-block;
+    margin: 16px auto;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #444;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  .back-btn:hover {
+    background: #f0f0f0;
+  }
+
+  /* Style Streamlit buttons to match the original menu button design */
+div.stButton > button {
+    display: block;
+    width: 200px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-align: center;
+    border: 2px solid #444444 !important;
+    border-radius: 999px !important; /* Pill shape */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.2s ease-in-out !important;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+div.stButton > button:hover {
+    background-color: #f0f0f0 !important;
+    color: #000000 !important;
+    transform: scale(1.02) !important;
+}
+
+/* Make Total Sales, units, and choose category white */
+.total-sales,
+.sales-units,
+.choose-category {
+    color: #ffffff !important;
+}
