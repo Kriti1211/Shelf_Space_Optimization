@@ -1,5 +1,5 @@
 /* ──────────────────────────────────────────────────────── */
-/*                Global Dark Mode Overrides               */
+/*             Global Dark-Mode Overrides                */
 /* ──────────────────────────────────────────────────────── */
 html,
 body,
@@ -11,7 +11,7 @@ body,
 }
 
 /* ──────────────────────────────────────────────────────── */
-/*               Hide Streamlit UI Chrome                  */
+/*           Hide Streamlit Chrome (sidebar, header, etc.) */
 /* ──────────────────────────────────────────────────────── */
 [data-testid="stSidebar"],
 [data-testid="collapsedControl"],
@@ -23,7 +23,7 @@ body,
 }
 
 /* ──────────────────────────────────────────────────────── */
-/*             Centered Menu Container & Buttons           */
+/*         Centered Menu Container & Button Overrides     */
 /* ──────────────────────────────────────────────────────── */
 .menu-container {
   display: flex;
@@ -34,7 +34,6 @@ body,
   gap: 20px;
 }
 
-/* Pill-shaped menu buttons */
 .menu-btn,
 div.stButton > button {
   display: block;
@@ -56,7 +55,6 @@ div.stButton > button {
   cursor: pointer !important;
 }
 
-/* Slightly smaller for Streamlit default buttons */
 div.stButton > button {
   width: 200px;
   height: 50px;
@@ -64,7 +62,6 @@ div.stButton > button {
   padding: 0 20px;
 }
 
-/* Hover effect */
 .menu-btn:hover,
 div.stButton > button:hover {
   background-color: #f0f0f0 !important;
@@ -72,16 +69,14 @@ div.stButton > button:hover {
 }
 
 /* ──────────────────────────────────────────────────────── */
-/*                   Header & Divider Styles               */
+/*                   Header & Divider Styles              */
 /* ──────────────────────────────────────────────────────── */
-/* Optional custom class for top-level titles */
 h1.title {
   color: #ffffff !important;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-/* Horizontal rule */
 hr {
   border: 0;
   border-top: 1px solid #333 !important;
@@ -89,7 +84,7 @@ hr {
 }
 
 /* ──────────────────────────────────────────────────────── */
-/*                   Back Button Styling                   */
+/*                   Back Button Styling                  */
 /* ──────────────────────────────────────────────────────── */
 .back-btn {
   display: inline-block;
@@ -111,10 +106,50 @@ hr {
 }
 
 /* ──────────────────────────────────────────────────────── */
-/*                   Miscellaneous Text                    */
+/*                   Miscellaneous Text                   */
 /* ──────────────────────────────────────────────────────── */
 .total-sales,
 .sales-units,
 .choose-category {
   color: #ffffff !important;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*   Force all Streamlit metric text (labels & values)    */
+/* ──────────────────────────────────────────────────────── */
+[data-testid="metric-container"] * {
+  color: #ffffff !important;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*   Force Slider marks (min/max labels) white in dark    */
+/* ──────────────────────────────────────────────────────── */
+.rc-slider-mark-text {
+  color: #ffffff !important;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*   Force Slider handle & track labels white in dark     */
+/* ──────────────────────────────────────────────────────── */
+.rc-slider-dot,
+.rc-slider-handle,
+.rc-slider-handle:active,
+.rc-slider-handle:focus {
+  border-color: #f1f1f1 !important;
+  background-color: #f1f1f1 !important;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*   FORM CONTROLS: ensure ANY text on white backgrounds  */
+/*   (inputs, selects, textareas, buttons, sliders, radios) */
+/*   stays BLACK                                        */
+/* ──────────────────────────────────────────────────────── */
+input,
+textarea,
+select,
+option,
+button,
+div.stSlider,
+div.stRadio {
+  color: #000000 !important;
 }

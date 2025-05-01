@@ -5,6 +5,10 @@ import plotly.graph_objects as go
 import plotly.express as px
 from utils.helpers import upload_and_preview_data, filter_by_season
 
+# ── inject our custom styles ─────────────────────────────
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
 def show_dashboard():
     st.title("📊 Interactive Sales Dashboard & Insights")
     st.markdown(
@@ -109,9 +113,9 @@ def show_dashboard():
     # ── STEP 6: Top-N Products ───────────────────────────────
     st.header("6️⃣ Top-N Products by Sales")
     top_n = st.slider("Choose N", min_value=3, max_value=20, value=10, key="top_n")
-    top_df = df.nlargest(top_n, "Sales_Last_30_Days")[
-        ["Product_Name", "Category", "Sales_Last_30_Days", "Profit_Per_Unit"]
-    ]
+    top_df = df.nlargest(top_n, "Sales_Last_30_Days")[[
+        "Product_Name", "Category", "Sales_Last_30_Days", "Profit_Per_Unit"
+    ]]
     st.dataframe(top_df, use_container_width=True)
 
     # ── STEP 7: Synthetic Daily Trend ─────────────────────────
@@ -120,9 +124,8 @@ def show_dashboard():
         prod = st.selectbox("Pick product for trend", df["Product_Name"].unique(), key="trend_prod")
         subset = df[df["Product_Name"] == prod]
         base = float(subset["Sales_Last_30_Days"].iloc[0]) / 30.0
-        seed = abs(hash(prod)) % 2**32
-        rng = np.random.default_rng(seed)
-        noise = rng.normal(loc=0, scale=base*0.1, size=30)
+        rng = np.random.default_rng(abs(hash(prod)) % 2**32)
+        noise = rng.normal(loc=0, scale=base * 0.1, size=30)
         series = np.clip(base + noise, 0, None).round(2)
         dates = pd.date_range(end=pd.Timestamp.today(), periods=30)
         trend_df = pd.DataFrame({"Date": dates, "Sales": series})
