@@ -1,16 +1,3 @@
-# import pandas as pd
-
-# def optimize_ppo(df: pd.DataFrame, train_steps: int = 10000) -> pd.DataFrame:
-#     """
-#     Placeholder PPO optimizer. Replace with actual RL implementation.
-#     Currently falls back to proportional LP.
-#     """
-#     # Simple fallback: allocate min(stock_max, LP_MIN_BUFFER*sales)
-#     alloc = df['Sales_Last_30_Days'].astype(int)
-#     out = df.copy()
-#     out['Allocated_Space'] = alloc
-#     return out[['Product_Name','Category','Allocated_Space','Profit_Per_Unit']]
-
 import pandas as pd
 from utils.optimization_methods.linear_programming import optimize_lp
 
