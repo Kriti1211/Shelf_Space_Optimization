@@ -7,6 +7,7 @@ import utils.optimization_methods.linear_programming as lp_mod
 import utils.optimization_methods.genetic_algorithm as ga_mod
 import utils.optimization_methods.greedy as greedy_mod
 from utils.optimization_methods.ppo_quick import quick_optimize
+import altair as alt
 
 # ─────────────── LOAD CUSTOM STYLES ───────────────
 try:
@@ -152,14 +153,78 @@ def show_optimization():
 
     display_planogram_interactive(result)
 
-    # bring the sales column into result so both live in the same DataFrame
-    result["Sales_Last_30_Days"] = df["Sales_Last_30_Days"]
+    # ------------- STOCK-OUT & SHORTFALL ANALYSIS --------------
 
-    alerts = result[result["Allocated_Space"] < result["Sales_Last_30_Days"]]
-    if not alerts.empty:
-        st.warning("⚠️ Potential stock-outs:")
-        st.table(alerts)
+    # 1) Start from your allocation results
+    alloc_df = result.copy().reset_index(drop=True)
 
+    # 2) Re-attach the 30-day sales from the original df
+    df2 = df.reset_index(drop=True)
+    alloc_df["Sales_Last_30_Days"] = df2["Sales_Last_30_Days"]
+
+    # 3) Factor in category weights for “ideal” demand
+    alloc_df["Category_Weight"] = alloc_df["Category"].map(weights)
+    alloc_df["Weighted_Sales"] = alloc_df["Sales_Last_30_Days"] * alloc_df["Category_Weight"]
+    total_weighted_demand = alloc_df["Weighted_Sales"].sum()
+
+    # 4) Compute ideal shelf units (ceiled to whole units)
+    alloc_df["Ideal_Allocation"] = np.ceil(
+        alloc_df["Weighted_Sales"] / total_weighted_demand * total_space
+    ).astype(int)
+
+    # 5) Calculate the shortfall in shelf-unit terms (ceiled)
+    alloc_df["Shortfall_Units"] = np.ceil(
+        (alloc_df["Ideal_Allocation"] - alloc_df["Allocated_Space"]).clip(lower=0)
+    ).astype(int)
+
+    # 6) Compute the dollar impact of each product’s shortfall
+    alloc_df["Shortfall_Revenue"] = alloc_df["Shortfall_Units"] * alloc_df["Profit_Per_Unit"]
+
+    # 7) Filter to only under-allocated products and sort by lost revenue desc
+    alerts = alloc_df[alloc_df["Shortfall_Units"] > 0].copy()
+    alerts = alerts.sort_values("Shortfall_Revenue", ascending=False)
+
+    st.header("⚠️ Potential Stock-Out Alerts")
+    st.metric("Products at Risk", len(alerts))
+    st.metric("Total Lost Revenue", f"${alerts['Shortfall_Revenue'].sum():,.2f}")
+
+    # 8) Preview slider (always visible)
+    max_n = len(alerts) if len(alerts) > 0 else 1
+    default_n = min(10, max_n)
+
+    n = st.slider(
+        "How many products to preview?",
+        min_value=1,
+        max_value=max_n,
+        value=default_n,
+        step=1
+    )
+
+    with st.expander(f"Show top {n} by lost revenue"):
+        # since alerts is pre-sorted, head(n) is already the top-n
+        st.dataframe(
+            alerts[[
+                "Product_Name","Category",
+                "Sales_Last_30_Days","Allocated_Space",
+                "Ideal_Allocation","Shortfall_Units","Shortfall_Revenue"
+            ]].head(n),
+            use_container_width=True
+        )
+
+    # 9) Horizontal bar chart of the TOP-5 lost-revenue gaps
+    top5 = alerts.head(5).set_index("Product_Name")["Shortfall_Revenue"]
+    fig = px.bar(
+        top5.reset_index().rename(
+            columns={"Product_Name":"Product","Shortfall_Revenue":"Lost Revenue"}
+        ),
+        x="Lost Revenue",
+        y="Product",
+        orientation="h",
+        title="🔍 Top-5 Lost-Revenue Shortfalls"
+    )
+    fig.update_layout(margin=dict(l=150,t=30))
+    st.plotly_chart(fig, use_container_width=True)
+        
     # Fill‑rate metric
     fill_rate = result.Allocated_Space.sum() / total_space * 100
     st.metric("Overall Fill Rate", f"{fill_rate:.1f}%")
