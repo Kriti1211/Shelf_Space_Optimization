@@ -26,23 +26,156 @@ Nutty Granola,Dairy,2.98,98,Autumn,9.3,19.7,12-10-2025
 Herbal Shampoo,Personal Care,4.05,170,Monsoon,14.8,22.3,08-09-2025
 Spicy Chips,Snacks,3.45,122,Summer,15.6,13.9,11-07-2025
 Premium Coffee,Beverages,5.12,187,Winter,12.3,29.7,18-11-2025
-Happy Deodorant,Personal Care,4.01,94,Monsoon,5.5,48.6,01-07-2025
-Nature Crackers,Snacks,3.28,51,Summer,6.2,48.8,08-06-2025
-Pure Butter,Dairy,3.17,90,Winter,6.6,47.7,23-07-2025
-Fresh Cookies,Snacks,0.57,113,Spring,17.4,6.5,13-08-2025
-Pure Soap,Personal Care,1.9,23,Autumn,29.2,39.9,07-06-2025
-Nature Shampoo,Personal Care,2.25,43,Winter,12,29.4,04-07-2025
-Fresh Dish Soap,Household,0.57,72,Monsoon,10,37,26-06-2025
-Good Cream,Dairy,2.11,174,Summer,7.4,21.7,25-07-2025
-Pure Tissue,Household,3.37,12,Winter,23,15.6,13-10-2025
-Good Milk,Dairy,0.61,91,Autumn,18.5,14.1,06-06-2025
-Pure Yogurt,Dairy,4.68,173,Spring,9.7,45.2,07-08-2025
-Fresh Crackers,Snacks,1.93,150,Monsoon,15.4,15,14-07-2025
-Happy Crackers,Snacks,1.95,117,Spring,11.2,36.3,02-10-2025
-Fresh Water,Beverages,4.99,162,Monsoon,22,28.9,31-07-2025
-Fresh Yogurt,Dairy,3.78,155,Winter,8.8,27.9,25-08-2025
-Pure Butter,Dairy,3.55,135,Winter,22.3,22.4,14-08-2025
-Pure Juice,Beverages,3.81,200,Summer,29.6,28.2,14-09-2025
-Pure Chips,Snacks,3.01,134,Monsoon,26.4,23.2,17-09-2025
-Pure Milk,Dairy,4.54,151,Summer,17.1,25.2,31-07-2025
-Pure Water,Beverages,2.15,185,Spring,17.7,33.6,15-06-2025
+Zesty Lemonade,Beverages,3.21,143,Summer,8.6,24.3,21-07-2025
+Silky Lotion,Personal Care,2.84,58,Winter,13.2,35.1,05-08-2025
+Crunchy Muesli,Snacks,2.47,110,Spring,10.4,20.8,27-09-2025
+Fresh Paneer,Dairy,4.02,96,Winter,7.1,18.3,09-08-2025
+Natural Toothpaste,Personal Care,1.76,41,Autumn,16.5,23.4,03-07-2025
+Citrus Cleaner,Household,2.89,84,Summer,9.6,39.7,11-06-2025
+Classic Butter Cookies,Snacks,2.63,140,Spring,14.4,17.3,16-09-2025
+Tropical Juice,Beverages,4.17,166,Monsoon,19.5,26.1,05-10-2025
+Mint Mouthwash,Personal Care,1.94,38,Winter,11.2,42.5,20-08-2025
+Almond Milk,Dairy,3.65,89,Summer,6.8,25.4,08-07-2025
+Crispy Nachos,Snacks,3.23,130,Autumn,13.9,15.8,30-09-2025
+Sweet Corn Soup,Beverages,2.12,78,Winter,10.1,29.6,06-11-2025
+Instant Coffee,Beverages,5.05,193,Autumn,11.7,30.9,13-10-2025
+Gentle Face Wash,Personal Care,2.38,47,Monsoon,15.6,33.3,26-08-2025
+Scented Candles,Household,3.49,65,Spring,12.9,28.7,29-06-2025
+Low Fat Cheese,Dairy,4.19,101,Summer,20.7,19.3,10-08-2025
+Chocolate Spread,Snacks,2.75,152,Winter,9.4,17.6,07-09-2025
+Berry Yogurt,Dairy,3.83,144,Spring,13.5,20.9,01-10-2025
+Mild Detergent,Household,1.68,56,Monsoon,21.6,38.2,18-06-2025
+Lime Soda,Beverages,3.96,174,Summer,17.8,31.5,12-07-2025
+Organic Face Cream,Personal Care,4.11,32,Winter,14.7,36.1,17-08-2025
+Healthy Oats,Dairy,2.26,93,Autumn,8.9,22.8,28-09-2025
+Crispy Wafers,Snacks,2.59,138,Summer,16.1,18.2,24-09-2025
+Sparkling Water,Beverages,3.72,160,Spring,24.5,26.9,19-06-2025
+Aloe Shampoo,Personal Care,2.67,49,Autumn,10.3,34.8,04-10-2025
+Soft Napkins,Household,1.89,61,Winter,11.8,16.4,15-10-2025
+Vanilla Milkshake,Dairy,3.12,99,Summer,13.6,26.7,07-07-2025
+Fruit & Nut Bar,Snacks,2.34,115,Spring,12.7,13.5,03-09-2025
+Cooling Talc,Personal Care,2.05,54,Monsoon,10.9,31.2,28-08-2025
+Lime Cleaner,Household,1.92,77,Summer,14.2,35.7,09-06-2025
+Energy Drink,Beverages,4.65,178,Autumn,18.4,32.1,01-11-2025
+Mint Chocolate,Snacks,3.37,125,Winter,11.1,17.2,22-09-2025
+Moisturizing Cream,Personal Care,3.71,46,Spring,15.3,30.5,11-08-2025
+Wholesome Milk,Dairy,4.09,134,Monsoon,19.2,23.3,06-08-2025
+Natural Deodorant,Personal Care,2.88,36,Summer,20.4,40.8,29-07-2025
+Classic Green Tea,Beverages,3.44,149,Autumn,21.7,28.4,10-10-2025
+Kitchen Towels,Household,2.77,67,Winter,22.5,20.1,08-11-2025
+Veggie Chips,Snacks,2.68,142,Spring,18.2,14.5,13-09-2025
+Coconut Shampoo,Personal Care,2.93,60,Monsoon,17.3,27.2,16-07-2025
+Flavored Yogurt,Dairy,3.91,152,Autumn,9.8,19.2,12-10-2025
+Berry Juice,Beverages,3.38,182,Summer,26.6,29.9,05-08-2025
+Herbal Face Wash,Personal Care,1.84,44,Winter,10.7,35.4,18-09-2025
+Lemon Soap,Personal Care,2.19,39,Spring,13.1,31.9,25-07-2025
+Alkaline Water,Beverages,4.28,175,Monsoon,20.6,30.2,17-06-2025
+Eco Floor Cleaner,Household,2.16,73,Autumn,19.8,36.6,03-10-2025
+Protein Milk,Dairy,4.27,106,Summer,16.9,22.7,14-08-2025
+Multigrain Biscuits,Snacks,3.05,119,Winter,14.3,15.9,06-09-2025
+Soothing Body Wash,Personal Care,3.62,53,Spring,16.7,38.5,22-08-2025
+Sparkle Glass Cleaner,Household,2.43,70,Monsoon,12.6,33.1,10-07-2025
+Natural Ice Tea,Beverages,4.55,169,Spring,25.1,27.8,30-06-2025
+Minty Toothpaste,Personal Care,2.17,58,Winter,9.5,33.7,20-09-2025
+Dry Fruit Mix,Snacks,3.29,139,Summer,13.2,12.9,12-07-2025
+Classic Lassi,Dairy,2.84,103,Monsoon,11.6,20.6,08-08-2025
+Cool Hair Gel,Personal Care,2.65,47,Spring,10.2,26.3,04-07-2025
+Shiny Dish Bar,Household,1.49,68,Autumn,14.5,34.1,18-10-2025
+Sparkling Soda,Beverages,3.77,191,Summer,28.2,31.3,11-07-2025
+Wheat Crackers,Snacks,1.88,111,Winter,16.1,18.4,15-09-2025
+Refreshing Body Mist,Personal Care,3.54,49,Monsoon,18.7,36.8,09-08-2025
+Organic Paneer,Dairy,4.15,127,Spring,12.9,24.3,07-08-2025
+Healthy Juice,Beverages,4.02,164,Winter,24.1,28.5,10-09-2025
+Gentle Shampoo,Personal Care,3.26,55,Summer,15.8,32.7,01-07-2025
+Natural Floor Wash,Household,2.01,74,Autumn,21.3,35.1,03-11-2025
+Tropical Smoothie,Beverages,3.93,160,Spring,19.5,30.8,14-06-2025
+Fresh Paneer,Dairy,3.64,119,Monsoon,17.6,22.9,30-07-2025
+Orange Soda,Beverages,2.96,176,Summer,27.8,30.6,17-08-2025
+Scented Candles,Household,2.49,33,Winter,12.2,25.1,21-12-2025
+Almond Cookies,Snacks,2.94,130,Autumn,14.6,16.3,12-10-2025
+Rose Water Spray,Personal Care,2.22,42,Spring,16.4,37.2,09-08-2025
+Organic Curd,Dairy,3.73,112,Winter,10.4,21.5,07-09-2025
+Green Apple Juice,Beverages,3.41,158,Monsoon,26.7,29.1,05-07-2025
+Kitchen Sponge,Household,1.62,65,Summer,13.9,16.7,06-06-2025
+Masala Chips,Snacks,3.07,140,Autumn,17.9,14.3,18-09-2025
+Aloe Vera Gel,Personal Care,3.33,50,Winter,11.4,39.4,28-08-2025
+Herbal Conditioner,Personal Care,2.95,41,Spring,13.8,34.6,23-07-2025
+Fresh Tonic Water,Beverages,4.11,170,Summer,22.8,27.1,01-08-2025
+Lemon Cake,Snacks,3.29,125,Summer,12.5,21.7,22-08-2025
+Herbal Tea Bags,Beverages,2.96,100,Spring,12.7,20.5,01-09-2025
+Ginger Honey,Snacks,3.25,140,Autumn,14.8,18.3,18-11-2025
+Cold Brew Coffee,Beverages,3.75,170,Summer,19.6,27.2,12-08-2025
+Tooth Whitening Paste,Personal Care,3.55,80,Winter,6.9,18.4,10-09-2025
+Mint Infused Water,Beverages,4.15,155,Summer,17.3,25.8,21-09-2025
+Cinnamon Cookies,Snacks,2.79,160,Autumn,14.1,18.9,03-10-2025
+Choco Fudge,Snacks,3.50,125,Winter,10.5,15.6,15-11-2025
+Aloe Vera Juice,Beverages,3.10,130,Summer,20.3,24.5,28-09-2025
+Lavender Soap,Personal Care,2.60,75,Spring,9.3,22.4,14-10-2025
+Butter Pecan,Snacks,3.39,140,Autumn,15.2,16.3,02-11-2025
+Caramel Popcorn,Snacks,2.88,110,Spring,13.6,14.2,25-09-2025
+Rice Cake,Snacks,2.32,150,Winter,14.5,17.1,17-12-2025
+Dark Chocolate,Beverages,4.05,95,Summer,12.2,23.6,10-09-2025
+Natural Honey,Snacks,3.88,80,Spring,12.8,19.7,23-10-2025
+Coconut Water,Beverages,2.90,140,Summer,19.6,22.3,30-11-2025
+Lime Flavored Yogurt,Dairy,4.05,125,Summer,8.3,15.4,05-09-2025
+Tropical Chips,Snacks,3.22,105,Summer,16.7,13.1,01-11-2025
+Berry Smoothie,Beverages,4.25,135,Spring,18.9,24.1,12-10-2025
+Peach Cider,Snacks,3.48,95,Autumn,17.4,16.3,23-12-2025
+Tomato Ketchup,Household,2.85,110,Summer,14.3,21.6,02-12-2025
+Strawberry Jam,Snacks,3.55,80,Spring,12.5,18.2,17-11-2025
+Chia Pudding,Snacks,2.99,125,Summer,10.7,16.4,06-09-2025
+Sizzling Soup,Snacks,2.72,130,Winter,15.3,17.9,22-11-2025
+Coconut Chips,Snacks,2.88,110,Autumn,14.6,18.2,04-11-2025
+Papaya Smoothie,Beverages,3.75,150,Spring,19.7,24.6,18-12-2025
+Sugar-Free Muesli,Snacks,2.85,120,Winter,13.2,19.4,15-10-2025
+Sour Cherry Juice,Beverages,3.68,115,Summer,18.3,22.4,29-10-2025
+Cinnamon Granola,Snacks,2.55,100,Autumn,14.4,17.7,01-11-2025
+Spicy Cashews,Snacks,3.12,105,Winter,13.8,16.5,15-12-2025
+Mint Infused Tea,Beverages,4.05,125,Summer,13.5,22.8,12-09-2025
+Coconut Soap,Personal Care,2.70,65,Summer,11.2,20.6,19-11-2025
+Choco Chip Cookies,Snacks,3.40,120,Autumn,16.7,18.2,14-12-2025
+Carrot Soup,Beverages,2.85,95,Winter,17.2,21.5,18-11-2025
+Spinach Chips,Snacks,3.00,125,Summer,14.3,19.6,10-10-2025
+Peach Yogurt,Dairy,3.85,115,Spring,9.4,17.2,02-11-2025
+Cucumber Face Mask,Personal Care,3.20,70,Summer,11.9,21.8,25-09-2025
+Spiced Almonds,Snacks,3.05,110,Autumn,15.8,16.7,01-11-2025
+Chocolate Mousse,Snacks,3.62,130,Winter,13.6,19.3,23-12-2025
+Chili Flavored Chips,Snacks,3.05,125,Summer,14.6,18.4,30-09-2025
+Honey Lemonade,Beverages,3.10,150,Spring,17.5,22.7,12-10-2025
+Roasted Almonds,Snacks,2.85,90,Autumn,13.4,17.2,25-11-2025
+Tropical Fruit Salad,Snacks,3.25,95,Spring,13.6,19.3,18-12-2025
+Sugar-Free Biscuits,Snacks,3.08,110,Winter,11.8,18.6,12-10-2025
+Ginger Lemon Tea,Beverages,3.75,115,Autumn,12.8,22.1,05-10-2025
+Maple Syrup,Snacks,3.40,120,Spring,14.1,17.2,15-11-2025
+Berry Popcorn,Snacks,2.98,100,Summer,13.3,15.6,25-12-2025
+Green Mango Juice,Beverages,3.45,130,Summer,19.1,23.7,10-09-2025
+Baked Oats,Snacks,3.20,105,Winter,15.2,17.4,23-12-2025
+Blueberry Muffins,Snacks,2.80,110,Autumn,13.5,18.8,08-11-2025
+Garlic Butter,Snacks,2.60,120,Spring,13.9,17.9,19-11-2025
+Kiwi Smoothie,Beverages,4.10,135,Summer,18.6,24.3,21-12-2025
+Lemon Popsicle,Snacks,2.45,115,Winter,16.2,19.1,18-10-2025
+Choco Coconut Bars,Snacks,3.15,125,Autumn,14.2,16.5,15-12-2025
+Pineapple Smoothie,Beverages,3.88,110,Spring,19.3,22.8,30-10-2025
+Coconut Lime Drink,Beverages,3.30,95,Summer,15.2,24.1,01-12-2025
+Honey Almond Butter,Snacks,3.20,120,Winter,14.7,18.3,17-11-2025
+Maple Pecan Biscuits,Snacks,3.00,105,Spring,13.3,17.6,22-11-2025
+Tamarind Paste,Snacks,2.85,115,Autumn,15.4,16.2,14-12-2025
+Banana Chips,Snacks,2.75,130,Summer,16.2,17.4,13-10-2025
+Raspberry Jam,Snacks,3.15,125,Spring,14.3,16.7,09-12-2025
+Fruit & Nut Granola,Snacks,2.95,110,Winter,12.9,19.2,05-11-2025
+Lime Margarita,Snacks,3.20,125,Autumn,13.4,18.7,01-12-2025
+Coconut Milkshake,Beverages,4.25,140,Summer,20.6,25.2,25-11-2025
+Chocolate Tarts,Snacks,3.38,105,Winter,14.5,17.1,20-12-2025
+Pineapple Popsicle,Snacks,3.00,120,Spring,16.1,18.2,22-11-2025
+Organic Granola,Snacks,2.89,95,Autumn,15.2,16.8,18-12-2025
+Strawberry Flavored Milk,Beverages,3.60,110,Winter,18.2,22.4,29-11-2025
+Papaya Yogurt,Snacks,2.80,115,Spring,12.9,17.2,14-12-2025
+Passion Fruit Smoothie,Beverages,3.90,125,Summer,17.3,24.1,10-12-2025
+Lemon Butter,Snacks,2.68,110,Autumn,14.7,17.8,23-11-2025
+Raisin Biscotti,Snacks,3.05,130,Winter,15.1,16.9,17-11-2025
+Basil Pesto Sauce,Snacks,2.90,95,Spring,14.5,17.5,05-11-2025
+Saffron Milk,Beverages,4.05,85,Autumn,18.4,23.7,01-12-2025
+Chocolate Brownies,Snacks,3.12,120,Winter,13.1,16.3,28-11-2025
+Vegan Protein Bar,Snacks,3.30,100,Summer,13.7,19.8,23-12-2025
+Chili Garlic Sauce,Snacks,3.45,125,Autumn,15.1,18.4,22-11-2025
+Herb Infused Oil,Snacks,2.85,105,Winter,16.3,17.2,17-10-2025

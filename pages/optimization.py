@@ -37,8 +37,8 @@ def optimize_shelf_space_lp(df: pd.DataFrame, total_shelf_space: int) -> pd.Data
         prob += vars_[i] >= min(LP_MIN_STOCK_MIN, sales[i] * LP_MIN_BUFFER)
 
     status = prob.solve()
-    if pulp.LpStatus[status] != 'Optimal':
-        st.warning(f"LP solver status: {pulp.LpStatus[status]}")
+    # if pulp.LpStatus[status] != 'Optimal':
+    #     st.warning(f"LP solver status: {pulp.LpStatus[status]}")
 
     allocated = [int(v.value() or 0) for v in vars_]
     out = df.copy()
@@ -161,14 +161,43 @@ def display_optimization_details(opt_df: pd.DataFrame):
         return
 
     st.subheader("📊 Summary")
-    total_units = int(opt_df['Allocated_Space'].sum())
-    total_profit = (opt_df['Allocated_Space'] *
-                    opt_df['Profit_Per_Unit']).sum()
-    total_products = opt_df[opt_df['Allocated_Space'] > 0].shape[0]
 
-    st.markdown(f"**Total products:** {total_products}")
-    st.markdown(f"**Total shelf units allocated:** {total_units}  ")
-    st.markdown(f"**Projected profit:** ${total_profit:,.2f}")
+    # Allocated Products
+    allocated_products = opt_df[opt_df['Allocated_Space'] > 0]
+    not_allocated_products = opt_df[opt_df['Allocated_Space'] == 0]
+
+    total_allocated_units = int(allocated_products['Allocated_Space'].sum())
+    total_allocated_profit = (allocated_products['Allocated_Space'] *
+                              allocated_products['Profit_Per_Unit']).sum()
+    total_allocated_products = allocated_products.shape[0]
+
+    # Not Allocated Products
+    total_not_allocated_products = not_allocated_products.shape[0]
+
+    # Display Allocated Products Summary
+    st.markdown(f"**Total allocated products:** {total_allocated_products}")
+    st.markdown(f"**Total shelf units allocated:** {total_allocated_units}")
+    st.markdown(
+        f"**Projected profit from allocated products:** ${total_allocated_profit:,.2f}")
+
+    # Display Not Allocated Products Summary
+    st.markdown(
+        f"**Total not allocated products:** {total_not_allocated_products}")
+
+    # Optional: Display the details of both allocated and not allocated products
+    if total_not_allocated_products > 0:
+        st.subheader("📋 Not Allocated Products")
+        st.write(not_allocated_products[[
+                 'Product_Name', 'Category', 'Profit_Per_Unit']])
+
+    if total_allocated_products > 0:
+        st.subheader("📋 Allocated Products")
+        st.write(allocated_products[[
+                 'Product_Name', 'Category', 'Allocated_Space', 'Profit_Per_Unit']])
+
+    # Display a note about the optimization
+    st.markdown(
+        "Note: Products with zero allocated space were not considered in the final optimized shelf space.")
 
 
 def display_planogram_shelves(opt_df: pd.DataFrame, shelves: int = 5, units_per_shelf: int = 250, shelf_height_px: int = 80):
@@ -211,29 +240,38 @@ def display_planogram_shelves(opt_df: pd.DataFrame, shelves: int = 5, units_per_
                 shelf_index += 1
                 current_units = 0
 
+    # Generate unique colors for each product
+    product_colors = {product: px.colors.qualitative.Set1[i % len(px.colors.qualitative.Set1)]
+                      for i, product in enumerate(df['Product_Name'].unique())}
+
     # Plotly figure
     fig = go.Figure()
-    category_colors = {cat: px.colors.qualitative.Safe[i % len(px.colors.qualitative.Safe)]
-                       for i, cat in enumerate(df['Category'].unique())}
 
     for block in shelf_blocks:
-        fig.add_trace(go.Scatter(
-            x=[block['Start'], block['End'], block['End'],
-                block['Start'], block['Start']],
-            y=[-block['Shelf'], -block['Shelf'], -block['Shelf'] -
-                1, -block['Shelf'] - 1, -block['Shelf']],
-            fill="toself",
-            fillcolor=category_colors[block['Category']],
+        # Use shapes (rectangles) for each product block
+        fig.add_shape(
+            type="rect",
+            x0=block['Start'],
+            y0=-block['Shelf'],
+            x1=block['End'],
+            y1=-block['Shelf'] - 1,
+            fillcolor=product_colors[block['Product']],
             line=dict(color='black'),
-            hoveron='fills',
-            name=block['Product'],
-            hoverlabel=dict(bgcolor='white', font=dict(
-                color='black', size=12)),
-            text=(f"<b>{block['Product']}</b><br>"
-                  f"Category: {block['Category']}<br>"
-                  f"Allocated Units: {block['Allocated']}<br>"
-                  f"Profit/Unit: ${block['Profit']:.2f}"),
-            hoverinfo='text',
+            opacity=0.7,
+            layer="below",
+        )
+
+        # Add hover information
+        fig.add_trace(go.Scatter(
+            x=[(block['Start'] + block['End']) / 2],
+            y=[-block['Shelf'] - 0.5],
+            mode="markers",
+            marker=dict(color="rgba(255,255,255,0)", size=1),
+            text=f"<b>{block['Product']}</b><br>"
+                 f"Category: {block['Category']}<br>"
+                 f"Allocated Units: {block['Allocated']}<br>"
+                 f"Profit/Unit: ${block['Profit']:.2f}",
+            hoverinfo="text",
             showlegend=False
         ))
 
