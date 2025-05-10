@@ -147,14 +147,6 @@ def show_optimization():
     elif method == "Genetic Algorithm":
         result = run_genetic(weighted_df, total_space)
     else:
-        # with st.spinner("Training fast PPO agent…"):
-        #     result = optimize_ppo_speedup(
-        #         weighted_df,
-        #         total_space,
-        #         timesteps=5000,   # you can tune this
-        #         num_envs=4,       # e.g. to your CPU cores
-        #         use_warmup=True   # toggle imitation pre-training
-        #     )
         with st.spinner("Training PPO with profit/lost‐revenue trade‐off…"):
             result = optimize_ppo_speedup(
                 weighted_df, total_space,
