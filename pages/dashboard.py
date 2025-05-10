@@ -52,7 +52,7 @@ def show_dashboard():
 
     min_p, max_p = float(filtered_df["Profit_Per_Unit"].min()), float(filtered_df["Profit_Per_Unit"].max())
     profit_range = st.slider(
-        f"• Profit per unit (${min_p:.2f}–${max_p:.2f})",
+        f"• Profit per unit (₹{min_p:.2f}–₹{max_p:.2f})",
         min_value=min_p, max_value=max_p, value=(min_p, max_p)
     )
     filtered_df = filtered_df[
@@ -72,8 +72,8 @@ def show_dashboard():
 
     c1, c2, c3 = st.columns(3)
     c1.metric("Total Sales (30d)", f"{total_sales:,.0f} units")
-    c2.metric("Avg Profit/Unit", f"${avg_profit:.2f}")
-    c3.metric("Total Profit (30d)", f"${total_profit:,.2f}")
+    c2.metric("Avg Profit/Unit", f"₹{avg_profit:.2f}")
+    c3.metric("Total Profit (30d)", f"₹{total_profit:,.2f}")
 
     # ── STEP 4: Sales by Category ────────────────────────────
     st.header("4️⃣ Sales by Category")
@@ -107,7 +107,7 @@ def show_dashboard():
         hover_data=["Product_Name", "Category"],
         trendline="ols"
     )
-    fig2.update_layout(xaxis_title="Profit per Unit ($)", yaxis_title="Sales (30d)")
+    fig2.update_layout(xaxis_title="Profit per Unit (₹)", yaxis_title="Sales (30d)")
     st.plotly_chart(fig2, use_container_width=True)
 
     # ── STEP 6: Top-N Products ───────────────────────────────
