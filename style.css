@@ -1,0 +1,155 @@
+/* ──────────────────────────────────────────────────────── */
+/*             Global Dark-Mode Overrides                */
+/* ──────────────────────────────────────────────────────── */
+html,
+body,
+[data-testid="stAppViewContainer"] {
+  background-color: #121212 !important;
+  color: #f1f1f1 !important;
+  margin: 0;
+  height: 100%;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*           Hide Streamlit Chrome (sidebar, header, etc.) */
+/* ──────────────────────────────────────────────────────── */
+[data-testid="stSidebar"],
+[data-testid="collapsedControl"],
+[data-testid="stHeader"],
+[data-testid="stToolbar"],
+[data-testid="stStatusWidget"],
+.viewerBadge_container__1QSob {
+  display: none !important;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*         Centered Menu Container & Button Overrides     */
+/* ──────────────────────────────────────────────────────── */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  height: 10vh;
+  gap: 20px;
+}
+
+.menu-btn,
+div.stButton > button {
+  display: block;
+  width: 240px;
+  height: 60px;
+  line-height: 60px;
+  margin: 10px auto;
+  padding: 0 24px;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border: 2px solid #444444 !important;
+  border-radius: 999px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+  transition: transform 0.2s ease-in-out, background-color 0.2s !important;
+  cursor: pointer !important;
+}
+
+div.stButton > button {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+.menu-btn:hover,
+div.stButton > button:hover {
+  background-color: #f0f0f0 !important;
+  transform: scale(1.02) !important;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*                   Header & Divider Styles              */
+/* ──────────────────────────────────────────────────────── */
+h1.title {
+  color: #ffffff !important;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #333 !important;
+  margin: 2rem 0;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*                   Back Button Styling                  */
+/* ──────────────────────────────────────────────────────── */
+.back-btn {
+  display: inline-block;
+  margin: 16px auto;
+  padding: 10px 20px;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border: 1px solid #444444 !important;
+  border-radius: 8px !important;
+  transition: background-color 0.2s ease-in-out !important;
+  cursor: pointer !important;
+}
+
+.back-btn:hover {
+  background-color: #f0f0f0 !important;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*                   Miscellaneous Text                   */
+/* ──────────────────────────────────────────────────────── */
+.total-sales,
+.sales-units,
+.choose-category {
+  color: #ffffff !important;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*   Force all Streamlit metric text (labels & values)    */
+/* ──────────────────────────────────────────────────────── */
+[data-testid="metric-container"] * {
+  color: #ffffff !important;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*   Force Slider marks (min/max labels) white in dark    */
+/* ──────────────────────────────────────────────────────── */
+.rc-slider-mark-text {
+  color: #ffffff !important;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*   Force Slider handle & track labels white in dark     */
+/* ──────────────────────────────────────────────────────── */
+.rc-slider-dot,
+.rc-slider-handle,
+.rc-slider-handle:active,
+.rc-slider-handle:focus {
+  border-color: #f1f1f1 !important;
+  background-color: #f1f1f1 !important;
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*   FORM CONTROLS: ensure ANY text on white backgrounds  */
+/*   (inputs, selects, textareas, buttons, sliders, radios) */
+/*   stays BLACK                                        */
+/* ──────────────────────────────────────────────────────── */
+input,
+textarea,
+select,
+option,
+
+div.stSlider,
+div.stRadio {
+  color: #000000 !important;
+}
