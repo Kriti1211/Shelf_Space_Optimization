@@ -192,7 +192,7 @@ def show_dashboard():
             grouped,
             x="Sales_Last_30_Days",
             y="Weight_Volume",
-            color="Season",
+            color="Weight_Volume",
             barmode="group",
             text="Sales_Last_30_Days",
             orientation='h',
@@ -202,7 +202,7 @@ def show_dashboard():
                     "Sales_Last_30_Days": "Sales (30d)"},
             title=f"Seasonal Sales Distribution by Size for {selected_product}"
         )
-        fig_sales.update_traces(textposition='outside')
+        fig_sales.update_traces(textposition='outside', width=0.6)
         fig_sales.update_layout(
             xaxis_title="Sales in Last 30 Days", yaxis_title="Weight")
 
