@@ -77,6 +77,12 @@ def display_planogram_interactive(opt_df: pd.DataFrame):
     total_profit = (opt_df['Allocated_Space'] * opt_df['Profit_Per_Unit']).sum()
     st.markdown(f"**Total units used:** {total_units}")
     st.markdown(f"**Estimated profit:** ₹{total_profit:,.2f}")
+    st.markdown(f"""
+    <div style='color: white;'>
+        <div style='font-size:18px;'>Estimated profit</div>
+        <div style='font-size:36px;'>₹{total_profit:,.2f}</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # ───────────────── MAIN APP ────────────────────
 def show_optimization():
@@ -163,8 +169,17 @@ def show_optimization():
     alloc_df = result.copy().reset_index(drop=True)
 
     # 2) Re-attach the 30-day sales
-    df2 = df.reset_index(drop=True)
-    alloc_df["Sales_Last_30_Days"] = df2["Sales_Last_30_Days"]
+    alloc_df = pd.merge(
+        alloc_df,
+        seasonal_df[["Product_Name", "Category", "Sales_Last_30_Days", "Profit_Per_Unit"]],
+        on=["Product_Name", "Category"],
+        how="left",
+        suffixes=("", "_season")
+    )
+
+    # If columns exist in both, prefer the 'season' version if original is NaN
+    alloc_df["Sales_Last_30_Days"] = alloc_df["Sales_Last_30_Days"].fillna(alloc_df["Sales_Last_30_Days_season"])
+    alloc_df["Profit_Per_Unit"] = alloc_df["Profit_Per_Unit"].fillna(alloc_df["Profit_Per_Unit_season"])
 
     # 3) Apply category weights → weighted demand
     alloc_df["Category_Weight"] = alloc_df["Category"].map(weights)
@@ -210,19 +225,23 @@ def show_optimization():
         st.metric("Total Lost Revenue", f"₹{alerts['Shortfall_Revenue'].sum():,.2f}")
 
         max_n     = len(alerts)
-        default_n = min(10, max_n)
+        default_n = st.session_state.get("preview_n", min(10, max_n))
 
+        # Give the slider a key so its value sticks across reruns
         n = st.slider(
             "How many products to preview?",
             min_value=1,
             max_value=max_n,
             value=default_n,
             step=1,
+            key="preview_n"
         )
 
-        with st.expander(f"Show top {n} by lost revenue"):
+        # Build a dynamic expander label and expand it by default
+        expander_label = f"Showing top {st.session_state.preview_n} products by lost revenue"
+        with st.expander(expander_label):
             st.dataframe(
-                alerts.head(n)[[
+                alerts.head(st.session_state.preview_n)[[
                     "Product_Name","Category","Sales_Last_30_Days",
                     "Allocated_Space","Ideal_Allocation",
                     "Shortfall_Units","Shortfall_Revenue"
