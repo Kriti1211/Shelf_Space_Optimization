@@ -147,23 +147,40 @@ def show_optimization():
 
     # Select optimization method
     method = st.radio("Method", ["Linear Programming", "Genetic Algorithm", "PPO (Reinforcement Learning)"], key="method")
-    if method == "Linear Programming":
-        
-        result = lp_mod.optimize_lp(weighted_df,total_space)
-    elif method == "Genetic Algorithm":
-        result = run_genetic(weighted_df, total_space)
-    else:
-        with st.spinner("Training PPO with profit/lost‐revenue trade‐off…"):
-            result = optimize_ppo_speedup(
-                weighted_df, total_space,
-                timesteps=5000,
-                num_envs=4
-            )
 
+    # 1) Build a hashable “inputs” tuple
+    inputs = (
+        season,
+        total_space,
+        tuple(sorted(weights.items())),
+        method
+    )
 
+    # 2) If inputs differ from last run, recompute and store
+    if st.session_state.get("last_inputs") != inputs:
+        st.session_state.last_inputs = inputs
+
+        # Clear out old preview sliders so they’ll start at your DEFAULT again
+        st.session_state.pop("preview_n", None)
+        st.session_state.pop("category_pie_topn", None)
+
+        # Run the chosen optimizer exactly once and stash the df
+        if method == "Linear Programming":
+            result = lp_mod.optimize_lp(weighted_df, total_space)
+        elif method == "Genetic Algorithm":
+            result = run_genetic(weighted_df, total_space)
+        else:
+            result = optimize_ppo_speedup(weighted_df, total_space)
+
+        st.session_state.result = result
+
+    # 3) Always pull from state (no recompute when sliders below change)
+    result = st.session_state.result
+
+    # 4) Display planogram
     display_planogram_interactive(result)
 
-# ------------- STOCK-OUT & SHORTFALL ANALYSIS --------------
+    # ------------- STOCK-OUT & SHORTFALL ANALYSIS --------------
 
     # 1) Start from your allocation results
     alloc_df = result.copy().reset_index(drop=True)
@@ -225,14 +242,14 @@ def show_optimization():
         st.metric("Total Lost Revenue", f"₹{alerts['Shortfall_Revenue'].sum():,.2f}")
 
         max_n     = len(alerts)
-        default_n = st.session_state.get("preview_n", min(10, max_n))
+        default_n = min(10, max_n)
+        start_n   = st.session_state.get("preview_n", default_n)
 
-        # Give the slider a key so its value sticks across reruns
         n = st.slider(
             "How many products to preview?",
             min_value=1,
             max_value=max_n,
-            value=default_n,
+            value=start_n,
             step=1,
             key="preview_n"
         )
@@ -265,9 +282,14 @@ def show_optimization():
         # 10) Category pie chart
         max_slices = len(alerts)
         default_pie = min(5, max_slices)
+        start_pie   = st.session_state.get("category_pie_topn", default_pie)
+
         top_n = st.slider(
             "Compute pie on top how many products by lost revenue?",
-            1, max_slices, default_pie, step=1,
+            min_value=1,
+            max_value=max_slices,
+            value=start_pie,
+            step=1,
             key="category_pie_topn"
         )
         top_alerts = alerts.head(top_n)

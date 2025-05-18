@@ -6,6 +6,9 @@ from gymnasium import spaces
 from stable_baselines3 import PPO
 from stable_baselines3.common.vec_env import SubprocVecEnv
 from stable_baselines3.common.env_checker import check_env
+import random
+from stable_baselines3.common.utils import set_random_seed
+from stable_baselines3.common.vec_env import DummyVecEnv
 
 # Balance factor for lost‐revenue penalty
 LAMBDA = 1.0
@@ -84,47 +87,70 @@ def optimize_ppo_speedup(
     df: pd.DataFrame,
     total_space: int,
     timesteps: int = 5000,
-    num_envs: int = 4
+    num_envs: int = 4,
+    seed: int = 42
 ) -> pd.DataFrame:
-    # 1) Aggregate
+    
+    """
+    Runs a single-step PPO to allocate shelf space.
+    Returns a DataFrame with columns:
+      Product_Name, Category, Sales_Last_30_Days, Profit_Per_Unit,
+      Balanced_Score, Allocated_Space, Total_Profit, Total_Lost_Revenue, Net_Reward
+    Deterministic given fixed `seed`.
+    """
+    # ─── 0) Seed everything ─────────────────────────────
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    set_random_seed(seed)
+
+    # ─── 1) Aggregate & compute balanced score ─────────
     grouped = (
         df.groupby(["Product_Name","Category"], as_index=False)
-          .agg({"Sales_Last_30_Days":"sum","Profit_Per_Unit":"mean"})
+          .agg({
+              "Sales_Last_30_Days": "sum",
+              "Profit_Per_Unit":    "mean"
+          })
     )
-    # 2) Compute balanced score
     grouped["Balanced_Score"] = np.sqrt(
-        grouped["Profit_Per_Unit"] * grouped["Sales_Last_30_Days"]
+        grouped["Sales_Last_30_Days"] * grouped["Profit_Per_Unit"]
     )
 
-    # 3) Build features array: now 3 cols per SKU
-    features = grouped[["Profit_Per_Unit",
-                        "Sales_Last_30_Days",
-                        "Balanced_Score"]].to_numpy(np.float32)
+    # ─── 2) Build feature matrix ───────────────────────
+    features = grouped[[
+        "Profit_Per_Unit",
+        "Sales_Last_30_Days",
+        "Balanced_Score"
+    ]].to_numpy(np.float32)
 
-    # 4) Create & validate raw env
+    # ─── 3) Check a single env ─────────────────────────
     raw_env = ShelfSpaceEnv(features, total_space)
     check_env(raw_env, warn=True)
 
-    # 5) Parallelize
-    def make_env(): return ShelfSpaceEnv(features, total_space)
-    vec_env = SubprocVecEnv([make_env for _ in range(num_envs)])
+    # ─── 4) DummyVecEnv (no subprocesses) ─
+    # Single‐process envs avoid any pickle/spawn issues on Windows
+    vec_env = DummyVecEnv([lambda: ShelfSpaceEnv(features, total_space)])
 
-    # 6) Train PPO
+    # ─── 5) Train PPO ───────────────────────────────────
     model = PPO(
-        "MlpPolicy", vec_env,
+        policy="MlpPolicy",
+        env=vec_env,
+        seed=seed,
         device="auto",
-        n_steps=256, batch_size=256, n_epochs=3,
-        verbose=1
+        n_steps=256,
+        batch_size=256,
+        n_epochs=3,
+        verbose=0
     )
     model.learn(total_timesteps=timesteps)
 
-    # 7) Roll out one step for final allocation
-    obs, _        = raw_env.reset()
-    action, _     = model.predict(obs, deterministic=True)
+    # ─── 6) Single-step rollout ────────────────────────
+    obs, _      = raw_env.reset(seed=seed)
+    action, _   = model.predict(obs, deterministic=True)
     _, _, _, _, info = raw_env.step(action)
-    alloc = info["allocation"]
+    alloc       = info["allocation"]
 
-    # 8) Merge & return
+    # ─── 7) Attach results & return ────────────────────
     grouped["Allocated_Space"]    = alloc
     grouped["Total_Profit"]       = info["total_profit"]
     grouped["Total_Lost_Revenue"] = info["total_lost_revenue"]
