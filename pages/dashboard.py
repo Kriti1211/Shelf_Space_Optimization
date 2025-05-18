@@ -145,27 +145,10 @@ def show_dashboard():
         fig3.update_layout(yaxis_title="Units Sold")
         st.plotly_chart(fig3, use_container_width=True)
 
-    # ── STEP 8: Download filtered data ────────────────────────
-    st.header("8️⃣ Download your filtered data")
-    csv = df.to_csv(index=False).encode('utf-8')
-    st.download_button(
-        "Download as CSV",
-        csv,
-        file_name="filtered_sales.csv",
-        mime="text/csv"
-    )
-
-    st.markdown(
-        """
-        ---
-        👉 Use the **season**, **category**, and **profit** filters to zero-in on products you care about.  
-        👉 Switch chart types or drill into individual product trends.  
-        👉 Download your exact view for sharing or further analysis!
-        """
-    )
+    # ── STEP 8: Product Size variations ────────────────────────
 
     # Add after the profit range filter and before the key metrics section:
-    st.header("9️⃣ Product Size Variations")
+    st.header("8️⃣ Product Size Variations")
 
     # Compute volume
     df["Volume"] = df["Height_cm"] * df["Width_cm"] * df["Depth_cm"]
@@ -196,71 +179,69 @@ def show_dashboard():
         "Volume": "first"
     }).reset_index()
 
-    # 📊 Interactive bar chart: Sales by size (weight) and season
-    st.subheader("📊 Sales by Size (Weight) and Season")
-    fig_sales = px.bar(
-        grouped,
-        x="Weight_Volume",
-        y="Sales_Last_30_Days",
-        color="Season",
-        barmode="group",
-        text="Sales_Last_30_Days",
-        hover_data=["Volume", "Profit_Per_Unit",
-                    "Height_cm", "Width_cm", "Depth_cm"],
-        labels={"Weight_Volume": "Size (Weight)",
-                "Sales_Last_30_Days": "Sales (30d)"},
-        title=f"Seasonal Sales Distribution by Size for {selected_product}"
+    # 📊 Conditional Chart Rendering: Sales by size (weight) and season
+    st.subheader("📊 Sales by Size (Weight)")
+    # Chart type selection
+    chart_type = st.selectbox(
+        "Choose Chart Type for Sales by Size and Season:",
+        ("Horizontal Bar", "Pie Chart")
     )
-    fig_sales.update_traces(textposition='outside')
-    fig_sales.update_layout(xaxis_title="Weight",
-                            yaxis_title="Sales in Last 30 Days")
+
+    if chart_type == "Horizontal Bar":
+        fig_sales = px.bar(
+            grouped,
+            x="Sales_Last_30_Days",
+            y="Weight_Volume",
+            color="Season",
+            barmode="group",
+            text="Sales_Last_30_Days",
+            orientation='h',
+            hover_data=["Volume", "Profit_Per_Unit",
+                        "Height_cm", "Width_cm", "Depth_cm"],
+            labels={"Weight_Volume": "Size (Weight)",
+                    "Sales_Last_30_Days": "Sales (30d)"},
+            title=f"Seasonal Sales Distribution by Size for {selected_product}"
+        )
+        fig_sales.update_traces(textposition='outside')
+        fig_sales.update_layout(
+            xaxis_title="Sales in Last 30 Days", yaxis_title="Weight")
+
+    elif chart_type == "Pie Chart":
+        pie_data = grouped.groupby("Weight_Volume")[
+            "Sales_Last_30_Days"].sum().reset_index()
+        fig_sales = px.pie(
+            pie_data,
+            names="Weight_Volume",
+            values="Sales_Last_30_Days",
+            title=f"Sales Distribution by Size for {selected_product}"
+        )
+        fig_sales.update_traces(textinfo='percent+label')
+
     st.plotly_chart(fig_sales, use_container_width=True)
 
-    # 📈 Scatter Plot: Size vs Sales
-    st.subheader("📈 Size Volume vs Sales Scatter")
-    fig_scatter = px.scatter(
-        variations_df,
-        x="Volume",
-        y="Sales_Last_30_Days",
-        color="Weight_Volume",
-        size="Profit_Per_Unit",
-        hover_data=["Season", "Height_cm", "Width_cm", "Depth_cm"],
-        title=f"Size vs Sales for {selected_product}",
-        labels={"Volume": "Volume (cm³)", "Sales_Last_30_Days": "Sales (30d)"}
-    )
-    st.plotly_chart(fig_scatter, use_container_width=True)
+    # Calculate total profit and round to 2 decimal places
+    variations_df["Total_Profit"] = (
+        variations_df["Sales_Last_30_Days"] * variations_df["Profit_Per_Unit"]
+    ).round(2)
 
-    avg_sales_season_size = variations_df.groupby(
-        ["Weight_Volume", "Season"]
-    )["Sales_Last_30_Days"].mean().reset_index()
-
-    st.subheader("🌤️ Seasonal Sales Trend by Size")
-    fig_seasonal_trend = px.bar(
-        avg_sales_season_size,
-        x="Season",
-        y="Sales_Last_30_Days",
-        color="Weight_Volume",
-        barmode="group",
-        title=f"Average Sales per Season for {selected_product}",
-        labels={
-            "Sales_Last_30_Days": "Avg Sales (30d)", "Weight_Volume": "Size"}
-    )
-    st.plotly_chart(fig_seasonal_trend, use_container_width=True)
-
-    variations_df["Total_Profit"] = variations_df["Sales_Last_30_Days"] * \
-        variations_df["Profit_Per_Unit"]
-
+    # Group and round again (in case of float sum inaccuracies)
     profit_by_size = variations_df.groupby(
-        "Weight_Volume")["Total_Profit"].sum().reset_index()
+        "Weight_Volume")["Total_Profit"].sum().round(2).reset_index()
 
     st.subheader("💰 Total Profit by Size")
     fig_profit = px.bar(
         profit_by_size,
-        x="Weight_Volume",
-        y="Total_Profit",
+        x="Total_Profit",
+        y="Weight_Volume",
+        color="Weight_Volume",  # Distinct color for each weight
+        orientation='h',
+        text="Total_Profit",
         title=f"Total Profit by Size for {selected_product}",
         labels={"Weight_Volume": "Size", "Total_Profit": "Total Profit (₹)"}
     )
+
+    fig_profit.update_traces(textposition='outside', width=0.6)
+    fig_profit.update_layout(showlegend=False)
     st.plotly_chart(fig_profit, use_container_width=True)
 
     # Calculate Days to Expiry
@@ -273,7 +254,7 @@ def show_dashboard():
         lambda x: max(1, 100 - x) if x >= 0 else 100)
 
     # Scatter plot
-    st.subheader("📅 Days to Expiry vs Sales (Visualized)")
+    st.subheader("📅 Days to Expiry vs Sales")
 
     fig_expiry = px.scatter(
         variations_df,
@@ -310,55 +291,25 @@ def show_dashboard():
 
     st.plotly_chart(fig_expiry, use_container_width=True)
 
-    variations_df["Profit_Per_cm3"] = variations_df["Profit_Per_Unit"] / \
-        variations_df["Volume"]
-    variations_df["Sales_Efficiency"] = variations_df["Sales_Last_30_Days"] / \
-        variations_df["Volume"]
+    # ── STEP 9: Download filtered data ────────────────────────
 
-    # Group by size
-    metrics_df = variations_df.groupby("Weight_Volume")[
-        ["Profit_Per_cm3", "Sales_Efficiency"]].mean().reset_index()
-
-    # Create subplots with 2 bar charts
-    fig_metrics = make_subplots(
-        rows=1, cols=2,
-        subplot_titles=("Profitability per cm³", "Sales Efficiency per cm³"),
-        shared_yaxes=False
+    st.header("9️⃣ Download your filtered data")
+    csv = df.to_csv(index=False).encode('utf-8')
+    st.download_button(
+        "Download as CSV",
+        csv,
+        file_name="filtered_sales.csv",
+        mime="text/csv"
     )
 
-    # Add Profit per cm³ bar chart
-    fig_metrics.add_trace(
-        go.Bar(
-            x=metrics_df["Weight_Volume"],
-            y=metrics_df["Profit_Per_cm3"],
-            name="Profit/cm³",
-            marker_color="mediumseagreen",
-            hovertemplate="Size: %{x}<br>Profit/cm³: %{y:.2f}<extra></extra>"
-        ),
-        row=1, col=1
+    st.markdown(
+        """
+        ---
+        👉 Use the **season**, **category**, and **profit** filters to zero-in on products you care about.  
+        👉 Switch chart types or drill into individual product trends.  
+        👉 Download your exact view for sharing or further analysis!
+        """
     )
-
-    # Add Sales Efficiency bar chart
-    fig_metrics.add_trace(
-        go.Bar(
-            x=metrics_df["Weight_Volume"],
-            y=metrics_df["Sales_Efficiency"],
-            name="Sales/cm³",
-            marker_color="steelblue",
-            hovertemplate="Size: %{x}<br>Sales/cm³: %{y:.2f}<extra></extra>"
-        ),
-        row=1, col=2
-    )
-
-    # Update layout
-    fig_metrics.update_layout(
-        title_text="📊 Profitability vs Sales Efficiency per cm³ by Size",
-        showlegend=False,
-        height=450,
-        margin=dict(t=60, b=30, l=30, r=30),
-    )
-
-    st.plotly_chart(fig_metrics, use_container_width=True)
 
 
 if __name__ == "__main__":
