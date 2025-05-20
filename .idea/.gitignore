@@ -5,3 +5,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Python byte-code
+__pycache__/
+*.py[cod]
+*$py.class
