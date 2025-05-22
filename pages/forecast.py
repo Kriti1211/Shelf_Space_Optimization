@@ -64,7 +64,7 @@ def show_forecast():
     st.header("2️⃣ Filter by season")
     season = st.selectbox(
         "Choose a season to focus on", 
-        ["Select season", "All", "Winter", "Summer", "Monsoon", "Spring", "Autumn"],
+        ["Select season", "Winter", "Summer", "Monsoon", "Spring", "Autumn"],
         key="forecast_season"
     )
     if season == "Select season":
@@ -149,6 +149,18 @@ def show_forecast():
         fig_rev = go.Figure(go.Bar(x=forecast['ds'].tail(horizon), y=forecast['revenue'].tail(horizon)))
         fig_rev.update_layout(title='Revenue Forecast', xaxis_title='Date', yaxis_title='Revenue (₹)')
         st.plotly_chart(fig_rev, use_container_width=True)
+
+    st.markdown(
+        """
+    <style>
+    /* Target number inputs in Streamlit */
+    div[data-testid="stNumberInput"] input {
+        color: white !important;
+    }
+    </style>
+    """,
+        unsafe_allow_html=True
+    )
 
     # STEP 11: Demand planning calculators
     st.header("🔢 Demand Planning Calculators")
