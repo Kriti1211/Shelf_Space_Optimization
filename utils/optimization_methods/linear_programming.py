@@ -72,7 +72,7 @@ def optimize_lp(df: pd.DataFrame, total_space: int) -> pd.DataFrame:
     # 3) Solve
     status = prob.solve()
     if pulp.LpStatus[status] != 'Optimal':
-        st.warning(f"LP status: {pulp.LpStatus[status]}")
+        return None
 
     # 4) Extract results
     alloc   = [int(x_vars[i].value() or 0) for i in range(n)]
