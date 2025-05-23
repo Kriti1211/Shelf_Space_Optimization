@@ -34,8 +34,9 @@ if current_page == "home":
 
 # ─── DASHBOARD ─────────────────────────────────────────────────────
 elif current_page == "Dashboard":
-    from pages.dashboard import show_dashboard
-    show_dashboard()
+    import importlib
+    dashboard_mod = importlib.import_module("pages.dashboard")
+    dashboard_mod.show_dashboard()
 
 # ─── FORECAST ──────────────────────────────────────────────────────
 elif current_page == "Forecast":
