@@ -7,11 +7,12 @@ import utils.optimization_methods.linear_programming as lp_mod
 import utils.optimization_methods.genetic_algorithm as ga_mod
 import altair as alt
 from utils.optimization_methods.ppo_rl import optimize_ppo_speedup
+import plotly.graph_objects as go
 
 # at the top of your pages/optimization.py
 @st.cache_data(show_spinner=False)
 def run_genetic(df: pd.DataFrame, total_space: int) -> pd.DataFrame:
-    return ga_mod.optimize_ga(df,total_space)
+    return ga_mod.optimize_ga(df, total_space)
 
 
 # ─────────────── LOAD CUSTOM STYLES ───────────────
@@ -31,12 +32,12 @@ def display_planogram_interactive(opt_df: pd.DataFrame):
     st.subheader("📦 Shelf Space by Category")
     cat_agg = (
         opt_df.groupby("Category", as_index=False)["Allocated_Space"]
-              .sum().sort_values("Allocated_Space", ascending=False)
+        .sum().sort_values("Allocated_Space", ascending=False)
     )
     fig_cat = px.bar(
         cat_agg, x="Allocated_Space", y="Category",
         orientation="h", text="Allocated_Space",
-        labels={"Allocated_Space":"Units Allocated","Category":"Category"},
+        labels={"Allocated_Space": "Units Allocated", "Category": "Category"},
         title="Shelf Space by Category"
     )
     fig_cat.update_layout(margin=dict(l=150, t=20))
@@ -50,21 +51,64 @@ def display_planogram_interactive(opt_df: pd.DataFrame):
         prod_df, x="Allocated_Space", y="Product_Name",
         orientation="h", color="Category",
         text="Allocated_Space", hover_data=["Profit_Per_Unit"],
-        labels={"Allocated_Space":"Units","Product_Name":"Product"},
+        labels={"Allocated_Space": "Units", "Product_Name": "Product"},
         title="Shelf Space by Product"
     )
-    fig_prod.update_layout(margin=dict(l=200, t=20), yaxis={'categoryorder':'total descending'})
+    fig_prod.update_layout(margin=dict(l=200, t=20), yaxis={
+                           'categoryorder': 'total descending'})
     fig_prod.update_traces(textposition="outside")
     st.plotly_chart(fig_prod, use_container_width=True)
 
     # Treemap view
-    st.subheader("📊 Proportional View (Treemap)")
-    fig_treemap = px.treemap(
-        opt_df, path=["Category","Product_Name"],
-        values="Allocated_Space", hover_data=["Profit_Per_Unit"],
-        title="Shelf Space Allocation (Treemap)"
+    # 1) Precompute category‐avg profit
+    opt_df["Category_Avg_Profit"] = (
+        opt_df.groupby("Category")["Profit_Per_Unit"]
+            .transform("mean")
     )
-    st.plotly_chart(fig_treemap, use_container_width=True)
+
+    labels, parents, values = [], [], []
+    cat_text, prod_text = [], []
+
+    # ─── category nodes ────────────────────────────────
+    for cat, group in opt_df.groupby("Category"):
+        total_units = int(group["Allocated_Space"].sum())
+        avg_p      = group["Category_Avg_Profit"].iloc[0]
+
+        labels.append(cat)
+        parents.append("")             # top level
+        values.append(total_units)
+        cat_text.append(f"Avg profit (category): ₹{avg_p:.2f}<br>")
+        prod_text.append("")           # no product line here
+
+    # ─── product leaves ───────────────────────────────
+    for _, row in opt_df.iterrows():
+        labels.append(row["Product_Name"])
+        parents.append(row["Category"])
+        values.append(int(row["Allocated_Space"]))
+        cat_text.append("")            # no cat‐avg here
+        prod_text.append(f"Profit (product): ₹{row['Profit_Per_Unit']:.2f}")
+
+    # 2) Pack into customdata
+    customdata = list(zip(cat_text, prod_text))
+
+    # 3) Build the treemap
+    fig = go.Figure(go.Treemap(
+        labels     = labels,
+        parents    = parents,
+        values     = values,
+        customdata=customdata,
+        hovertemplate=(
+            "<b>%{label}</b><br>" +
+            "Allocated units: %{value}<br>" +
+            "%{customdata[0]}%{customdata[1]}" +
+            "<extra></extra>"
+        ),
+        branchvalues="total"
+    ))
+
+    st.subheader("📊 Proportional View (Treemap)")
+    st.plotly_chart(fig, use_container_width=True)
+
 
     # KPIs and context
     st.subheader("Why this layout helps")
@@ -73,10 +117,10 @@ def display_planogram_interactive(opt_df: pd.DataFrame):
         "- Product view for item detail.  \n"
         "- Treemap for proportional insights."
     )
-    total_units  = int(opt_df['Allocated_Space'].sum())
-    total_profit = (opt_df['Allocated_Space'] * opt_df['Profit_Per_Unit']).sum()
-    st.markdown(f"**Total units used:** {total_units}")
-    st.markdown(f"**Estimated profit:** ₹{total_profit:,.2f}")
+    total_units = int(opt_df['Allocated_Space'].sum())
+    total_profit = (opt_df['Allocated_Space'] *
+                    opt_df['Profit_Per_Unit']).sum()
+    st.markdown(f"*Total units used:* {total_units}")
     st.markdown(f"""
     <div style='color: white;'>
         <div style='font-size:18px;'>Estimated profit</div>
@@ -85,6 +129,8 @@ def display_planogram_interactive(opt_df: pd.DataFrame):
     """, unsafe_allow_html=True)
 
 # ───────────────── MAIN APP ────────────────────
+
+
 def show_optimization():
     st.title("🧮 Shelf Space Optimization")
     st.markdown(
@@ -100,7 +146,7 @@ def show_optimization():
 
     season = st.selectbox(
         "Select Season",
-        ["Select Season","Winter","Summer","Monsoon","Spring","Autumn"],
+        ["Select Season", "Winter", "Summer", "Monsoon", "Spring", "Autumn"],
         key="opt_season"
     )
     if season == "Select Season":
@@ -121,7 +167,8 @@ def show_optimization():
     cat_sales = seasonal_df.groupby("Category")["Sales_Last_30_Days"].sum()
     min_s, max_s = cat_sales.min(), cat_sales.max()
     default_weights = {
-        cat: float(((sales - min_s) / (max(1e-9, max_s - min_s))) * (2.0 - 0.5) + 0.5)
+        cat: float(((sales - min_s) / (max(1e-9, max_s - min_s)))
+                   * (2.0 - 0.5) + 0.5)
         if max_s != min_s else 1.0
         for cat, sales in cat_sales.items()
     }
@@ -135,7 +182,7 @@ def show_optimization():
     # Explanation of chosen defaults
     st.markdown(
         """
-        **Why these default weights?**  
+        *Why these default weights?*  
         We normalize each category’s total recent sales into the [0.5, 2.0] range, so categories selling more this season start with higher weights. You can still tweak them, but these defaults reflect seasonal demand.
         """
     )
@@ -146,41 +193,27 @@ def show_optimization():
     )
 
     # Select optimization method
-    method = st.radio("Method", ["Linear Programming", "Genetic Algorithm", "PPO (Reinforcement Learning)"], key="method")
+    method = st.radio("Method", [
+                      "Linear Programming", "Genetic Algorithm", "PPO (Reinforcement Learning)"], key="method")
+    if method == "Linear Programming":
 
-    # 1) Build a hashable “inputs” tuple
-    inputs = (
-        season,
-        total_space,
-        tuple(sorted(weights.items())),
-        method
-    )
+        result = lp_mod.optimize_lp(weighted_df, total_space)
+        if result is None:
+            st.error("⚠️  Linear program is infeasible")
+            return
+    elif method == "Genetic Algorithm":
+        result = run_genetic(weighted_df, total_space)
+    else:
+        with st.spinner("Training PPO with profit/lost‐revenue trade‐off…"):
+            result = optimize_ppo_speedup(
+                weighted_df, total_space,
+                timesteps=5000,
+                num_envs=4
+            )
 
-    # 2) If inputs differ from last run, recompute and store
-    if st.session_state.get("last_inputs") != inputs:
-        st.session_state.last_inputs = inputs
-
-        # Clear out old preview sliders so they’ll start at your DEFAULT again
-        st.session_state.pop("preview_n", None)
-        st.session_state.pop("category_pie_topn", None)
-
-        # Run the chosen optimizer exactly once and stash the df
-        if method == "Linear Programming":
-            result = lp_mod.optimize_lp(weighted_df, total_space)
-        elif method == "Genetic Algorithm":
-            result = run_genetic(weighted_df, total_space)
-        else:
-            result = optimize_ppo_speedup(weighted_df, total_space)
-
-        st.session_state.result = result
-
-    # 3) Always pull from state (no recompute when sliders below change)
-    result = st.session_state.result
-
-    # 4) Display planogram
     display_planogram_interactive(result)
 
-    # ------------- STOCK-OUT & SHORTFALL ANALYSIS --------------
+# ------------- STOCK-OUT & SHORTFALL ANALYSIS --------------
 
     # 1) Start from your allocation results
     alloc_df = result.copy().reset_index(drop=True)
@@ -188,20 +221,24 @@ def show_optimization():
     # 2) Re-attach the 30-day sales
     alloc_df = pd.merge(
         alloc_df,
-        seasonal_df[["Product_Name", "Category", "Sales_Last_30_Days", "Profit_Per_Unit"]],
+        seasonal_df[["Product_Name", "Category",
+                     "Sales_Last_30_Days", "Profit_Per_Unit"]],
         on=["Product_Name", "Category"],
         how="left",
         suffixes=("", "_season")
     )
 
     # If columns exist in both, prefer the 'season' version if original is NaN
-    alloc_df["Sales_Last_30_Days"] = alloc_df["Sales_Last_30_Days"].fillna(alloc_df["Sales_Last_30_Days_season"])
-    alloc_df["Profit_Per_Unit"] = alloc_df["Profit_Per_Unit"].fillna(alloc_df["Profit_Per_Unit_season"])
+    alloc_df["Sales_Last_30_Days"] = alloc_df["Sales_Last_30_Days"].fillna(
+        alloc_df["Sales_Last_30_Days_season"])
+    alloc_df["Profit_Per_Unit"] = alloc_df["Profit_Per_Unit"].fillna(
+        alloc_df["Profit_Per_Unit_season"])
 
     # 3) Apply category weights → weighted demand
     alloc_df["Category_Weight"] = alloc_df["Category"].map(weights)
-    alloc_df["Weighted_Sales"]   = alloc_df["Sales_Last_30_Days"] * alloc_df["Category_Weight"]
-    total_weighted_demand       = alloc_df["Weighted_Sales"].sum()
+    alloc_df["Weighted_Sales"] = alloc_df["Sales_Last_30_Days"] * \
+        alloc_df["Category_Weight"]
+    total_weighted_demand = alloc_df["Weighted_Sales"].sum()
 
     # 4) Ideal_Allocation (ceiled)
     alloc_df["Ideal_Allocation"] = np.ceil(
@@ -210,7 +247,8 @@ def show_optimization():
 
     # 5) Shortfall_Units (ceiled)
     alloc_df["Shortfall_Units"] = np.ceil(
-        (alloc_df["Ideal_Allocation"] - alloc_df["Allocated_Space"]).clip(lower=0)
+        (alloc_df["Ideal_Allocation"] -
+         alloc_df["Allocated_Space"]).clip(lower=0)
     ).astype(int)
 
     # 6) Shortfall_Revenue
@@ -222,7 +260,7 @@ def show_optimization():
     alerts = (
         alloc_df[alloc_df["Shortfall_Units"] > 0]
         .sort_values("Shortfall_Revenue", ascending=False)
-        .groupby(["Product_Name","Category"], as_index=False)
+        .groupby(["Product_Name", "Category"], as_index=False)
         .agg({
             "Sales_Last_30_Days":   "sum",
             "Allocated_Space":      "sum",
@@ -234,34 +272,37 @@ def show_optimization():
         .sort_values("Shortfall_Revenue", ascending=False)
     )
 
-    st.header("⚠️ Potential Stock-Out Alerts")
+    max_n = len(alerts)
+
+    st.header("⚠ Potential Stock-Out Alerts")
     if alerts.empty:
         st.success("✅ All products are sufficiently allocated—no potential stock-outs detected!")
     else:
-        st.metric("Products at Risk", len(alerts))
+        st.metric("Products at Risk", max_n)
         st.metric("Total Lost Revenue", f"₹{alerts['Shortfall_Revenue'].sum():,.2f}")
 
-        max_n     = len(alerts)
-        default_n = min(10, max_n)
-        start_n   = st.session_state.get("preview_n", default_n)
+        # only show a slider if there's more than one alert
+        if max_n > 1:
+            default_n = st.session_state.get("preview_n", min(10, max_n))
+            n = st.slider(
+                "How many products to preview?",
+                min_value=1,
+                max_value=max_n,
+                value=default_n,
+                step=1,
+                key="preview_n"
+            )
+        else:
+            # with exactly one alert, we just preview 1
+            n = 1
 
-        n = st.slider(
-            "How many products to preview?",
-            min_value=1,
-            max_value=max_n,
-            value=start_n,
-            step=1,
-            key="preview_n"
-        )
-
-        # Build a dynamic expander label and expand it by default
-        expander_label = f"Showing top {st.session_state.preview_n} products by lost revenue"
-        with st.expander(expander_label):
+        expander_label = f"Showing top {n} products by lost revenue"
+        with st.expander(expander_label, expanded=True):
             st.dataframe(
-                alerts.head(st.session_state.preview_n)[[
-                    "Product_Name","Category","Sales_Last_30_Days",
-                    "Allocated_Space","Ideal_Allocation",
-                    "Shortfall_Units","Shortfall_Revenue"
+                alerts.head(n)[[
+                    "Product_Name", "Category", "Sales_Last_30_Days",
+                    "Allocated_Space", "Ideal_Allocation",
+                    "Shortfall_Units", "Shortfall_Revenue"
                 ]],
                 use_container_width=True
             )
@@ -270,28 +311,30 @@ def show_optimization():
         top5 = alerts.head(5).set_index("Product_Name")["Shortfall_Revenue"]
         fig = px.bar(
             top5.reset_index().rename(
-                columns={"Product_Name":"Product","Shortfall_Revenue":"Lost Revenue"}
+                columns={"Product_Name": "Product",
+                         "Shortfall_Revenue": "Lost Revenue"}
             ),
             x="Lost Revenue", y="Product",
             orientation="h",
             title="🔍 Top-5 Lost-Revenue Shortfalls"
         )
-        fig.update_layout(margin=dict(l=150,t=30))
+        fig.update_layout(margin=dict(l=150, t=30))
         st.plotly_chart(fig, use_container_width=True)
 
         # 10) Category pie chart
         max_slices = len(alerts)
-        default_pie = min(5, max_slices)
-        start_pie   = st.session_state.get("category_pie_topn", default_pie)
+        if max_slices <= 1:
+            top_n = 1
+            st.info("Only one product with shortfall detected.")
+        else:
+            default_pie = min(5, max_slices)
+            top_n = st.slider(
+                "Compute pie on top how many products by lost revenue?",
+                1, max_slices, default_pie, step=1,
+                key="category_pie_topn"
+            )
 
-        top_n = st.slider(
-            "Compute pie on top how many products by lost revenue?",
-            min_value=1,
-            max_value=max_slices,
-            value=start_pie,
-            step=1,
-            key="category_pie_topn"
-        )
+        # Create pie chart with the determined top_n
         top_alerts = alerts.head(top_n)
         cat_losses = (
             top_alerts.groupby("Category", as_index=False)["Shortfall_Revenue"]
@@ -301,12 +344,9 @@ def show_optimization():
             cat_losses, names="Category", values="Shortfall_Revenue",
             title=f"🔍 Category Share of Lost Revenue (Top {top_n} Products)"
         )
-        fig_cat_pie.update_traces(textposition="inside", textinfo="percent+label")
+        fig_cat_pie.update_traces(
+            textposition="inside", textinfo="percent+label")
         st.plotly_chart(fig_cat_pie, use_container_width=True)
-        
-    # Fill‑rate metric
-    fill_rate = result.Allocated_Space.sum() / total_space * 100
-    st.metric("Overall Fill Rate", f"{fill_rate:.1f}%")
 
     # Downloadable CSV
     csv = result.to_csv(index=False).encode('utf-8')
@@ -316,6 +356,7 @@ def show_optimization():
     # JSON summary for debugging or integration
     st.json({"season": season, "total_space": total_space,
              "weights": weights, "method": method})
+
 
 if __name__ == "__main__":
     show_optimization()
