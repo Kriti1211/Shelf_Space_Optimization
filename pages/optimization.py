@@ -94,7 +94,7 @@ def display_planogram_interactive(opt_df: pd.DataFrame):
     total_profit = (opt_df['Allocated_Units'] *
                     opt_df['Profit_Per_Unit']).sum()
     st.markdown(f"Total units used: {total_units}")
-    st.markdown(f"Estimated profit: ₹{total_profit:,.2f}")
+    #st.markdown(f"Estimated profit: ₹{total_profit:,.2f}")
     st.markdown(f"""
     <div style='color: white;'>
         <div style='font-size:18px;'>Estimated profit</div>
