@@ -10,6 +10,7 @@ from stable_baselines3.common.env_checker import check_env
 # Balance factor for lost‐revenue penalty
 LAMBDA = 1.0
 
+
 class ShelfSpaceEnv(gym.Env):
     def __init__(self, features: np.ndarray, total_space: int):
         """
@@ -18,11 +19,11 @@ class ShelfSpaceEnv(gym.Env):
         ]
         """
         super().__init__()
-        self.features    = features
-        self.profits     = features[:, 0]
-        self.sales       = features[:, 1]
+        self.features = features
+        self.profits = features[:, 0]
+        self.sales = features[:, 1]
         self.total_space = total_space
-        self.n           = self.features.shape[0]
+        self.n = self.features.shape[0]
 
         # --- Observation space: flattened [profit, sales, balanced] for each SKU
         n_feat = self.features.shape[1]  # now 3
@@ -53,7 +54,7 @@ class ShelfSpaceEnv(gym.Env):
         w = a / (a.sum() if a.sum() > 0 else 1.0)
         alloc_frac = w * self.total_space
         alloc_base = np.floor(alloc_frac).astype(int)
-        leftover   = self.total_space - alloc_base.sum()
+        leftover = self.total_space - alloc_base.sum()
         if leftover > 0:
             rems = alloc_frac - alloc_base
             for idx in np.argsort(-rems)[:leftover]:
@@ -61,8 +62,8 @@ class ShelfSpaceEnv(gym.Env):
 
         # Profit & lost‐revenue
         total_profit = float((alloc_base * self.profits).sum())
-        lost_units   = np.maximum(self.ideal_frac - alloc_base, 0)
-        total_lost   = float((lost_units * self.profits).sum())
+        lost_units = np.maximum(self.ideal_frac - alloc_base, 0)
+        total_lost = float((lost_units * self.profits).sum())
 
         # Combined reward
         reward = total_profit - LAMBDA * total_lost
@@ -88,8 +89,8 @@ def optimize_ppo_speedup(
 ) -> pd.DataFrame:
     # 1) Aggregate
     grouped = (
-        df.groupby(["Product_Name","Category"], as_index=False)
-          .agg({"Sales_Last_30_Days":"sum","Profit_Per_Unit":"mean"})
+        df.groupby(["Product_Name", "Category"], as_index=False)
+          .agg({"Sales_Last_30_Days": "sum", "Profit_Per_Unit": "mean"})
     )
     # 2) Compute balanced score
     grouped["Balanced_Score"] = np.sqrt(
@@ -119,20 +120,21 @@ def optimize_ppo_speedup(
     model.learn(total_timesteps=timesteps)
 
     # 7) Roll out one step for final allocation
-    obs, _        = raw_env.reset()
-    action, _     = model.predict(obs, deterministic=True)
+    obs, _ = raw_env.reset()
+    action, _ = model.predict(obs, deterministic=True)
     _, _, _, _, info = raw_env.step(action)
     alloc = info["allocation"]
 
     # 8) Merge & return
-    grouped["Allocated_Space"]    = alloc
-    grouped["Total_Profit"]       = info["total_profit"]
+    grouped["Allocated_Units"] = alloc
+    grouped["Total_Profit"] = info["total_profit"]
     grouped["Total_Lost_Revenue"] = info["total_lost_revenue"]
-    grouped["Net_Reward"]         = grouped["Total_Profit"] - LAMBDA * grouped["Total_Lost_Revenue"]
+    grouped["Net_Reward"] = grouped["Total_Profit"] - \
+        LAMBDA * grouped["Total_Lost_Revenue"]
 
     return grouped[[
-        "Product_Name","Category",
-        "Sales_Last_30_Days","Profit_Per_Unit",
-        "Balanced_Score","Allocated_Space",
-        "Total_Profit","Total_Lost_Revenue","Net_Reward"
+        "Product_Name", "Category",
+        "Sales_Last_30_Days", "Profit_Per_Unit",
+        "Balanced_Score", "Allocated_Units",
+        "Total_Profit", "Total_Lost_Revenue", "Net_Reward"
     ]]

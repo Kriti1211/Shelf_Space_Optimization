@@ -3,8 +3,8 @@ import pandas as pd
 
 # GA hyperparameters
 GA_POPULATION_SIZE = 50
-GA_GENERATIONS     = 100
-GA_MUTATION_RATE   = 0.1
+GA_GENERATIONS = 100
+GA_MUTATION_RATE = 0.1
 
 # Penalty / tradeoff
 LAMBDA = 1.0  # weight on lost revenue in fitness
@@ -13,10 +13,10 @@ LAMBDA = 1.0  # weight on lost revenue in fitness
 def optimize_ga(df: pd.DataFrame, total_space: int) -> pd.DataFrame:
     # 1) Group and compute metrics
     grouped = (
-        df.groupby(['Product_Name','Category'], as_index=False)
+        df.groupby(['Product_Name', 'Category'], as_index=False)
           .agg({
-              'Sales_Last_30_Days':'sum',
-              'Profit_Per_Unit':'mean'
+              'Sales_Last_30_Days': 'sum',
+              'Profit_Per_Unit': 'mean'
           })
     )
     # Total profit per SKU
@@ -58,7 +58,7 @@ def optimize_ga(df: pd.DataFrame, total_space: int) -> pd.DataFrame:
         if total_alloc > total_space:
             penalty += (total_alloc - total_space) * 100
         # simple lower/upper bounds (you can tune these)
-        over  = ind > sales * 1.2
+        over = ind > sales * 1.2
         under = ind < np.minimum(5, sales * 0.2)
         penalty += (over.sum() + under.sum()) * 100
         # combined objective
@@ -100,18 +100,18 @@ def optimize_ga(df: pd.DataFrame, total_space: int) -> pd.DataFrame:
 
     # 7) Build result DataFrame
     result = grouped.copy()
-    result['Allocated_Space']    = best
+    result['Allocated_Units'] = best
     # recompute for report
-    result['Lost_Units']         = np.maximum(ideal_frac - best, 0).astype(int)
-    result['Lost_Revenue']       = result['Lost_Units'] * result['Profit_Per_Unit']
-    result['Net_Objective']      = (
-        result['Allocated_Space'] * result['Profit_Per_Unit']
+    result['Lost_Units'] = np.maximum(ideal_frac - best, 0).astype(int)
+    result['Lost_Revenue'] = result['Lost_Units'] * result['Profit_Per_Unit']
+    result['Net_Objective'] = (
+        result['Allocated_Units'] * result['Profit_Per_Unit']
         - LAMBDA * result['Lost_Revenue']
     )
 
     return result[[
-        'Product_Name','Category',
-        'Sales_Last_30_Days','Profit_Per_Unit',
-        'Balanced_Score','Allocated_Space',
-        'Lost_Units','Lost_Revenue','Net_Objective'
+        'Product_Name', 'Category',
+        'Sales_Last_30_Days', 'Profit_Per_Unit',
+        'Balanced_Score', 'Allocated_Units',
+        'Lost_Units', 'Lost_Revenue', 'Net_Objective'
     ]]

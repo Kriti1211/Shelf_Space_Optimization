@@ -174,7 +174,8 @@ def show_optimization():
         weighted_df["Unit_Volume"] = weighted_df["Height_cm"] * \
             weighted_df["Width_cm"] * weighted_df["Depth_cm"]
 
-    method = st.radio("Method", ["LP", "Genetic", "PPO"], key="method")
+    method = st.radio("Method", [
+                      "Linear Programming", "Genetic Algorithm", "Proximal Policy Optimization"], key="method")
     inputs = (season, total_volume, tuple(sorted(weights.items())), method)
 
     if st.session_state.get("last_inputs") != inputs:
