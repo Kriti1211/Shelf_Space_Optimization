@@ -182,9 +182,9 @@ def show_optimization():
         st.session_state.last_inputs = inputs
         st.session_state.pop("preview_n", None)
         st.session_state.pop("category_pie_topn", None)
-        if method == "LP":
+        if method == "Linear Programming":
             result = lp_mod.optimize_lp(weighted_df, total_volume)
-        elif method == "Genetic":
+        elif method == "Genetic Algorithm":
             result = run_genetic(weighted_df, total_volume)
         else:
             result = optimize_ppo_speedup(weighted_df, total_volume)
