@@ -1,9 +1,12 @@
 import streamlit as st
 
 # ─── load CSS ───────────────────────────────────────────────────────
+
+
 def load_css():
     with open("style.css", "r", encoding="utf-8") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
 
 st.set_page_config(layout="wide", page_title="Retail Shelf Optimization")
 load_css()
@@ -14,9 +17,10 @@ if "current_page" not in st.session_state:
 
 # ─── menu labels ────────────────────────────────────────────────────
 MENU_ITEMS = {
+    "Optimize": "🧮 Shelf Optimization",
     "Dashboard": "📊 Dashboard",
-    "Forecast" : "📈 Supply Forecast",
-    "Optimize" : "🧮 Shelf Optimization",
+    "Forecast": "📈 Supply Forecast",
+
 }
 
 # ─── determine page (using only session state) ──────────────────────
@@ -24,12 +28,13 @@ current_page = st.session_state["current_page"]
 
 # ─── HOME / MENU ────────────────────────────────────────────────────
 if current_page == "home":
-    st.markdown("<h1 class='title'>🛍️ Retail Shelf Optimization System</h1><hr>", unsafe_allow_html=True)
+    st.markdown("<h1 class='title'>🛍️ Retail Shelf Space Optimization System</h1><hr>",
+                unsafe_allow_html=True)
     st.markdown('<div class="menu-container">', unsafe_allow_html=True)
     for key, label in MENU_ITEMS.items():
         # Using st.button preserves your UI styling
         if st.button(label, key=f"btn_{key}"):
-            st.session_state["current_page"] = key 
+            st.session_state["current_page"] = key
     st.markdown('</div>', unsafe_allow_html=True)
 
 # ─── DASHBOARD ─────────────────────────────────────────────────────

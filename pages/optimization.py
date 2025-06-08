@@ -10,6 +10,8 @@ from utils.optimization_methods.ppo_rl import optimize_ppo_speedup
 import plotly.graph_objects as go
 
 # at the top of your pages/optimization.py
+
+
 @st.cache_data(show_spinner=False)
 def run_genetic(df: pd.DataFrame, total_space: int) -> pd.DataFrame:
     return ga_mod.optimize_ga(df, total_space)
@@ -63,7 +65,7 @@ def display_planogram_interactive(opt_df: pd.DataFrame):
     # 1) Precompute category‐avg profit
     opt_df["Category_Avg_Profit"] = (
         opt_df.groupby("Category")["Profit_Per_Unit"]
-            .transform("mean")
+        .transform("mean")
     )
 
     labels, parents, values = [], [], []
@@ -72,7 +74,7 @@ def display_planogram_interactive(opt_df: pd.DataFrame):
     # ─── category nodes ────────────────────────────────
     for cat, group in opt_df.groupby("Category"):
         total_units = int(group["Allocated_Space"].sum())
-        avg_p      = group["Category_Avg_Profit"].iloc[0]
+        avg_p = group["Category_Avg_Profit"].iloc[0]
 
         labels.append(cat)
         parents.append("")             # top level
@@ -93,9 +95,9 @@ def display_planogram_interactive(opt_df: pd.DataFrame):
 
     # 3) Build the treemap
     fig = go.Figure(go.Treemap(
-        labels     = labels,
-        parents    = parents,
-        values     = values,
+        labels=labels,
+        parents=parents,
+        values=values,
         customdata=customdata,
         hovertemplate=(
             "<b>%{label}</b><br>" +
@@ -108,7 +110,6 @@ def display_planogram_interactive(opt_df: pd.DataFrame):
 
     st.subheader("📊 Proportional View (Treemap)")
     st.plotly_chart(fig, use_container_width=True)
-
 
     # KPIs and context
     st.subheader("Why this layout helps")
@@ -194,7 +195,7 @@ def show_optimization():
 
     # Select optimization method
     method = st.radio("Method", [
-                      "Linear Programming", "Genetic Algorithm", "PPO (Reinforcement Learning)"], key="method")
+                      "Linear Programming", "Genetic Algorithm", "Proximal Policy Optimization (Reinforcement Learning)"], key="method")
     if method == "Linear Programming":
 
         result = lp_mod.optimize_lp(weighted_df, total_space)
@@ -276,10 +277,12 @@ def show_optimization():
 
     st.header("⚠ Potential Stock-Out Alerts")
     if alerts.empty:
-        st.success("✅ All products are sufficiently allocated—no potential stock-outs detected!")
+        st.success(
+            "✅ All products are sufficiently allocated—no potential stock-outs detected!")
     else:
         st.metric("Products at Risk", max_n)
-        st.metric("Total Lost Revenue", f"₹{alerts['Shortfall_Revenue'].sum():,.2f}")
+        st.metric("Total Lost Revenue",
+                  f"₹{alerts['Shortfall_Revenue'].sum():,.2f}")
 
         # only show a slider if there's more than one alert
         if max_n > 1:
