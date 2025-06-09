@@ -1,0 +1,1006 @@
+Product_Name,Category,Season,Weight_Volume,Height_cm,Width_cm,Depth_cm,Sales_Last_30_Days,Profit_Per_Unit,Expiry_Date
+Fresh Donut,Bakery,Winter,0.05kg,11.07,9.17,3.71,269,5.07,2025-05-28
+Fresh Donut,Bakery,Spring,0.05kg,11.07,9.17,3.71,365,11.32,2025-05-29
+Fresh Donut,Bakery,Summer,0.05kg,11.07,9.17,3.71,411,4.42,2025-05-30
+Fresh Donut,Bakery,Autumn,0.05kg,11.07,9.17,3.71,625,6.45,2025-05-30
+Fresh Donut,Bakery,Monsoon,0.05kg,11.07,9.17,3.71,763,3.98,2025-05-28
+Fresh Donut,Bakery,Winter,0.10kg,11.45,9.4,3.92,257,18.1,2025-05-27
+Fresh Donut,Bakery,Spring,0.10kg,11.45,9.4,3.92,553,10.19,2025-05-28
+Fresh Donut,Bakery,Summer,0.10kg,11.45,9.4,3.92,685,19.08,2025-05-28
+Fresh Donut,Bakery,Autumn,0.10kg,11.45,9.4,3.92,327,4.86,2025-05-25
+Fresh Donut,Bakery,Monsoon,0.10kg,11.45,9.4,3.92,501,9.65,2025-05-28
+Fresh Donut,Bakery,Winter,0.20kg,9.7,10.73,3.98,393,20.05,2025-05-30
+Fresh Donut,Bakery,Spring,0.20kg,9.7,10.73,3.98,596,28.08,2025-05-25
+Fresh Donut,Bakery,Summer,0.20kg,9.7,10.73,3.98,637,6.94,2025-05-29
+Fresh Donut,Bakery,Autumn,0.20kg,9.7,10.73,3.98,531,21.74,2025-05-26
+Fresh Donut,Bakery,Monsoon,0.20kg,9.7,10.73,3.98,784,11.87,2025-05-25
+Premium Donut,Bakery,Winter,0.05kg,10.96,10.9,3.9,533,9.78,2025-05-27
+Premium Donut,Bakery,Spring,0.05kg,10.96,10.9,3.9,579,6.29,2025-05-26
+Premium Donut,Bakery,Summer,0.05kg,10.96,10.9,3.9,813,1.56,2025-05-31
+Premium Donut,Bakery,Autumn,0.05kg,10.96,10.9,3.9,637,9.65,2025-05-26
+Premium Donut,Bakery,Monsoon,0.05kg,10.96,10.9,3.9,388,9.31,2025-05-25
+Premium Donut,Bakery,Winter,0.10kg,9.41,8.81,3.44,317,21.68,2025-05-27
+Premium Donut,Bakery,Spring,0.10kg,9.41,8.81,3.44,589,17.89,2025-05-26
+Premium Donut,Bakery,Summer,0.10kg,9.41,8.81,3.44,955,14.36,2025-05-25
+Premium Donut,Bakery,Autumn,0.10kg,9.41,8.81,3.44,645,5.59,2025-05-26
+Premium Donut,Bakery,Monsoon,0.10kg,9.41,8.81,3.44,823,2.67,2025-05-25
+Premium Donut,Bakery,Winter,0.20kg,11.96,8.06,3.97,550,36.64,2025-05-31
+Premium Donut,Bakery,Spring,0.20kg,11.96,8.06,3.97,516,44.26,2025-05-26
+Premium Donut,Bakery,Summer,0.20kg,11.96,8.06,3.97,486,51.34,2025-05-29
+Premium Donut,Bakery,Autumn,0.20kg,11.96,8.06,3.97,574,25.04,2025-05-31
+Premium Donut,Bakery,Monsoon,0.20kg,11.96,8.06,3.97,548,25.44,2025-05-30
+Supreme Cake,Bakery,Winter,0.05kg,9.54,9.73,3.8,320,7.59,2025-05-31
+Supreme Cake,Bakery,Spring,0.05kg,9.54,9.73,3.8,296,5.73,2025-05-25
+Supreme Cake,Bakery,Summer,0.05kg,9.54,9.73,3.8,853,6.26,2025-05-31
+Supreme Cake,Bakery,Autumn,0.05kg,9.54,9.73,3.8,389,7.31,2025-05-31
+Supreme Cake,Bakery,Monsoon,0.05kg,9.54,9.73,3.8,357,7.56,2025-05-29
+Supreme Cake,Bakery,Winter,0.10kg,9.03,8.26,3.08,250,9.49,2025-05-25
+Supreme Cake,Bakery,Spring,0.10kg,9.03,8.26,3.08,533,6.28,2025-05-31
+Supreme Cake,Bakery,Summer,0.10kg,9.03,8.26,3.08,357,7.88,2025-05-31
+Supreme Cake,Bakery,Autumn,0.10kg,9.03,8.26,3.08,585,22.45,2025-05-24
+Supreme Cake,Bakery,Monsoon,0.10kg,9.03,8.26,3.08,567,21.81,2025-05-26
+Supreme Cake,Bakery,Winter,0.20kg,10.49,11.03,2.05,324,17.39,2025-05-31
+Supreme Cake,Bakery,Spring,0.20kg,10.49,11.03,2.05,320,30.98,2025-05-27
+Supreme Cake,Bakery,Summer,0.20kg,10.49,11.03,2.05,401,10.45,2025-05-29
+Supreme Cake,Bakery,Autumn,0.20kg,10.49,11.03,2.05,578,39.54,2025-05-30
+Supreme Cake,Bakery,Monsoon,0.20kg,10.49,11.03,2.05,583,49.26,2025-05-29
+Urban Muffin,Bakery,Winter,0.05kg,9.56,11.37,3.51,333,1.22,2025-05-26
+Urban Muffin,Bakery,Spring,0.05kg,9.56,11.37,3.51,329,3.29,2025-05-29
+Urban Muffin,Bakery,Summer,0.05kg,9.56,11.37,3.51,517,10.7,2025-05-31
+Urban Muffin,Bakery,Autumn,0.05kg,9.56,11.37,3.51,456,4.08,2025-05-27
+Urban Muffin,Bakery,Monsoon,0.05kg,9.56,11.37,3.51,358,1.3,2025-05-28
+Urban Muffin,Bakery,Winter,0.10kg,8.93,10.69,2.24,280,11.34,2025-05-31
+Urban Muffin,Bakery,Spring,0.10kg,8.93,10.69,2.24,488,20.21,2025-05-27
+Urban Muffin,Bakery,Summer,0.10kg,8.93,10.69,2.24,1036,5.05,2025-05-27
+Urban Muffin,Bakery,Autumn,0.10kg,8.93,10.69,2.24,577,23.26,2025-05-26
+Urban Muffin,Bakery,Monsoon,0.10kg,8.93,10.69,2.24,587,15.62,2025-05-31
+Urban Muffin,Bakery,Winter,0.20kg,10.29,9.84,3.96,445,21.11,2025-05-25
+Urban Muffin,Bakery,Spring,0.20kg,10.29,9.84,3.96,436,7.42,2025-05-31
+Urban Muffin,Bakery,Summer,0.20kg,10.29,9.84,3.96,726,49.86,2025-05-25
+Urban Muffin,Bakery,Autumn,0.20kg,10.29,9.84,3.96,442,38.27,2025-05-30
+Urban Muffin,Bakery,Monsoon,0.20kg,10.29,9.84,3.96,710,12.48,2025-05-26
+Vibrant Donut,Bakery,Winter,0.05kg,11.2,10.35,3.49,542,3.8,2025-05-28
+Vibrant Donut,Bakery,Spring,0.05kg,11.2,10.35,3.49,667,11.52,2025-05-28
+Vibrant Donut,Bakery,Summer,0.05kg,11.2,10.35,3.49,336,4.2,2025-05-24
+Vibrant Donut,Bakery,Autumn,0.05kg,11.2,10.35,3.49,178,11.91,2025-05-30
+Vibrant Donut,Bakery,Monsoon,0.05kg,11.2,10.35,3.49,708,11.08,2025-05-26
+Vibrant Donut,Bakery,Winter,0.10kg,10.16,10.85,2.52,487,6.33,2025-05-30
+Vibrant Donut,Bakery,Spring,0.10kg,10.16,10.85,2.52,191,22.65,2025-05-24
+Vibrant Donut,Bakery,Summer,0.10kg,10.16,10.85,2.52,409,13.7,2025-05-30
+Vibrant Donut,Bakery,Autumn,0.10kg,10.16,10.85,2.52,406,22.59,2025-05-25
+Vibrant Donut,Bakery,Monsoon,0.10kg,10.16,10.85,2.52,699,20.66,2025-05-26
+Vibrant Donut,Bakery,Winter,0.20kg,10.5,11.79,3.43,287,17.86,2025-05-26
+Vibrant Donut,Bakery,Spring,0.20kg,10.5,11.79,3.43,456,30.99,2025-05-30
+Vibrant Donut,Bakery,Summer,0.20kg,10.5,11.79,3.43,956,6.16,2025-05-26
+Vibrant Donut,Bakery,Autumn,0.20kg,10.5,11.79,3.43,414,6.77,2025-05-30
+Vibrant Donut,Bakery,Monsoon,0.20kg,10.5,11.79,3.43,329,33.94,2025-05-30
+Classic Coffee,Beverages,Winter,1000ml,18.61,6.09,6.18,520,20.49,2027-03-16
+Classic Coffee,Beverages,Spring,1000ml,18.61,6.09,6.18,679,23.29,2027-01-13
+Classic Coffee,Beverages,Summer,1000ml,18.61,6.09,6.18,828,17.33,2026-11-05
+Classic Coffee,Beverages,Autumn,1000ml,18.61,6.09,6.18,647,5.73,2026-06-20
+Classic Coffee,Beverages,Monsoon,1000ml,18.61,6.09,6.18,406,18.16,2026-10-02
+Classic Coffee,Beverages,Winter,250ml,21.12,7.13,7.87,143,7.94,2027-02-17
+Classic Coffee,Beverages,Spring,250ml,21.12,7.13,7.87,180,1.87,2026-10-05
+Classic Coffee,Beverages,Summer,250ml,21.12,7.13,7.87,482,12.38,2026-07-23
+Classic Coffee,Beverages,Autumn,250ml,21.12,7.13,7.87,369,6.3,2026-07-20
+Classic Coffee,Beverages,Monsoon,250ml,21.12,7.13,7.87,331,8.66,2026-06-27
+Classic Coffee,Beverages,Winter,500ml,19.66,6.2,6.35,299,11.55,2026-07-01
+Classic Coffee,Beverages,Spring,500ml,19.66,6.2,6.35,272,3.83,2027-01-07
+Classic Coffee,Beverages,Summer,500ml,19.66,6.2,6.35,1002,11.11,2026-06-21
+Classic Coffee,Beverages,Autumn,500ml,19.66,6.2,6.35,530,2.53,2027-04-23
+Classic Coffee,Beverages,Monsoon,500ml,19.66,6.2,6.35,309,5.51,2027-01-25
+Deluxe Paneer,Dairy,Winter,0.10kg,5.81,10.49,6.33,238,8.53,2025-07-31
+Deluxe Paneer,Dairy,Spring,0.10kg,5.81,10.49,6.33,252,5.45,2025-07-29
+Deluxe Paneer,Dairy,Summer,0.10kg,5.81,10.49,6.33,797,6.85,2025-07-19
+Deluxe Paneer,Dairy,Autumn,0.10kg,5.81,10.49,6.33,445,8.67,2025-06-26
+Deluxe Paneer,Dairy,Monsoon,0.10kg,5.81,10.49,6.33,654,9.36,2025-07-30
+Deluxe Paneer,Dairy,Winter,0.20kg,7.64,9.92,6.43,318,11.94,2025-07-22
+Deluxe Paneer,Dairy,Spring,0.20kg,7.64,9.92,6.43,418,13.7,2025-08-10
+Deluxe Paneer,Dairy,Summer,0.20kg,7.64,9.92,6.43,610,6.62,2025-07-22
+Deluxe Paneer,Dairy,Autumn,0.20kg,7.64,9.92,6.43,586,12.42,2025-06-22
+Deluxe Paneer,Dairy,Monsoon,0.20kg,7.64,9.92,6.43,440,11.76,2025-08-13
+Deluxe Paneer,Dairy,Winter,0.50kg,7.8,11.55,5.41,500,21.18,2025-07-08
+Deluxe Paneer,Dairy,Spring,0.50kg,7.8,11.55,5.41,300,32.52,2025-06-18
+Deluxe Paneer,Dairy,Summer,0.50kg,7.8,11.55,5.41,289,50.33,2025-08-15
+Deluxe Paneer,Dairy,Autumn,0.50kg,7.8,11.55,5.41,445,11.84,2025-06-28
+Deluxe Paneer,Dairy,Monsoon,0.50kg,7.8,11.55,5.41,505,26.99,2025-07-16
+Deluxe Yogurt,Dairy,Winter,0.10kg,7.04,11.78,5.57,299,8.57,2025-06-22
+Deluxe Yogurt,Dairy,Spring,0.10kg,7.04,11.78,5.57,683,6.88,2025-07-01
+Deluxe Yogurt,Dairy,Summer,0.10kg,7.04,11.78,5.57,813,2.03,2025-08-12
+Deluxe Yogurt,Dairy,Autumn,0.10kg,7.04,11.78,5.57,282,1.8,2025-07-14
+Deluxe Yogurt,Dairy,Monsoon,0.10kg,7.04,11.78,5.57,501,4.39,2025-07-24
+Deluxe Yogurt,Dairy,Winter,0.20kg,7.4,8.67,5.22,561,2.89,2025-08-09
+Deluxe Yogurt,Dairy,Spring,0.20kg,7.4,8.67,5.22,233,3.66,2025-08-09
+Deluxe Yogurt,Dairy,Summer,0.20kg,7.4,8.67,5.22,333,15.11,2025-07-24
+Deluxe Yogurt,Dairy,Autumn,0.20kg,7.4,8.67,5.22,319,16.87,2025-07-18
+Deluxe Yogurt,Dairy,Monsoon,0.20kg,7.4,8.67,5.22,794,11.17,2025-06-30
+Deluxe Yogurt,Dairy,Winter,0.50kg,5.17,9.02,6.08,492,31.92,2025-06-21
+Deluxe Yogurt,Dairy,Spring,0.50kg,5.17,9.02,6.08,387,8.29,2025-07-30
+Deluxe Yogurt,Dairy,Summer,0.50kg,5.17,9.02,6.08,1014,9.31,2025-08-04
+Deluxe Yogurt,Dairy,Autumn,0.50kg,5.17,9.02,6.08,341,16.5,2025-07-11
+Deluxe Yogurt,Dairy,Monsoon,0.50kg,5.17,9.02,6.08,201,22.37,2025-06-20
+Fresh Butter,Dairy,Winter,0.10kg,6.14,10.01,5.71,156,7.09,2025-07-10
+Fresh Butter,Dairy,Spring,0.10kg,6.14,10.01,5.71,547,9.26,2025-06-24
+Fresh Butter,Dairy,Summer,0.10kg,6.14,10.01,5.71,604,8.21,2025-07-30
+Fresh Butter,Dairy,Autumn,0.10kg,6.14,10.01,5.71,289,2.78,2025-07-08
+Fresh Butter,Dairy,Monsoon,0.10kg,6.14,10.01,5.71,389,3.9,2025-08-14
+Fresh Butter,Dairy,Winter,0.20kg,7.53,8.75,6.47,192,5.79,2025-07-02
+Fresh Butter,Dairy,Spring,0.20kg,7.53,8.75,6.47,307,2.39,2025-08-09
+Fresh Butter,Dairy,Summer,0.20kg,7.53,8.75,6.47,772,11.05,2025-07-16
+Fresh Butter,Dairy,Autumn,0.20kg,7.53,8.75,6.47,281,4.95,2025-07-29
+Fresh Butter,Dairy,Monsoon,0.20kg,7.53,8.75,6.47,323,5.35,2025-07-13
+Fresh Butter,Dairy,Winter,0.50kg,6.94,9.3,6.77,477,15.04,2025-07-18
+Fresh Butter,Dairy,Spring,0.50kg,6.94,9.3,6.77,565,45.45,2025-06-17
+Fresh Butter,Dairy,Summer,0.50kg,6.94,9.3,6.77,351,22.9,2025-08-14
+Fresh Butter,Dairy,Autumn,0.50kg,6.94,9.3,6.77,428,49.7,2025-06-19
+Fresh Butter,Dairy,Monsoon,0.50kg,6.94,9.3,6.77,470,20.11,2025-07-26
+Fresh Paneer,Dairy,Winter,0.10kg,5.12,8.02,6.06,338,7.25,2025-06-16
+Fresh Paneer,Dairy,Spring,0.10kg,5.12,8.02,6.06,578,5.52,2025-06-18
+Fresh Paneer,Dairy,Summer,0.10kg,5.12,8.02,6.06,579,10.05,2025-08-10
+Fresh Paneer,Dairy,Autumn,0.10kg,5.12,8.02,6.06,476,5.38,2025-06-26
+Fresh Paneer,Dairy,Monsoon,0.10kg,5.12,8.02,6.06,271,5.07,2025-07-05
+Fresh Paneer,Dairy,Winter,0.20kg,6.46,11.3,5.54,492,13.3,2025-07-08
+Fresh Paneer,Dairy,Spring,0.20kg,6.46,11.3,5.54,592,12.02,2025-07-04
+Fresh Paneer,Dairy,Summer,0.20kg,6.46,11.3,5.54,919,19.5,2025-08-07
+Fresh Paneer,Dairy,Autumn,0.20kg,6.46,11.3,5.54,636,8.48,2025-07-01
+Fresh Paneer,Dairy,Monsoon,0.20kg,6.46,11.3,5.54,336,9.59,2025-07-17
+Fresh Paneer,Dairy,Winter,0.50kg,5.3,9.82,6.85,585,20.6,2025-07-14
+Fresh Paneer,Dairy,Spring,0.50kg,5.3,9.82,6.85,495,47.73,2025-06-20
+Fresh Paneer,Dairy,Summer,0.50kg,5.3,9.82,6.85,935,28.5,2025-07-05
+Fresh Paneer,Dairy,Autumn,0.50kg,5.3,9.82,6.85,329,45.6,2025-07-26
+Fresh Paneer,Dairy,Monsoon,0.50kg,5.3,9.82,6.85,376,32.37,2025-06-19
+Golden Cheese,Dairy,Winter,0.10kg,7.04,10.38,5.84,340,3.0,2025-07-07
+Golden Cheese,Dairy,Spring,0.10kg,7.04,10.38,5.84,415,4.63,2025-07-29
+Golden Cheese,Dairy,Summer,0.10kg,7.04,10.38,5.84,913,1.2,2025-08-02
+Golden Cheese,Dairy,Autumn,0.10kg,7.04,10.38,5.84,481,7.92,2025-07-28
+Golden Cheese,Dairy,Monsoon,0.10kg,7.04,10.38,5.84,393,3.4,2025-07-14
+Golden Cheese,Dairy,Winter,0.20kg,6.48,8.93,5.48,379,8.3,2025-07-01
+Golden Cheese,Dairy,Spring,0.20kg,6.48,8.93,5.48,417,9.6,2025-08-10
+Golden Cheese,Dairy,Summer,0.20kg,6.48,8.93,5.48,995,16.26,2025-07-07
+Golden Cheese,Dairy,Autumn,0.20kg,6.48,8.93,5.48,274,19.72,2025-08-05
+Golden Cheese,Dairy,Monsoon,0.20kg,6.48,8.93,5.48,614,15.83,2025-07-22
+Golden Cheese,Dairy,Winter,0.50kg,7.98,10.95,5.9,405,11.84,2025-08-05
+Golden Cheese,Dairy,Spring,0.50kg,7.98,10.95,5.9,251,15.73,2025-06-28
+Golden Cheese,Dairy,Summer,0.50kg,7.98,10.95,5.9,337,40.74,2025-07-05
+Golden Cheese,Dairy,Autumn,0.50kg,7.98,10.95,5.9,525,25.83,2025-08-07
+Golden Cheese,Dairy,Monsoon,0.50kg,7.98,10.95,5.9,672,16.12,2025-07-29
+Premium Cheese,Dairy,Winter,0.10kg,5.37,10.34,5.91,523,1.76,2025-08-05
+Premium Cheese,Dairy,Spring,0.10kg,5.37,10.34,5.91,434,3.2,2025-07-27
+Premium Cheese,Dairy,Summer,0.10kg,5.37,10.34,5.91,908,2.75,2025-08-14
+Premium Cheese,Dairy,Autumn,0.10kg,5.37,10.34,5.91,317,7.22,2025-06-16
+Premium Cheese,Dairy,Monsoon,0.10kg,5.37,10.34,5.91,516,4.43,2025-07-12
+Premium Cheese,Dairy,Winter,0.20kg,6.2,9.98,5.87,297,2.37,2025-06-21
+Premium Cheese,Dairy,Spring,0.20kg,6.2,9.98,5.87,395,19.4,2025-07-23
+Premium Cheese,Dairy,Summer,0.20kg,6.2,9.98,5.87,627,9.96,2025-06-18
+Premium Cheese,Dairy,Autumn,0.20kg,6.2,9.98,5.87,446,9.51,2025-08-15
+Premium Cheese,Dairy,Monsoon,0.20kg,6.2,9.98,5.87,388,16.21,2025-08-09
+Premium Cheese,Dairy,Winter,0.50kg,7.21,9.99,5.55,196,41.21,2025-08-07
+Premium Cheese,Dairy,Spring,0.50kg,7.21,9.99,5.55,688,27.24,2025-06-21
+Premium Cheese,Dairy,Summer,0.50kg,7.21,9.99,5.55,1030,22.35,2025-07-07
+Premium Cheese,Dairy,Autumn,0.50kg,7.21,9.99,5.55,604,39.44,2025-07-18
+Premium Cheese,Dairy,Monsoon,0.50kg,7.21,9.99,5.55,702,44.69,2025-08-10
+Royal Cheese,Dairy,Winter,0.10kg,7.34,10.34,6.13,375,4.01,2025-07-18
+Royal Cheese,Dairy,Spring,0.10kg,7.34,10.34,6.13,198,6.34,2025-08-01
+Royal Cheese,Dairy,Summer,0.10kg,7.34,10.34,6.13,899,8.66,2025-07-16
+Royal Cheese,Dairy,Autumn,0.10kg,7.34,10.34,6.13,437,7.06,2025-07-17
+Royal Cheese,Dairy,Monsoon,0.10kg,7.34,10.34,6.13,744,2.76,2025-08-14
+Royal Cheese,Dairy,Winter,0.20kg,5.51,11.22,6.03,366,12.52,2025-06-16
+Royal Cheese,Dairy,Spring,0.20kg,5.51,11.22,6.03,358,11.04,2025-07-18
+Royal Cheese,Dairy,Summer,0.20kg,5.51,11.22,6.03,515,6.29,2025-06-25
+Royal Cheese,Dairy,Autumn,0.20kg,5.51,11.22,6.03,184,6.41,2025-07-02
+Royal Cheese,Dairy,Monsoon,0.20kg,5.51,11.22,6.03,303,7.32,2025-08-04
+Royal Cheese,Dairy,Winter,0.50kg,6.76,10.87,6.22,203,37.14,2025-06-18
+Royal Cheese,Dairy,Spring,0.50kg,6.76,10.87,6.22,477,46.95,2025-07-23
+Royal Cheese,Dairy,Summer,0.50kg,6.76,10.87,6.22,766,17.95,2025-08-12
+Royal Cheese,Dairy,Autumn,0.50kg,6.76,10.87,6.22,488,34.47,2025-08-14
+Royal Cheese,Dairy,Monsoon,0.50kg,6.76,10.87,6.22,603,32.61,2025-07-20
+Urban Yogurt,Dairy,Winter,0.10kg,7.32,9.06,5.59,520,1.62,2025-08-04
+Urban Yogurt,Dairy,Spring,0.10kg,7.32,9.06,5.59,179,8.55,2025-08-10
+Urban Yogurt,Dairy,Summer,0.10kg,7.32,9.06,5.59,827,8.84,2025-07-14
+Urban Yogurt,Dairy,Autumn,0.10kg,7.32,9.06,5.59,188,4.61,2025-08-05
+Urban Yogurt,Dairy,Monsoon,0.10kg,7.32,9.06,5.59,681,8.22,2025-08-09
+Urban Yogurt,Dairy,Winter,0.20kg,6.72,8.92,5.63,180,12.06,2025-06-23
+Urban Yogurt,Dairy,Spring,0.20kg,6.72,8.92,5.63,306,5.36,2025-07-21
+Urban Yogurt,Dairy,Summer,0.20kg,6.72,8.92,5.63,375,12.62,2025-08-10
+Urban Yogurt,Dairy,Autumn,0.20kg,6.72,8.92,5.63,180,6.27,2025-07-25
+Urban Yogurt,Dairy,Monsoon,0.20kg,6.72,8.92,5.63,541,12.73,2025-06-25
+Urban Yogurt,Dairy,Winter,0.50kg,6.61,10.13,6.99,218,40.88,2025-07-10
+Urban Yogurt,Dairy,Spring,0.50kg,6.61,10.13,6.99,446,16.55,2025-08-13
+Urban Yogurt,Dairy,Summer,0.50kg,6.61,10.13,6.99,441,48.75,2025-07-25
+Urban Yogurt,Dairy,Autumn,0.50kg,6.61,10.13,6.99,219,24.31,2025-06-30
+Urban Yogurt,Dairy,Monsoon,0.50kg,6.61,10.13,6.99,294,20.88,2025-07-26
+Deluxe Pizza,Frozen Foods,Winter,1000ml,14.47,7.31,6.12,220,22.22,2026-01-04
+Deluxe Pizza,Frozen Foods,Spring,1000ml,14.47,7.31,6.12,417,19.14,2026-03-03
+Deluxe Pizza,Frozen Foods,Summer,1000ml,14.47,7.31,6.12,929,12.06,2026-02-19
+Deluxe Pizza,Frozen Foods,Autumn,1000ml,14.47,7.31,6.12,312,6.64,2025-12-07
+Deluxe Pizza,Frozen Foods,Monsoon,1000ml,14.47,7.31,6.12,335,12.5,2026-03-13
+Deluxe Pizza,Frozen Foods,Winter,2000ml,18.18,6.8,9.69,258,24.63,2026-04-14
+Deluxe Pizza,Frozen Foods,Spring,2000ml,18.18,6.8,9.69,330,28.27,2025-12-04
+Deluxe Pizza,Frozen Foods,Summer,2000ml,18.18,6.8,9.69,391,35.2,2025-11-26
+Deluxe Pizza,Frozen Foods,Autumn,2000ml,18.18,6.8,9.69,441,38.29,2026-03-13
+Deluxe Pizza,Frozen Foods,Monsoon,2000ml,18.18,6.8,9.69,389,15.07,2026-02-09
+Deluxe Pizza,Frozen Foods,Winter,500ml,16.3,6.46,9.55,430,7.5,2025-11-13
+Deluxe Pizza,Frozen Foods,Spring,500ml,16.3,6.46,9.55,311,4.72,2025-11-17
+Deluxe Pizza,Frozen Foods,Summer,500ml,16.3,6.46,9.55,353,2.68,2026-03-01
+Deluxe Pizza,Frozen Foods,Autumn,500ml,16.3,6.46,9.55,183,8.71,2026-01-19
+Deluxe Pizza,Frozen Foods,Monsoon,500ml,16.3,6.46,9.55,359,4.0,2026-04-08
+Golden VegMix,Frozen Foods,Winter,1000ml,15.15,8.09,5.8,401,6.27,2026-03-27
+Golden VegMix,Frozen Foods,Spring,1000ml,15.15,8.09,5.8,499,21.63,2026-03-20
+Golden VegMix,Frozen Foods,Summer,1000ml,15.15,8.09,5.8,692,15.16,2025-12-08
+Golden VegMix,Frozen Foods,Autumn,1000ml,15.15,8.09,5.8,694,8.04,2026-03-05
+Golden VegMix,Frozen Foods,Monsoon,1000ml,15.15,8.09,5.8,552,3.19,2026-04-02
+Golden VegMix,Frozen Foods,Winter,2000ml,10.14,7.44,9.67,307,32.53,2025-11-25
+Golden VegMix,Frozen Foods,Spring,2000ml,10.14,7.44,9.67,372,10.36,2026-04-20
+Golden VegMix,Frozen Foods,Summer,2000ml,10.14,7.44,9.67,868,31.27,2026-04-09
+Golden VegMix,Frozen Foods,Autumn,2000ml,10.14,7.44,9.67,181,46.9,2025-12-04
+Golden VegMix,Frozen Foods,Monsoon,2000ml,10.14,7.44,9.67,677,47.1,2026-01-30
+Golden VegMix,Frozen Foods,Winter,500ml,10.14,5.67,6.64,271,10.85,2026-03-09
+Golden VegMix,Frozen Foods,Spring,500ml,10.14,5.67,6.64,334,7.16,2026-03-09
+Golden VegMix,Frozen Foods,Summer,500ml,10.14,5.67,6.64,822,5.14,2025-12-28
+Golden VegMix,Frozen Foods,Autumn,500ml,10.14,5.67,6.64,195,10.21,2026-05-10
+Golden VegMix,Frozen Foods,Monsoon,500ml,10.14,5.67,6.64,615,7.63,2025-11-30
+Natural VegMix,Frozen Foods,Winter,1000ml,19.12,5.5,5.28,267,9.05,2025-12-16
+Natural VegMix,Frozen Foods,Spring,1000ml,19.12,5.5,5.28,307,16.35,2025-11-13
+Natural VegMix,Frozen Foods,Summer,1000ml,19.12,5.5,5.28,436,24.37,2025-11-20
+Natural VegMix,Frozen Foods,Autumn,1000ml,19.12,5.5,5.28,640,4.37,2026-01-23
+Natural VegMix,Frozen Foods,Monsoon,1000ml,19.12,5.5,5.28,720,5.06,2026-03-02
+Natural VegMix,Frozen Foods,Winter,2000ml,15.65,5.8,6.11,499,19.21,2026-01-16
+Natural VegMix,Frozen Foods,Spring,2000ml,15.65,5.8,6.11,374,11.87,2026-04-03
+Natural VegMix,Frozen Foods,Summer,2000ml,15.65,5.8,6.11,851,52.63,2025-11-21
+Natural VegMix,Frozen Foods,Autumn,2000ml,15.65,5.8,6.11,246,47.01,2026-05-01
+Natural VegMix,Frozen Foods,Monsoon,2000ml,15.65,5.8,6.11,495,13.45,2026-02-15
+Natural VegMix,Frozen Foods,Winter,500ml,15.18,9.89,5.1,518,3.72,2026-04-16
+Natural VegMix,Frozen Foods,Spring,500ml,15.18,9.89,5.1,440,3.54,2026-05-13
+Natural VegMix,Frozen Foods,Summer,500ml,15.18,9.89,5.1,266,2.72,2025-11-27
+Natural VegMix,Frozen Foods,Autumn,500ml,15.18,9.89,5.1,432,5.52,2025-12-09
+Natural VegMix,Frozen Foods,Monsoon,500ml,15.18,9.89,5.1,641,4.22,2026-02-20
+Rustic Nuggets,Frozen Foods,Winter,1000ml,16.66,8.16,7.33,546,7.06,2026-04-10
+Rustic Nuggets,Frozen Foods,Spring,1000ml,16.66,8.16,7.33,624,12.8,2026-02-02
+Rustic Nuggets,Frozen Foods,Summer,1000ml,16.66,8.16,7.33,719,9.66,2026-03-16
+Rustic Nuggets,Frozen Foods,Autumn,1000ml,16.66,8.16,7.33,342,9.74,2025-11-16
+Rustic Nuggets,Frozen Foods,Monsoon,1000ml,16.66,8.16,7.33,577,10.51,2026-01-17
+Rustic Nuggets,Frozen Foods,Winter,2000ml,18.86,8.85,5.63,157,23.77,2026-03-24
+Rustic Nuggets,Frozen Foods,Spring,2000ml,18.86,8.85,5.63,606,37.24,2025-11-30
+Rustic Nuggets,Frozen Foods,Summer,2000ml,18.86,8.85,5.63,324,17.51,2025-11-17
+Rustic Nuggets,Frozen Foods,Autumn,2000ml,18.86,8.85,5.63,675,17.05,2026-01-25
+Rustic Nuggets,Frozen Foods,Monsoon,2000ml,18.86,8.85,5.63,254,16.53,2025-11-25
+Rustic Nuggets,Frozen Foods,Winter,500ml,15.96,9.21,9.01,344,11.0,2026-02-06
+Rustic Nuggets,Frozen Foods,Spring,500ml,15.96,9.21,9.01,664,9.69,2026-04-06
+Rustic Nuggets,Frozen Foods,Summer,500ml,15.96,9.21,9.01,876,12.71,2025-12-29
+Rustic Nuggets,Frozen Foods,Autumn,500ml,15.96,9.21,9.01,274,10.94,2026-01-23
+Rustic Nuggets,Frozen Foods,Monsoon,500ml,15.96,9.21,9.01,463,9.27,2026-01-31
+Savory VegMix,Frozen Foods,Winter,1000ml,12.18,9.58,5.54,421,7.48,2026-02-25
+Savory VegMix,Frozen Foods,Spring,1000ml,12.18,9.58,5.54,462,10.64,2026-02-11
+Savory VegMix,Frozen Foods,Summer,1000ml,12.18,9.58,5.54,307,17.05,2026-04-08
+Savory VegMix,Frozen Foods,Autumn,1000ml,12.18,9.58,5.54,552,11.43,2026-04-16
+Savory VegMix,Frozen Foods,Monsoon,1000ml,12.18,9.58,5.54,255,21.3,2026-04-17
+Savory VegMix,Frozen Foods,Winter,2000ml,16.73,8.57,5.86,324,10.09,2026-04-15
+Savory VegMix,Frozen Foods,Spring,2000ml,16.73,8.57,5.86,573,28.81,2026-02-23
+Savory VegMix,Frozen Foods,Summer,2000ml,16.73,8.57,5.86,377,7.89,2026-03-04
+Savory VegMix,Frozen Foods,Autumn,2000ml,16.73,8.57,5.86,522,45.34,2025-12-29
+Savory VegMix,Frozen Foods,Monsoon,2000ml,16.73,8.57,5.86,580,9.6,2026-02-21
+Savory VegMix,Frozen Foods,Winter,500ml,18.55,9.68,5.86,507,8.08,2026-04-23
+Savory VegMix,Frozen Foods,Spring,500ml,18.55,9.68,5.86,503,7.4,2026-05-04
+Savory VegMix,Frozen Foods,Summer,500ml,18.55,9.68,5.86,796,1.56,2026-05-08
+Savory VegMix,Frozen Foods,Autumn,500ml,18.55,9.68,5.86,391,9.08,2026-04-16
+Savory VegMix,Frozen Foods,Monsoon,500ml,18.55,9.68,5.86,273,1.98,2026-04-23
+Supreme Fries,Frozen Foods,Winter,1000ml,15.67,6.95,7.31,357,10.68,2026-03-29
+Supreme Fries,Frozen Foods,Spring,1000ml,15.67,6.95,7.31,528,21.09,2026-04-02
+Supreme Fries,Frozen Foods,Summer,1000ml,15.67,6.95,7.31,324,12.01,2026-05-14
+Supreme Fries,Frozen Foods,Autumn,1000ml,15.67,6.95,7.31,559,9.39,2026-01-21
+Supreme Fries,Frozen Foods,Monsoon,1000ml,15.67,6.95,7.31,316,10.92,2026-04-06
+Supreme Fries,Frozen Foods,Winter,2000ml,19.44,7.89,9.94,180,20.67,2026-02-13
+Supreme Fries,Frozen Foods,Spring,2000ml,19.44,7.89,9.94,181,49.39,2026-02-22
+Supreme Fries,Frozen Foods,Summer,2000ml,19.44,7.89,9.94,822,41.38,2026-02-03
+Supreme Fries,Frozen Foods,Autumn,2000ml,19.44,7.89,9.94,380,48.13,2026-05-04
+Supreme Fries,Frozen Foods,Monsoon,2000ml,19.44,7.89,9.94,770,24.74,2025-11-17
+Supreme Fries,Frozen Foods,Winter,500ml,15.18,6.76,6.42,505,11.1,2025-12-19
+Supreme Fries,Frozen Foods,Spring,500ml,15.18,6.76,6.42,310,6.22,2026-02-14
+Supreme Fries,Frozen Foods,Summer,500ml,15.18,6.76,6.42,607,1.95,2025-12-31
+Supreme Fries,Frozen Foods,Autumn,500ml,15.18,6.76,6.42,267,9.16,2026-04-03
+Supreme Fries,Frozen Foods,Monsoon,500ml,15.18,6.76,6.42,601,11.94,2026-03-06
+Vibrant VegMix,Frozen Foods,Winter,1000ml,12.88,7.71,8.3,546,11.61,2026-05-02
+Vibrant VegMix,Frozen Foods,Spring,1000ml,12.88,7.71,8.3,458,21.68,2025-12-14
+Vibrant VegMix,Frozen Foods,Summer,1000ml,12.88,7.71,8.3,324,6.79,2025-12-14
+Vibrant VegMix,Frozen Foods,Autumn,1000ml,12.88,7.71,8.3,514,7.25,2025-11-15
+Vibrant VegMix,Frozen Foods,Monsoon,1000ml,12.88,7.71,8.3,823,5.48,2026-05-12
+Vibrant VegMix,Frozen Foods,Winter,2000ml,14.31,7.05,7.61,229,10.35,2026-02-26
+Vibrant VegMix,Frozen Foods,Spring,2000ml,14.31,7.05,7.61,291,37.28,2025-12-06
+Vibrant VegMix,Frozen Foods,Summer,2000ml,14.31,7.05,7.61,388,43.3,2025-11-13
+Vibrant VegMix,Frozen Foods,Autumn,2000ml,14.31,7.05,7.61,389,32.03,2026-01-18
+Vibrant VegMix,Frozen Foods,Monsoon,2000ml,14.31,7.05,7.61,477,45.4,2026-01-17
+Vibrant VegMix,Frozen Foods,Winter,500ml,18.68,9.95,9.96,247,10.64,2026-02-12
+Vibrant VegMix,Frozen Foods,Spring,500ml,18.68,9.95,9.96,704,5.73,2026-03-23
+Vibrant VegMix,Frozen Foods,Summer,500ml,18.68,9.95,9.96,413,8.28,2026-01-20
+Vibrant VegMix,Frozen Foods,Autumn,500ml,18.68,9.95,9.96,366,7.7,2026-04-23
+Vibrant VegMix,Frozen Foods,Monsoon,500ml,18.68,9.95,9.96,634,5.63,2026-01-28
+Fresh Oil,Groceries,Winter,0.50kg,18.02,7.23,8.54,156,9.86,2026-01-23
+Fresh Oil,Groceries,Spring,0.50kg,18.02,7.23,8.54,400,9.47,2026-05-17
+Fresh Oil,Groceries,Summer,0.50kg,18.02,7.23,8.54,741,10.49,2026-03-20
+Fresh Oil,Groceries,Autumn,0.50kg,18.02,7.23,8.54,615,2.89,2026-01-23
+Fresh Oil,Groceries,Monsoon,0.50kg,18.02,7.23,8.54,747,3.88,2026-03-23
+Fresh Oil,Groceries,Winter,1.00kg,13.27,9.3,6.11,245,21.24,2026-03-09
+Fresh Oil,Groceries,Spring,1.00kg,13.27,9.3,6.11,451,20.7,2025-12-17
+Fresh Oil,Groceries,Summer,1.00kg,13.27,9.3,6.11,1033,25.55,2025-11-14
+Fresh Oil,Groceries,Autumn,1.00kg,13.27,9.3,6.11,269,17.92,2026-01-19
+Fresh Oil,Groceries,Monsoon,1.00kg,13.27,9.3,6.11,345,19.48,2026-04-22
+Fresh Oil,Groceries,Winter,2.00kg,13.91,9.18,8.73,453,10.39,2026-03-02
+Fresh Oil,Groceries,Spring,2.00kg,13.91,9.18,8.73,211,21.49,2026-04-02
+Fresh Oil,Groceries,Summer,2.00kg,13.91,9.18,8.73,486,20.24,2026-04-12
+Fresh Oil,Groceries,Autumn,2.00kg,13.91,9.18,8.73,205,29.47,2026-02-21
+Fresh Oil,Groceries,Monsoon,2.00kg,13.91,9.18,8.73,209,34.44,2026-03-18
+Fresh Pasta,Groceries,Winter,0.50kg,11.86,8.54,7.28,231,8.2,2026-01-22
+Fresh Pasta,Groceries,Spring,0.50kg,11.86,8.54,7.28,377,9.8,2025-11-24
+Fresh Pasta,Groceries,Summer,0.50kg,11.86,8.54,7.28,838,1.83,2025-11-22
+Fresh Pasta,Groceries,Autumn,0.50kg,11.86,8.54,7.28,259,8.1,2026-03-09
+Fresh Pasta,Groceries,Monsoon,0.50kg,11.86,8.54,7.28,634,2.0,2026-02-28
+Fresh Pasta,Groceries,Winter,1.00kg,11.72,6.82,7.73,519,4.86,2025-11-20
+Fresh Pasta,Groceries,Spring,1.00kg,11.72,6.82,7.73,569,20.19,2026-01-11
+Fresh Pasta,Groceries,Summer,1.00kg,11.72,6.82,7.73,850,22.93,2026-01-02
+Fresh Pasta,Groceries,Autumn,1.00kg,11.72,6.82,7.73,297,18.68,2026-04-28
+Fresh Pasta,Groceries,Monsoon,1.00kg,11.72,6.82,7.73,231,11.89,2025-12-30
+Fresh Pasta,Groceries,Winter,2.00kg,11.83,8.61,9.98,190,23.79,2025-11-19
+Fresh Pasta,Groceries,Spring,2.00kg,11.83,8.61,9.98,602,23.37,2026-05-13
+Fresh Pasta,Groceries,Summer,2.00kg,11.83,8.61,9.98,807,7.23,2026-02-20
+Fresh Pasta,Groceries,Autumn,2.00kg,11.83,8.61,9.98,301,17.6,2026-05-10
+Fresh Pasta,Groceries,Monsoon,2.00kg,11.83,8.61,9.98,228,12.46,2026-01-24
+Golden Pasta,Groceries,Winter,0.50kg,14.3,5.9,7.6,178,7.62,2026-03-24
+Golden Pasta,Groceries,Spring,0.50kg,14.3,5.9,7.6,675,11.23,2025-12-08
+Golden Pasta,Groceries,Summer,0.50kg,14.3,5.9,7.6,800,5.46,2025-12-26
+Golden Pasta,Groceries,Autumn,0.50kg,14.3,5.9,7.6,618,3.76,2026-04-28
+Golden Pasta,Groceries,Monsoon,0.50kg,14.3,5.9,7.6,263,7.33,2026-04-04
+Golden Pasta,Groceries,Winter,1.00kg,10.92,7.75,5.73,531,4.08,2026-03-10
+Golden Pasta,Groceries,Spring,1.00kg,10.92,7.75,5.73,465,3.91,2025-12-12
+Golden Pasta,Groceries,Summer,1.00kg,10.92,7.75,5.73,322,18.67,2026-04-16
+Golden Pasta,Groceries,Autumn,1.00kg,10.92,7.75,5.73,590,9.1,2025-12-13
+Golden Pasta,Groceries,Monsoon,1.00kg,10.92,7.75,5.73,742,4.09,2026-05-03
+Golden Pasta,Groceries,Winter,2.00kg,16.54,7.74,8.76,424,15.42,2026-05-16
+Golden Pasta,Groceries,Spring,2.00kg,16.54,7.74,8.76,367,8.38,2025-12-13
+Golden Pasta,Groceries,Summer,2.00kg,16.54,7.74,8.76,340,49.91,2026-02-25
+Golden Pasta,Groceries,Autumn,2.00kg,16.54,7.74,8.76,596,6.86,2025-11-29
+Golden Pasta,Groceries,Monsoon,2.00kg,16.54,7.74,8.76,744,37.57,2026-05-01
+Golden Rice,Groceries,Winter,0.50kg,18.98,8.08,5.49,435,6.31,2025-11-15
+Golden Rice,Groceries,Spring,0.50kg,18.98,8.08,5.49,224,3.38,2025-12-15
+Golden Rice,Groceries,Summer,0.50kg,18.98,8.08,5.49,557,6.41,2026-04-06
+Golden Rice,Groceries,Autumn,0.50kg,18.98,8.08,5.49,563,5.01,2025-11-26
+Golden Rice,Groceries,Monsoon,0.50kg,18.98,8.08,5.49,377,8.8,2026-02-21
+Golden Rice,Groceries,Winter,1.00kg,14.03,7.79,6.16,275,7.96,2026-04-23
+Golden Rice,Groceries,Spring,1.00kg,14.03,7.79,6.16,197,23.77,2026-04-01
+Golden Rice,Groceries,Summer,1.00kg,14.03,7.79,6.16,658,17.23,2026-03-14
+Golden Rice,Groceries,Autumn,1.00kg,14.03,7.79,6.16,524,8.07,2026-02-20
+Golden Rice,Groceries,Monsoon,1.00kg,14.03,7.79,6.16,812,22.85,2026-02-19
+Golden Rice,Groceries,Winter,2.00kg,15.31,6.74,5.74,165,23.55,2026-04-22
+Golden Rice,Groceries,Spring,2.00kg,15.31,6.74,5.74,265,42.87,2026-05-06
+Golden Rice,Groceries,Summer,2.00kg,15.31,6.74,5.74,941,48.8,2026-04-08
+Golden Rice,Groceries,Autumn,2.00kg,15.31,6.74,5.74,589,15.08,2026-03-13
+Golden Rice,Groceries,Monsoon,2.00kg,15.31,6.74,5.74,796,42.05,2026-03-03
+Rustic Flour,Groceries,Winter,0.50kg,13.92,6.95,6.25,217,1.77,2025-12-08
+Rustic Flour,Groceries,Spring,0.50kg,13.92,6.95,6.25,471,3.1,2025-12-10
+Rustic Flour,Groceries,Summer,0.50kg,13.92,6.95,6.25,580,10.77,2026-04-20
+Rustic Flour,Groceries,Autumn,0.50kg,13.92,6.95,6.25,390,12.2,2026-03-21
+Rustic Flour,Groceries,Monsoon,0.50kg,13.92,6.95,6.25,447,6.15,2026-02-06
+Rustic Flour,Groceries,Winter,1.00kg,11.96,8.97,6.41,383,17.1,2026-04-08
+Rustic Flour,Groceries,Spring,1.00kg,11.96,8.97,6.41,404,18.67,2026-01-28
+Rustic Flour,Groceries,Summer,1.00kg,11.96,8.97,6.41,803,15.1,2026-04-16
+Rustic Flour,Groceries,Autumn,1.00kg,11.96,8.97,6.41,304,16.85,2026-01-04
+Rustic Flour,Groceries,Monsoon,1.00kg,11.96,8.97,6.41,762,8.05,2026-01-31
+Rustic Flour,Groceries,Winter,2.00kg,14.2,7.94,7.6,223,5.05,2026-01-07
+Rustic Flour,Groceries,Spring,2.00kg,14.2,7.94,7.6,300,23.85,2026-02-04
+Rustic Flour,Groceries,Summer,2.00kg,14.2,7.94,7.6,988,34.36,2025-11-28
+Rustic Flour,Groceries,Autumn,2.00kg,14.2,7.94,7.6,581,30.52,2026-03-17
+Rustic Flour,Groceries,Monsoon,2.00kg,14.2,7.94,7.6,557,19.7,2026-02-21
+Rustic Pasta,Groceries,Winter,0.50kg,15.6,5.69,9.54,411,6.75,2026-04-22
+Rustic Pasta,Groceries,Spring,0.50kg,15.6,5.69,9.54,599,9.58,2026-03-04
+Rustic Pasta,Groceries,Summer,0.50kg,15.6,5.69,9.54,583,12.1,2026-03-31
+Rustic Pasta,Groceries,Autumn,0.50kg,15.6,5.69,9.54,177,10.38,2026-01-30
+Rustic Pasta,Groceries,Monsoon,0.50kg,15.6,5.69,9.54,619,8.55,2026-04-26
+Rustic Pasta,Groceries,Winter,1.00kg,17.29,7.61,9.71,214,20.15,2026-03-22
+Rustic Pasta,Groceries,Spring,1.00kg,17.29,7.61,9.71,512,23.04,2026-03-18
+Rustic Pasta,Groceries,Summer,1.00kg,17.29,7.61,9.71,663,18.17,2026-02-11
+Rustic Pasta,Groceries,Autumn,1.00kg,17.29,7.61,9.71,519,19.74,2025-12-23
+Rustic Pasta,Groceries,Monsoon,1.00kg,17.29,7.61,9.71,788,11.46,2026-02-25
+Rustic Pasta,Groceries,Winter,2.00kg,18.82,6.5,9.31,551,20.08,2026-02-13
+Rustic Pasta,Groceries,Spring,2.00kg,18.82,6.5,9.31,451,26.06,2026-01-16
+Rustic Pasta,Groceries,Summer,2.00kg,18.82,6.5,9.31,709,6.01,2026-03-08
+Rustic Pasta,Groceries,Autumn,2.00kg,18.82,6.5,9.31,407,5.95,2026-04-08
+Rustic Pasta,Groceries,Monsoon,2.00kg,18.82,6.5,9.31,503,44.14,2025-12-29
+Savory Oil,Groceries,Winter,0.50kg,17.08,8.31,6.95,377,6.96,2026-03-01
+Savory Oil,Groceries,Spring,0.50kg,17.08,8.31,6.95,374,1.98,2026-04-06
+Savory Oil,Groceries,Summer,0.50kg,17.08,8.31,6.95,884,9.81,2026-02-10
+Savory Oil,Groceries,Autumn,0.50kg,17.08,8.31,6.95,334,12.41,2026-03-31
+Savory Oil,Groceries,Monsoon,0.50kg,17.08,8.31,6.95,226,4.99,2026-01-14
+Savory Oil,Groceries,Winter,1.00kg,19.49,8.03,7.64,399,2.56,2026-03-20
+Savory Oil,Groceries,Spring,1.00kg,19.49,8.03,7.64,490,12.24,2025-12-15
+Savory Oil,Groceries,Summer,1.00kg,19.49,8.03,7.64,711,7.26,2026-01-23
+Savory Oil,Groceries,Autumn,1.00kg,19.49,8.03,7.64,601,17.77,2025-11-18
+Savory Oil,Groceries,Monsoon,1.00kg,19.49,8.03,7.64,425,22.52,2026-01-21
+Savory Oil,Groceries,Winter,2.00kg,14.87,9.36,9.04,276,27.53,2025-11-28
+Savory Oil,Groceries,Spring,2.00kg,14.87,9.36,9.04,378,38.77,2026-02-28
+Savory Oil,Groceries,Summer,2.00kg,14.87,9.36,9.04,761,8.32,2025-12-19
+Savory Oil,Groceries,Autumn,2.00kg,14.87,9.36,9.04,635,23.96,2026-02-23
+Savory Oil,Groceries,Monsoon,2.00kg,14.87,9.36,9.04,333,20.55,2026-01-30
+Classic BarSoap,Household,Winter,0.50kg,21.69,11.59,9.9,516,4.38,2027-01-21
+Classic BarSoap,Household,Spring,0.50kg,21.69,11.59,9.9,367,3.58,2026-08-11
+Classic BarSoap,Household,Summer,0.50kg,21.69,11.59,9.9,435,4.0,2026-11-21
+Classic BarSoap,Household,Autumn,0.50kg,21.69,11.59,9.9,536,6.01,2027-04-27
+Classic BarSoap,Household,Monsoon,0.50kg,21.69,11.59,9.9,561,3.27,2026-08-19
+Classic BarSoap,Household,Winter,1.00kg,21.62,11.43,9.57,465,9.94,2027-01-21
+Classic BarSoap,Household,Spring,1.00kg,21.62,11.43,9.57,534,20.16,2026-07-20
+Classic BarSoap,Household,Summer,1.00kg,21.62,11.43,9.57,1003,27.07,2026-06-27
+Classic BarSoap,Household,Autumn,1.00kg,21.62,11.43,9.57,383,6.13,2027-03-09
+Classic BarSoap,Household,Monsoon,1.00kg,21.62,11.43,9.57,404,4.3,2026-09-12
+Classic BarSoap,Household,Winter,2.00kg,24.12,8.07,9.96,206,29.35,2026-08-10
+Classic BarSoap,Household,Spring,2.00kg,24.12,8.07,9.96,559,23.86,2026-08-23
+Classic BarSoap,Household,Summer,2.00kg,24.12,8.07,9.96,969,15.81,2026-07-12
+Classic BarSoap,Household,Autumn,2.00kg,24.12,8.07,9.96,660,14.24,2027-04-14
+Classic BarSoap,Household,Monsoon,2.00kg,24.12,8.07,9.96,327,12.87,2026-05-22
+Classic Detergent,Household,Winter,0.50kg,29.3,9.26,11.51,509,6.64,2026-07-21
+Classic Detergent,Household,Spring,0.50kg,29.3,9.26,11.51,553,7.8,2026-08-17
+Classic Detergent,Household,Summer,0.50kg,29.3,9.26,11.51,650,2.59,2027-01-15
+Classic Detergent,Household,Autumn,0.50kg,29.3,9.26,11.51,674,6.7,2026-07-25
+Classic Detergent,Household,Monsoon,0.50kg,29.3,9.26,11.51,348,3.63,2026-10-22
+Classic Detergent,Household,Winter,1.00kg,20.78,9.12,11.36,490,14.25,2026-06-30
+Classic Detergent,Household,Spring,1.00kg,20.78,9.12,11.36,696,22.72,2026-10-09
+Classic Detergent,Household,Summer,1.00kg,20.78,9.12,11.36,804,10.35,2027-03-04
+Classic Detergent,Household,Autumn,1.00kg,20.78,9.12,11.36,378,3.82,2026-10-30
+Classic Detergent,Household,Monsoon,1.00kg,20.78,9.12,11.36,403,23.99,2026-07-16
+Classic Detergent,Household,Winter,2.00kg,21.84,8.79,11.2,423,7.67,2026-06-21
+Classic Detergent,Household,Spring,2.00kg,21.84,8.79,11.2,397,39.56,2026-07-06
+Classic Detergent,Household,Summer,2.00kg,21.84,8.79,11.2,840,5.54,2027-04-10
+Classic Detergent,Household,Autumn,2.00kg,21.84,8.79,11.2,357,35.15,2027-05-08
+Classic Detergent,Household,Monsoon,2.00kg,21.84,8.79,11.2,386,9.14,2027-01-31
+Natural Bleach,Household,Winter,0.50kg,25.27,9.73,8.05,181,10.95,2027-01-15
+Natural Bleach,Household,Spring,0.50kg,25.27,9.73,8.05,189,3.2,2027-04-30
+Natural Bleach,Household,Summer,0.50kg,25.27,9.73,8.05,303,12.14,2026-07-31
+Natural Bleach,Household,Autumn,0.50kg,25.27,9.73,8.05,394,7.83,2026-09-06
+Natural Bleach,Household,Monsoon,0.50kg,25.27,9.73,8.05,466,12.23,2026-08-01
+Natural Bleach,Household,Winter,1.00kg,29.38,11.78,11.53,143,19.97,2026-11-23
+Natural Bleach,Household,Spring,1.00kg,29.38,11.78,11.53,648,14.03,2026-10-08
+Natural Bleach,Household,Summer,1.00kg,29.38,11.78,11.53,733,13.58,2026-12-24
+Natural Bleach,Household,Autumn,1.00kg,29.38,11.78,11.53,643,13.72,2027-01-11
+Natural Bleach,Household,Monsoon,1.00kg,29.38,11.78,11.53,235,17.37,2026-05-25
+Natural Bleach,Household,Winter,2.00kg,28.45,9.91,8.2,273,6.39,2027-04-16
+Natural Bleach,Household,Spring,2.00kg,28.45,9.91,8.2,611,38.23,2026-12-13
+Natural Bleach,Household,Summer,2.00kg,28.45,9.91,8.2,786,30.46,2027-01-29
+Natural Bleach,Household,Autumn,2.00kg,28.45,9.91,8.2,481,46.13,2026-05-17
+Natural Bleach,Household,Monsoon,2.00kg,28.45,9.91,8.2,673,9.35,2027-01-26
+Natural Disinfectant,Household,Winter,0.50kg,23.88,9.46,11.04,288,7.1,2026-08-18
+Natural Disinfectant,Household,Spring,0.50kg,23.88,9.46,11.04,544,7.91,2026-08-23
+Natural Disinfectant,Household,Summer,0.50kg,23.88,9.46,11.04,462,11.43,2026-05-28
+Natural Disinfectant,Household,Autumn,0.50kg,23.88,9.46,11.04,392,11.68,2026-07-10
+Natural Disinfectant,Household,Monsoon,0.50kg,23.88,9.46,11.04,736,8.49,2027-03-02
+Natural Disinfectant,Household,Winter,1.00kg,23.71,10.55,8.71,340,19.88,2027-02-03
+Natural Disinfectant,Household,Spring,1.00kg,23.71,10.55,8.71,392,9.61,2026-08-15
+Natural Disinfectant,Household,Summer,1.00kg,23.71,10.55,8.71,623,18.85,2027-04-03
+Natural Disinfectant,Household,Autumn,1.00kg,23.71,10.55,8.71,551,5.33,2027-04-21
+Natural Disinfectant,Household,Monsoon,1.00kg,23.71,10.55,8.71,331,24.23,2027-05-14
+Natural Disinfectant,Household,Winter,2.00kg,21.09,8.94,9.61,462,44.7,2026-07-26
+Natural Disinfectant,Household,Spring,2.00kg,21.09,8.94,9.61,675,35.4,2026-06-14
+Natural Disinfectant,Household,Summer,2.00kg,21.09,8.94,9.61,684,42.45,2026-07-30
+Natural Disinfectant,Household,Autumn,2.00kg,21.09,8.94,9.61,474,41.37,2027-04-20
+Natural Disinfectant,Household,Monsoon,2.00kg,21.09,8.94,9.61,617,46.65,2027-01-13
+Organic BarSoap,Household,Winter,0.50kg,24.45,9.5,8.44,564,11.08,2027-02-18
+Organic BarSoap,Household,Spring,0.50kg,24.45,9.5,8.44,312,5.45,2026-08-08
+Organic BarSoap,Household,Summer,0.50kg,24.45,9.5,8.44,544,9.12,2026-12-15
+Organic BarSoap,Household,Autumn,0.50kg,24.45,9.5,8.44,469,10.63,2026-09-28
+Organic BarSoap,Household,Monsoon,0.50kg,24.45,9.5,8.44,798,3.95,2027-01-28
+Organic BarSoap,Household,Winter,1.00kg,24.39,11.89,10.73,415,8.31,2027-04-20
+Organic BarSoap,Household,Spring,1.00kg,24.39,11.89,10.73,353,17.91,2026-06-19
+Organic BarSoap,Household,Summer,1.00kg,24.39,11.89,10.73,767,7.99,2026-06-19
+Organic BarSoap,Household,Autumn,1.00kg,24.39,11.89,10.73,259,24.53,2027-05-11
+Organic BarSoap,Household,Monsoon,1.00kg,24.39,11.89,10.73,291,18.34,2027-05-03
+Organic BarSoap,Household,Winter,2.00kg,23.22,8.14,8.53,207,22.97,2026-06-19
+Organic BarSoap,Household,Spring,2.00kg,23.22,8.14,8.53,309,27.19,2027-03-24
+Organic BarSoap,Household,Summer,2.00kg,23.22,8.14,8.53,417,48.25,2026-10-06
+Organic BarSoap,Household,Autumn,2.00kg,23.22,8.14,8.53,350,20.31,2026-11-12
+Organic BarSoap,Household,Monsoon,2.00kg,23.22,8.14,8.53,372,42.43,2026-08-13
+Rustic Cleaner,Household,Winter,0.50kg,25.86,11.69,11.09,540,3.37,2026-06-15
+Rustic Cleaner,Household,Spring,0.50kg,25.86,11.69,11.09,215,8.15,2026-09-11
+Rustic Cleaner,Household,Summer,0.50kg,25.86,11.69,11.09,873,12.39,2026-09-01
+Rustic Cleaner,Household,Autumn,0.50kg,25.86,11.69,11.09,408,6.62,2026-10-02
+Rustic Cleaner,Household,Monsoon,0.50kg,25.86,11.69,11.09,614,8.36,2026-07-11
+Rustic Cleaner,Household,Winter,1.00kg,24.3,10.37,8.27,224,13.11,2026-12-09
+Rustic Cleaner,Household,Spring,1.00kg,24.3,10.37,8.27,407,6.12,2026-12-08
+Rustic Cleaner,Household,Summer,1.00kg,24.3,10.37,8.27,738,8.61,2026-05-25
+Rustic Cleaner,Household,Autumn,1.00kg,24.3,10.37,8.27,505,23.31,2026-06-04
+Rustic Cleaner,Household,Monsoon,1.00kg,24.3,10.37,8.27,475,17.78,2027-03-17
+Rustic Cleaner,Household,Winter,2.00kg,26.32,11.78,9.08,201,42.46,2026-06-17
+Rustic Cleaner,Household,Spring,2.00kg,26.32,11.78,9.08,380,15.73,2026-08-04
+Rustic Cleaner,Household,Summer,2.00kg,26.32,11.78,9.08,916,34.17,2027-03-16
+Rustic Cleaner,Household,Autumn,2.00kg,26.32,11.78,9.08,193,26.24,2026-12-03
+Rustic Cleaner,Household,Monsoon,2.00kg,26.32,11.78,9.08,453,12.39,2027-05-01
+Savory BarSoap,Household,Winter,0.50kg,28.82,10.21,8.64,295,10.69,2026-11-26
+Savory BarSoap,Household,Spring,0.50kg,28.82,10.21,8.64,577,2.81,2026-11-13
+Savory BarSoap,Household,Summer,0.50kg,28.82,10.21,8.64,576,11.49,2026-08-26
+Savory BarSoap,Household,Autumn,0.50kg,28.82,10.21,8.64,471,6.71,2026-07-25
+Savory BarSoap,Household,Monsoon,0.50kg,28.82,10.21,8.64,416,6.71,2026-06-05
+Savory BarSoap,Household,Winter,1.00kg,23.86,10.75,8.5,152,2.56,2027-02-20
+Savory BarSoap,Household,Spring,1.00kg,23.86,10.75,8.5,482,8.46,2026-08-14
+Savory BarSoap,Household,Summer,1.00kg,23.86,10.75,8.5,510,26.39,2027-01-12
+Savory BarSoap,Household,Autumn,1.00kg,23.86,10.75,8.5,546,20.07,2026-09-01
+Savory BarSoap,Household,Monsoon,1.00kg,23.86,10.75,8.5,733,14.28,2027-04-14
+Savory BarSoap,Household,Winter,2.00kg,21.26,11.88,8.18,373,44.19,2026-08-16
+Savory BarSoap,Household,Spring,2.00kg,21.26,11.88,8.18,611,29.69,2027-03-19
+Savory BarSoap,Household,Summer,2.00kg,21.26,11.88,8.18,1036,38.35,2026-09-08
+Savory BarSoap,Household,Autumn,2.00kg,21.26,11.88,8.18,292,10.55,2026-08-10
+Savory BarSoap,Household,Monsoon,2.00kg,21.26,11.88,8.18,562,31.72,2026-12-17
+Deluxe Shampoo,Personal Care,Winter,100ml,18.3,6.01,6.13,214,6.66,2028-02-01
+Deluxe Shampoo,Personal Care,Spring,100ml,18.3,6.01,6.13,484,6.56,2028-01-09
+Deluxe Shampoo,Personal Care,Summer,100ml,18.3,6.01,6.13,1028,1.71,2026-07-07
+Deluxe Shampoo,Personal Care,Autumn,100ml,18.3,6.01,6.13,455,5.47,2027-12-30
+Deluxe Shampoo,Personal Care,Monsoon,100ml,18.3,6.01,6.13,719,2.7,2027-11-16
+Deluxe Shampoo,Personal Care,Winter,250ml,15.1,6.51,6.26,308,19.15,2028-02-13
+Deluxe Shampoo,Personal Care,Spring,250ml,15.1,6.51,6.26,426,4.24,2026-10-20
+Deluxe Shampoo,Personal Care,Summer,250ml,15.1,6.51,6.26,338,9.92,2026-08-21
+Deluxe Shampoo,Personal Care,Autumn,250ml,15.1,6.51,6.26,384,5.3,2027-05-01
+Deluxe Shampoo,Personal Care,Monsoon,250ml,15.1,6.51,6.26,589,10.15,2027-12-11
+Deluxe Shampoo,Personal Care,Winter,500ml,20.18,6.62,5.38,274,27.77,2027-11-27
+Deluxe Shampoo,Personal Care,Spring,500ml,20.18,6.62,5.38,500,27.75,2026-06-03
+Deluxe Shampoo,Personal Care,Summer,500ml,20.18,6.62,5.38,468,42.14,2026-07-28
+Deluxe Shampoo,Personal Care,Autumn,500ml,20.18,6.62,5.38,458,7.7,2028-04-11
+Deluxe Shampoo,Personal Care,Monsoon,500ml,20.18,6.62,5.38,767,26.29,2028-03-28
+Deluxe Soap,Personal Care,Winter,100ml,15.15,6.26,6.94,448,8.15,2027-04-05
+Deluxe Soap,Personal Care,Spring,100ml,15.15,6.26,6.94,461,4.25,2028-05-10
+Deluxe Soap,Personal Care,Summer,100ml,15.15,6.26,6.94,862,7.12,2027-10-02
+Deluxe Soap,Personal Care,Autumn,100ml,15.15,6.26,6.94,304,1.96,2028-01-04
+Deluxe Soap,Personal Care,Monsoon,100ml,15.15,6.26,6.94,508,7.29,2026-07-24
+Deluxe Soap,Personal Care,Winter,250ml,20.23,6.56,5.43,172,20.29,2028-05-11
+Deluxe Soap,Personal Care,Spring,250ml,20.23,6.56,5.43,253,9.73,2027-09-16
+Deluxe Soap,Personal Care,Summer,250ml,20.23,6.56,5.43,428,10.87,2027-08-08
+Deluxe Soap,Personal Care,Autumn,250ml,20.23,6.56,5.43,610,11.93,2026-09-05
+Deluxe Soap,Personal Care,Monsoon,250ml,20.23,6.56,5.43,309,21.5,2026-05-20
+Deluxe Soap,Personal Care,Winter,500ml,21.53,6.66,6.34,299,35.0,2027-03-07
+Deluxe Soap,Personal Care,Spring,500ml,21.53,6.66,6.34,331,20.01,2027-10-16
+Deluxe Soap,Personal Care,Summer,500ml,21.53,6.66,6.34,506,51.36,2027-10-23
+Deluxe Soap,Personal Care,Autumn,500ml,21.53,6.66,6.34,673,11.76,2026-09-30
+Deluxe Soap,Personal Care,Monsoon,500ml,21.53,6.66,6.34,733,12.12,2026-07-25
+Essence Soap,Personal Care,Winter,100ml,15.33,5.84,6.32,213,6.39,2027-07-07
+Essence Soap,Personal Care,Spring,100ml,15.33,5.84,6.32,682,6.81,2027-01-08
+Essence Soap,Personal Care,Summer,100ml,15.33,5.84,6.32,360,3.94,2026-07-27
+Essence Soap,Personal Care,Autumn,100ml,15.33,5.84,6.32,264,2.78,2026-10-27
+Essence Soap,Personal Care,Monsoon,100ml,15.33,5.84,6.32,551,7.3,2027-06-24
+Essence Soap,Personal Care,Winter,250ml,17.18,6.39,5.41,543,21.83,2027-12-17
+Essence Soap,Personal Care,Spring,250ml,17.18,6.39,5.41,244,14.57,2027-11-26
+Essence Soap,Personal Care,Summer,250ml,17.18,6.39,5.41,719,12.74,2027-02-25
+Essence Soap,Personal Care,Autumn,250ml,17.18,6.39,5.41,231,9.57,2027-04-25
+Essence Soap,Personal Care,Monsoon,250ml,17.18,6.39,5.41,341,15.14,2026-10-30
+Essence Soap,Personal Care,Winter,500ml,18.6,6.88,5.01,252,34.41,2027-09-25
+Essence Soap,Personal Care,Spring,500ml,18.6,6.88,5.01,254,36.42,2027-11-03
+Essence Soap,Personal Care,Summer,500ml,18.6,6.88,5.01,698,53.0,2027-06-09
+Essence Soap,Personal Care,Autumn,500ml,18.6,6.88,5.01,198,21.49,2027-02-11
+Essence Soap,Personal Care,Monsoon,500ml,18.6,6.88,5.01,785,21.37,2026-10-13
+Golden Soap,Personal Care,Winter,100ml,20.21,6.3,6.32,207,8.1,2027-09-23
+Golden Soap,Personal Care,Spring,100ml,20.21,6.3,6.32,426,3.91,2027-05-08
+Golden Soap,Personal Care,Summer,100ml,20.21,6.3,6.32,630,7.96,2027-06-22
+Golden Soap,Personal Care,Autumn,100ml,20.21,6.3,6.32,528,5.18,2027-05-17
+Golden Soap,Personal Care,Monsoon,100ml,20.21,6.3,6.32,538,6.54,2027-08-29
+Golden Soap,Personal Care,Winter,250ml,15.6,6.54,6.68,254,17.34,2028-01-12
+Golden Soap,Personal Care,Spring,250ml,15.6,6.54,6.68,561,8.11,2027-11-26
+Golden Soap,Personal Care,Summer,250ml,15.6,6.54,6.68,739,14.31,2027-03-17
+Golden Soap,Personal Care,Autumn,250ml,15.6,6.54,6.68,472,13.08,2028-04-30
+Golden Soap,Personal Care,Monsoon,250ml,15.6,6.54,6.68,317,19.14,2027-07-10
+Golden Soap,Personal Care,Winter,500ml,16.58,5.7,6.94,381,40.58,2027-08-14
+Golden Soap,Personal Care,Spring,500ml,16.58,5.7,6.94,312,13.74,2026-06-09
+Golden Soap,Personal Care,Summer,500ml,16.58,5.7,6.94,896,24.79,2026-12-28
+Golden Soap,Personal Care,Autumn,500ml,16.58,5.7,6.94,640,40.54,2027-04-19
+Golden Soap,Personal Care,Monsoon,500ml,16.58,5.7,6.94,460,17.21,2026-10-08
+Natural Soap,Personal Care,Winter,100ml,15.24,6.93,6.23,274,4.81,2028-05-02
+Natural Soap,Personal Care,Spring,100ml,15.24,6.93,6.23,415,6.08,2027-10-14
+Natural Soap,Personal Care,Summer,100ml,15.24,6.93,6.23,764,4.89,2026-06-19
+Natural Soap,Personal Care,Autumn,100ml,15.24,6.93,6.23,375,4.59,2026-12-26
+Natural Soap,Personal Care,Monsoon,100ml,15.24,6.93,6.23,745,6.49,2027-05-17
+Natural Soap,Personal Care,Winter,250ml,18.38,5.36,6.04,144,20.7,2027-10-31
+Natural Soap,Personal Care,Spring,250ml,18.38,5.36,6.04,239,13.36,2027-01-31
+Natural Soap,Personal Care,Summer,250ml,18.38,5.36,6.04,277,26.5,2026-11-01
+Natural Soap,Personal Care,Autumn,250ml,18.38,5.36,6.04,615,12.83,2027-05-26
+Natural Soap,Personal Care,Monsoon,250ml,18.38,5.36,6.04,466,18.57,2027-12-23
+Natural Soap,Personal Care,Winter,500ml,20.58,6.02,6.37,181,43.92,2027-05-26
+Natural Soap,Personal Care,Spring,500ml,20.58,6.02,6.37,204,14.55,2027-07-05
+Natural Soap,Personal Care,Summer,500ml,20.58,6.02,6.37,281,37.6,2026-09-02
+Natural Soap,Personal Care,Autumn,500ml,20.58,6.02,6.37,295,24.72,2026-10-24
+Natural Soap,Personal Care,Monsoon,500ml,20.58,6.02,6.37,666,50.0,2028-03-03
+Organic Soap,Personal Care,Winter,100ml,18.88,6.14,6.12,377,4.92,2026-06-20
+Organic Soap,Personal Care,Spring,100ml,18.88,6.14,6.12,352,4.54,2027-03-26
+Organic Soap,Personal Care,Summer,100ml,18.88,6.14,6.12,302,8.5,2026-07-14
+Organic Soap,Personal Care,Autumn,100ml,18.88,6.14,6.12,210,4.76,2028-01-08
+Organic Soap,Personal Care,Monsoon,100ml,18.88,6.14,6.12,393,7.0,2027-06-21
+Organic Soap,Personal Care,Winter,250ml,18.09,6.58,5.67,333,6.41,2027-11-01
+Organic Soap,Personal Care,Spring,250ml,18.09,6.58,5.67,496,11.47,2027-01-12
+Organic Soap,Personal Care,Summer,250ml,18.09,6.58,5.67,596,21.7,2027-06-10
+Organic Soap,Personal Care,Autumn,250ml,18.09,6.58,5.67,533,10.91,2026-10-12
+Organic Soap,Personal Care,Monsoon,250ml,18.09,6.58,5.67,201,21.8,2027-01-25
+Organic Soap,Personal Care,Winter,500ml,18.14,6.46,6.29,313,18.19,2026-05-20
+Organic Soap,Personal Care,Spring,500ml,18.14,6.46,6.29,292,19.78,2027-12-06
+Organic Soap,Personal Care,Summer,500ml,18.14,6.46,6.29,623,44.5,2027-11-19
+Organic Soap,Personal Care,Autumn,500ml,18.14,6.46,6.29,574,13.93,2027-04-25
+Organic Soap,Personal Care,Monsoon,500ml,18.14,6.46,6.29,541,44.7,2026-09-27
+Rustic Toothpaste,Personal Care,Winter,100ml,19.65,5.06,6.37,387,8.91,2027-03-27
+Rustic Toothpaste,Personal Care,Spring,100ml,19.65,5.06,6.37,631,3.48,2026-07-19
+Rustic Toothpaste,Personal Care,Summer,100ml,19.65,5.06,6.37,663,5.48,2026-10-06
+Rustic Toothpaste,Personal Care,Autumn,100ml,19.65,5.06,6.37,238,3.78,2027-08-27
+Rustic Toothpaste,Personal Care,Monsoon,100ml,19.65,5.06,6.37,498,8.39,2026-10-06
+Rustic Toothpaste,Personal Care,Winter,250ml,21.67,5.71,5.75,347,2.78,2027-04-11
+Rustic Toothpaste,Personal Care,Spring,250ml,21.67,5.71,5.75,200,15.21,2028-03-10
+Rustic Toothpaste,Personal Care,Summer,250ml,21.67,5.71,5.75,814,17.97,2026-09-03
+Rustic Toothpaste,Personal Care,Autumn,250ml,21.67,5.71,5.75,691,13.63,2026-10-04
+Rustic Toothpaste,Personal Care,Monsoon,250ml,21.67,5.71,5.75,421,10.58,2027-10-23
+Rustic Toothpaste,Personal Care,Winter,500ml,19.67,5.73,5.85,415,13.54,2027-06-03
+Rustic Toothpaste,Personal Care,Spring,500ml,19.67,5.73,5.85,399,16.36,2027-06-25
+Rustic Toothpaste,Personal Care,Summer,500ml,19.67,5.73,5.85,439,18.65,2026-08-18
+Rustic Toothpaste,Personal Care,Autumn,500ml,19.67,5.73,5.85,631,17.23,2027-06-25
+Rustic Toothpaste,Personal Care,Monsoon,500ml,19.67,5.73,5.85,766,16.94,2027-07-19
+Savory Cream,Personal Care,Winter,100ml,16.31,6.07,6.77,339,5.17,2026-10-23
+Savory Cream,Personal Care,Spring,100ml,16.31,6.07,6.77,189,5.56,2027-04-13
+Savory Cream,Personal Care,Summer,100ml,16.31,6.07,6.77,722,4.41,2028-01-15
+Savory Cream,Personal Care,Autumn,100ml,16.31,6.07,6.77,226,6.01,2026-11-20
+Savory Cream,Personal Care,Monsoon,100ml,16.31,6.07,6.77,381,9.53,2026-11-14
+Savory Cream,Personal Care,Winter,250ml,21.92,5.54,5.45,349,21.91,2028-03-25
+Savory Cream,Personal Care,Spring,250ml,21.92,5.54,5.45,188,15.72,2027-01-18
+Savory Cream,Personal Care,Summer,250ml,21.92,5.54,5.45,281,16.41,2027-01-13
+Savory Cream,Personal Care,Autumn,250ml,21.92,5.54,5.45,288,9.85,2028-02-22
+Savory Cream,Personal Care,Monsoon,250ml,21.92,5.54,5.45,508,24.06,2028-03-22
+Savory Cream,Personal Care,Winter,500ml,16.0,6.88,6.57,550,6.3,2026-09-12
+Savory Cream,Personal Care,Spring,500ml,16.0,6.88,6.57,205,48.81,2026-08-11
+Savory Cream,Personal Care,Summer,500ml,16.0,6.88,6.57,862,39.86,2026-10-04
+Savory Cream,Personal Care,Autumn,500ml,16.0,6.88,6.57,555,23.72,2026-06-24
+Savory Cream,Personal Care,Monsoon,500ml,16.0,6.88,6.57,211,11.23,2027-05-13
+Urban Cream,Personal Care,Winter,100ml,18.44,5.56,5.03,448,6.32,2027-04-29
+Urban Cream,Personal Care,Spring,100ml,18.44,5.56,5.03,589,5.07,2026-06-26
+Urban Cream,Personal Care,Summer,100ml,18.44,5.56,5.03,359,3.14,2027-06-03
+Urban Cream,Personal Care,Autumn,100ml,18.44,5.56,5.03,223,6.81,2028-04-18
+Urban Cream,Personal Care,Monsoon,100ml,18.44,5.56,5.03,446,9.38,2027-03-06
+Urban Cream,Personal Care,Winter,250ml,15.63,6.92,5.47,261,4.58,2026-06-24
+Urban Cream,Personal Care,Spring,250ml,15.63,6.92,5.47,302,2.57,2027-05-16
+Urban Cream,Personal Care,Summer,250ml,15.63,6.92,5.47,630,25.6,2026-12-23
+Urban Cream,Personal Care,Autumn,250ml,15.63,6.92,5.47,253,10.28,2026-10-29
+Urban Cream,Personal Care,Monsoon,250ml,15.63,6.92,5.47,612,11.95,2028-01-04
+Urban Cream,Personal Care,Winter,500ml,21.55,5.65,5.93,447,44.1,2026-09-25
+Urban Cream,Personal Care,Spring,500ml,21.55,5.65,5.93,587,28.07,2027-10-30
+Urban Cream,Personal Care,Summer,500ml,21.55,5.65,5.93,422,27.14,2027-02-18
+Urban Cream,Personal Care,Autumn,500ml,21.55,5.65,5.93,360,14.65,2026-08-28
+Urban Cream,Personal Care,Monsoon,500ml,21.55,5.65,5.93,626,6.51,2028-04-28
+Urban Shampoo,Personal Care,Winter,100ml,18.58,6.89,6.33,497,7.48,2027-11-11
+Urban Shampoo,Personal Care,Spring,100ml,18.58,6.89,6.33,676,6.23,2028-01-11
+Urban Shampoo,Personal Care,Summer,100ml,18.58,6.89,6.33,633,4.76,2027-02-10
+Urban Shampoo,Personal Care,Autumn,100ml,18.58,6.89,6.33,205,1.11,2027-06-05
+Urban Shampoo,Personal Care,Monsoon,100ml,18.58,6.89,6.33,321,3.12,2026-05-26
+Urban Shampoo,Personal Care,Winter,250ml,18.48,6.72,6.65,144,21.49,2027-06-08
+Urban Shampoo,Personal Care,Spring,250ml,18.48,6.72,6.65,620,23.79,2026-12-21
+Urban Shampoo,Personal Care,Summer,250ml,18.48,6.72,6.65,350,17.4,2027-11-02
+Urban Shampoo,Personal Care,Autumn,250ml,18.48,6.72,6.65,257,23.03,2026-11-17
+Urban Shampoo,Personal Care,Monsoon,250ml,18.48,6.72,6.65,727,10.74,2028-01-24
+Urban Shampoo,Personal Care,Winter,500ml,19.46,5.1,5.54,364,6.64,2027-01-01
+Urban Shampoo,Personal Care,Spring,500ml,19.46,5.1,5.54,494,38.15,2026-11-05
+Urban Shampoo,Personal Care,Summer,500ml,19.46,5.1,5.54,296,18.84,2027-09-06
+Urban Shampoo,Personal Care,Autumn,500ml,19.46,5.1,5.54,324,31.79,2027-09-10
+Urban Shampoo,Personal Care,Monsoon,500ml,19.46,5.1,5.54,587,9.51,2026-10-27
+Classic Chips,Snacks,Winter,0.03kg,18.44,14.99,2.26,286,11.7,2026-03-23
+Classic Chips,Snacks,Spring,0.03kg,18.44,14.99,2.26,356,14.81,2025-11-25
+Classic Chips,Snacks,Summer,0.03kg,18.44,14.99,2.26,454,5.13,2026-03-10
+Classic Chips,Snacks,Autumn,0.03kg,18.44,14.99,2.26,419,4.85,2026-01-25
+Classic Chips,Snacks,Monsoon,0.03kg,18.44,14.99,2.26,215,9.28,2025-11-13
+Classic Chips,Snacks,Winter,0.05kg,15.57,10.93,2.94,159,21.26,2026-03-09
+Classic Chips,Snacks,Spring,0.05kg,15.57,10.93,2.94,377,22.52,2026-01-06
+Classic Chips,Snacks,Summer,0.05kg,15.57,10.93,2.94,980,12.73,2026-05-01
+Classic Chips,Snacks,Autumn,0.05kg,15.57,10.93,2.94,478,4.95,2026-03-29
+Classic Chips,Snacks,Monsoon,0.05kg,15.57,10.93,2.94,435,22.91,2026-04-15
+Classic Chips,Snacks,Winter,0.10kg,15.21,11.4,3.32,253,8.92,2025-11-29
+Classic Chips,Snacks,Spring,0.10kg,15.21,11.4,3.32,662,31.17,2026-04-10
+Classic Chips,Snacks,Summer,0.10kg,15.21,11.4,3.32,491,18.88,2026-01-30
+Classic Chips,Snacks,Autumn,0.10kg,15.21,11.4,3.32,244,31.85,2025-11-24
+Classic Chips,Snacks,Monsoon,0.10kg,15.21,11.4,3.32,685,24.46,2026-01-31
+Classic Nuts,Snacks,Winter,0.03kg,18.65,12.65,3.39,416,3.81,2026-02-27
+Classic Nuts,Snacks,Spring,0.03kg,18.65,12.65,3.39,672,6.18,2026-01-22
+Classic Nuts,Snacks,Summer,0.03kg,18.65,12.65,3.39,330,1.97,2026-02-19
+Classic Nuts,Snacks,Autumn,0.03kg,18.65,12.65,3.39,297,7.14,2026-02-17
+Classic Nuts,Snacks,Monsoon,0.03kg,18.65,12.65,3.39,266,11.62,2026-04-22
+Classic Nuts,Snacks,Winter,0.05kg,16.96,14.77,3.9,546,13.46,2026-05-10
+Classic Nuts,Snacks,Spring,0.05kg,16.96,14.77,3.9,234,23.5,2025-11-20
+Classic Nuts,Snacks,Summer,0.05kg,16.96,14.77,3.9,513,26.38,2026-05-13
+Classic Nuts,Snacks,Autumn,0.05kg,16.96,14.77,3.9,422,3.69,2026-02-24
+Classic Nuts,Snacks,Monsoon,0.05kg,16.96,14.77,3.9,515,20.48,2025-11-19
+Classic Nuts,Snacks,Winter,0.10kg,17.53,10.96,3.06,273,7.86,2026-05-13
+Classic Nuts,Snacks,Spring,0.10kg,17.53,10.96,3.06,405,6.02,2026-01-16
+Classic Nuts,Snacks,Summer,0.10kg,17.53,10.96,3.06,443,14.22,2026-04-10
+Classic Nuts,Snacks,Autumn,0.10kg,17.53,10.96,3.06,614,21.14,2026-02-27
+Classic Nuts,Snacks,Monsoon,0.10kg,17.53,10.96,3.06,837,44.58,2025-11-16
+Deluxe Nuts,Snacks,Winter,0.03kg,17.78,11.13,3.89,399,8.18,2025-11-27
+Deluxe Nuts,Snacks,Spring,0.03kg,17.78,11.13,3.89,259,12.71,2025-12-14
+Deluxe Nuts,Snacks,Summer,0.03kg,17.78,11.13,3.89,786,4.38,2026-01-29
+Deluxe Nuts,Snacks,Autumn,0.03kg,17.78,11.13,3.89,380,11.73,2026-05-10
+Deluxe Nuts,Snacks,Monsoon,0.03kg,17.78,11.13,3.89,342,3.03,2026-02-19
+Deluxe Nuts,Snacks,Winter,0.05kg,17.07,12.5,2.9,161,19.46,2026-01-19
+Deluxe Nuts,Snacks,Spring,0.05kg,17.07,12.5,2.9,519,20.92,2025-11-14
+Deluxe Nuts,Snacks,Summer,0.05kg,17.07,12.5,2.9,491,6.96,2026-01-25
+Deluxe Nuts,Snacks,Autumn,0.05kg,17.07,12.5,2.9,351,10.14,2026-01-26
+Deluxe Nuts,Snacks,Monsoon,0.05kg,17.07,12.5,2.9,506,12.85,2026-01-12
+Deluxe Nuts,Snacks,Winter,0.10kg,17.97,11.48,3.16,522,35.02,2026-03-11
+Deluxe Nuts,Snacks,Spring,0.10kg,17.97,11.48,3.16,467,12.71,2026-04-20
+Deluxe Nuts,Snacks,Summer,0.10kg,17.97,11.48,3.16,331,23.53,2026-03-30
+Deluxe Nuts,Snacks,Autumn,0.10kg,17.97,11.48,3.16,552,5.27,2026-02-10
+Deluxe Nuts,Snacks,Monsoon,0.10kg,17.97,11.48,3.16,404,7.74,2026-03-17
+Fresh Crackers,Snacks,Winter,0.03kg,18.67,13.29,2.58,154,1.43,2026-05-08
+Fresh Crackers,Snacks,Spring,0.03kg,18.67,13.29,2.58,247,9.84,2026-01-09
+Fresh Crackers,Snacks,Summer,0.03kg,18.67,13.29,2.58,314,7.92,2026-03-01
+Fresh Crackers,Snacks,Autumn,0.03kg,18.67,13.29,2.58,494,9.59,2026-02-20
+Fresh Crackers,Snacks,Monsoon,0.03kg,18.67,13.29,2.58,541,8.7,2026-04-15
+Fresh Crackers,Snacks,Winter,0.05kg,17.98,14.79,2.45,522,6.64,2025-11-21
+Fresh Crackers,Snacks,Spring,0.05kg,17.98,14.79,2.45,392,18.94,2025-12-13
+Fresh Crackers,Snacks,Summer,0.05kg,17.98,14.79,2.45,360,8.34,2025-12-12
+Fresh Crackers,Snacks,Autumn,0.05kg,17.98,14.79,2.45,215,5.96,2026-02-25
+Fresh Crackers,Snacks,Monsoon,0.05kg,17.98,14.79,2.45,336,4.09,2025-12-31
+Fresh Crackers,Snacks,Winter,0.10kg,17.97,10.09,3.26,165,34.35,2026-01-06
+Fresh Crackers,Snacks,Spring,0.10kg,17.97,10.09,3.26,441,19.52,2026-03-03
+Fresh Crackers,Snacks,Summer,0.10kg,17.97,10.09,3.26,951,28.84,2026-02-02
+Fresh Crackers,Snacks,Autumn,0.10kg,17.97,10.09,3.26,687,21.98,2026-03-04
+Fresh Crackers,Snacks,Monsoon,0.10kg,17.97,10.09,3.26,366,27.67,2026-03-30
+Fresh Popcorn,Snacks,Winter,0.03kg,15.45,12.6,2.03,193,4.09,2025-12-05
+Fresh Popcorn,Snacks,Spring,0.03kg,15.45,12.6,2.03,235,10.79,2026-03-05
+Fresh Popcorn,Snacks,Summer,0.03kg,15.45,12.6,2.03,971,11.61,2026-03-28
+Fresh Popcorn,Snacks,Autumn,0.03kg,15.45,12.6,2.03,681,8.1,2026-01-01
+Fresh Popcorn,Snacks,Monsoon,0.03kg,15.45,12.6,2.03,617,2.5,2026-04-29
+Fresh Popcorn,Snacks,Winter,0.05kg,19.74,12.29,2.34,191,17.16,2025-12-11
+Fresh Popcorn,Snacks,Spring,0.05kg,19.74,12.29,2.34,666,24.71,2026-03-18
+Fresh Popcorn,Snacks,Summer,0.05kg,19.74,12.29,2.34,850,7.57,2025-11-13
+Fresh Popcorn,Snacks,Autumn,0.05kg,19.74,12.29,2.34,329,13.54,2025-11-24
+Fresh Popcorn,Snacks,Monsoon,0.05kg,19.74,12.29,2.34,683,6.31,2025-11-16
+Fresh Popcorn,Snacks,Winter,0.10kg,15.8,11.29,3.23,320,35.63,2026-01-27
+Fresh Popcorn,Snacks,Spring,0.10kg,15.8,11.29,3.23,392,31.02,2026-05-05
+Fresh Popcorn,Snacks,Summer,0.10kg,15.8,11.29,3.23,620,54.33,2026-01-10
+Fresh Popcorn,Snacks,Autumn,0.10kg,15.8,11.29,3.23,376,9.17,2026-02-26
+Fresh Popcorn,Snacks,Monsoon,0.10kg,15.8,11.29,3.23,440,35.38,2026-05-03
+Golden Chips,Snacks,Winter,0.03kg,18.11,13.52,3.1,244,11.5,2026-01-08
+Golden Chips,Snacks,Spring,0.03kg,18.11,13.52,3.1,624,1.74,2026-01-15
+Golden Chips,Snacks,Summer,0.03kg,18.11,13.52,3.1,579,9.28,2026-03-27
+Golden Chips,Snacks,Autumn,0.03kg,18.11,13.52,3.1,663,7.2,2026-02-17
+Golden Chips,Snacks,Monsoon,0.03kg,18.11,13.52,3.1,685,8.72,2026-04-02
+Golden Chips,Snacks,Winter,0.05kg,18.61,14.94,3.47,463,13.2,2026-05-01
+Golden Chips,Snacks,Spring,0.05kg,18.61,14.94,3.47,613,13.7,2025-12-17
+Golden Chips,Snacks,Summer,0.05kg,18.61,14.94,3.47,731,10.28,2025-12-27
+Golden Chips,Snacks,Autumn,0.05kg,18.61,14.94,3.47,447,9.83,2026-02-18
+Golden Chips,Snacks,Monsoon,0.05kg,18.61,14.94,3.47,550,20.35,2026-01-12
+Golden Chips,Snacks,Winter,0.10kg,16.73,10.07,3.41,524,29.52,2026-03-03
+Golden Chips,Snacks,Spring,0.10kg,16.73,10.07,3.41,626,24.38,2026-01-27
+Golden Chips,Snacks,Summer,0.10kg,16.73,10.07,3.41,866,15.37,2026-03-09
+Golden Chips,Snacks,Autumn,0.10kg,16.73,10.07,3.41,179,12.61,2026-02-28
+Golden Chips,Snacks,Monsoon,0.10kg,16.73,10.07,3.41,323,42.82,2026-02-21
+Natural Crackers,Snacks,Winter,0.03kg,19.52,11.52,2.47,222,10.11,2026-01-11
+Natural Crackers,Snacks,Spring,0.03kg,19.52,11.52,2.47,391,7.97,2026-02-03
+Natural Crackers,Snacks,Summer,0.03kg,19.52,11.52,2.47,335,10.56,2025-12-10
+Natural Crackers,Snacks,Autumn,0.03kg,19.52,11.52,2.47,455,12.04,2026-04-18
+Natural Crackers,Snacks,Monsoon,0.03kg,19.52,11.52,2.47,564,5.6,2026-02-23
+Natural Crackers,Snacks,Winter,0.05kg,18.6,13.55,3.16,158,2.86,2026-03-20
+Natural Crackers,Snacks,Spring,0.05kg,18.6,13.55,3.16,257,5.53,2026-03-17
+Natural Crackers,Snacks,Summer,0.05kg,18.6,13.55,3.16,979,13.19,2026-03-05
+Natural Crackers,Snacks,Autumn,0.05kg,18.6,13.55,3.16,365,10.68,2026-03-27
+Natural Crackers,Snacks,Monsoon,0.05kg,18.6,13.55,3.16,490,24.54,2026-02-02
+Natural Crackers,Snacks,Winter,0.10kg,17.17,13.75,2.06,261,7.94,2026-03-04
+Natural Crackers,Snacks,Spring,0.10kg,17.17,13.75,2.06,397,17.01,2026-05-04
+Natural Crackers,Snacks,Summer,0.10kg,17.17,13.75,2.06,662,51.8,2026-01-13
+Natural Crackers,Snacks,Autumn,0.10kg,17.17,13.75,2.06,328,12.46,2026-05-11
+Natural Crackers,Snacks,Monsoon,0.10kg,17.17,13.75,2.06,450,16.46,2025-11-14
+Pure Nuts,Snacks,Winter,0.03kg,17.77,13.51,2.48,353,3.86,2026-03-11
+Pure Nuts,Snacks,Spring,0.03kg,17.77,13.51,2.48,280,10.84,2026-03-09
+Pure Nuts,Snacks,Summer,0.03kg,17.77,13.51,2.48,591,10.66,2026-02-01
+Pure Nuts,Snacks,Autumn,0.03kg,17.77,13.51,2.48,375,13.05,2026-03-08
+Pure Nuts,Snacks,Monsoon,0.03kg,17.77,13.51,2.48,498,8.2,2026-02-05
+Pure Nuts,Snacks,Winter,0.05kg,19.91,12.39,3.65,574,22.35,2026-04-05
+Pure Nuts,Snacks,Spring,0.05kg,19.91,12.39,3.65,255,5.59,2026-01-28
+Pure Nuts,Snacks,Summer,0.05kg,19.91,12.39,3.65,721,15.33,2026-02-22
+Pure Nuts,Snacks,Autumn,0.05kg,19.91,12.39,3.65,275,10.1,2026-04-26
+Pure Nuts,Snacks,Monsoon,0.05kg,19.91,12.39,3.65,616,23.71,2026-01-25
+Pure Nuts,Snacks,Winter,0.10kg,17.39,11.2,3.74,366,18.86,2026-01-22
+Pure Nuts,Snacks,Spring,0.10kg,17.39,11.2,3.74,645,28.47,2026-03-11
+Pure Nuts,Snacks,Summer,0.10kg,17.39,11.2,3.74,715,20.02,2026-04-09
+Pure Nuts,Snacks,Autumn,0.10kg,17.39,11.2,3.74,625,40.05,2026-01-18
+Pure Nuts,Snacks,Monsoon,0.10kg,17.39,11.2,3.74,272,29.18,2026-01-27
+Rustic Chips,Snacks,Winter,0.03kg,19.52,11.53,3.67,264,10.15,2026-04-05
+Rustic Chips,Snacks,Spring,0.03kg,19.52,11.53,3.67,620,5.46,2026-05-12
+Rustic Chips,Snacks,Summer,0.03kg,19.52,11.53,3.67,994,7.99,2026-01-11
+Rustic Chips,Snacks,Autumn,0.03kg,19.52,11.53,3.67,399,4.0,2026-04-28
+Rustic Chips,Snacks,Monsoon,0.03kg,19.52,11.53,3.67,513,12.75,2025-12-22
+Rustic Chips,Snacks,Winter,0.05kg,19.86,14.4,3.63,468,4.67,2026-03-29
+Rustic Chips,Snacks,Spring,0.05kg,19.86,14.4,3.63,352,18.66,2026-01-16
+Rustic Chips,Snacks,Summer,0.05kg,19.86,14.4,3.63,771,26.87,2026-01-09
+Rustic Chips,Snacks,Autumn,0.05kg,19.86,14.4,3.63,167,6.32,2026-04-20
+Rustic Chips,Snacks,Monsoon,0.05kg,19.86,14.4,3.63,251,22.98,2026-04-20
+Rustic Chips,Snacks,Winter,0.10kg,19.92,11.48,3.43,277,19.3,2026-01-19
+Rustic Chips,Snacks,Spring,0.10kg,19.92,11.48,3.43,385,15.26,2026-04-09
+Rustic Chips,Snacks,Summer,0.10kg,19.92,11.48,3.43,441,10.26,2026-01-08
+Rustic Chips,Snacks,Autumn,0.10kg,19.92,11.48,3.43,246,5.94,2025-12-21
+Rustic Chips,Snacks,Monsoon,0.10kg,19.92,11.48,3.43,314,27.84,2026-01-22
+Urban Crackers,Snacks,Winter,0.03kg,16.38,13.22,3.2,325,7.29,2026-04-03
+Urban Crackers,Snacks,Spring,0.03kg,16.38,13.22,3.2,395,2.01,2026-04-01
+Urban Crackers,Snacks,Summer,0.03kg,16.38,13.22,3.2,792,9.36,2026-04-10
+Urban Crackers,Snacks,Autumn,0.03kg,16.38,13.22,3.2,552,12.74,2026-03-19
+Urban Crackers,Snacks,Monsoon,0.03kg,16.38,13.22,3.2,644,5.85,2026-04-16
+Urban Crackers,Snacks,Winter,0.05kg,17.28,14.0,3.83,470,9.72,2026-05-09
+Urban Crackers,Snacks,Spring,0.05kg,17.28,14.0,3.83,469,21.0,2026-03-11
+Urban Crackers,Snacks,Summer,0.05kg,17.28,14.0,3.83,598,7.29,2026-01-30
+Urban Crackers,Snacks,Autumn,0.05kg,17.28,14.0,3.83,192,10.81,2026-01-26
+Urban Crackers,Snacks,Monsoon,0.05kg,17.28,14.0,3.83,398,23.53,2026-01-01
+Urban Crackers,Snacks,Winter,0.10kg,18.71,10.71,3.09,311,23.49,2025-11-19
+Urban Crackers,Snacks,Spring,0.10kg,18.71,10.71,3.09,388,35.73,2026-02-24
+Urban Crackers,Snacks,Summer,0.10kg,18.71,10.71,3.09,997,24.83,2025-11-22
+Urban Crackers,Snacks,Autumn,0.10kg,18.71,10.71,3.09,229,28.74,2026-04-05
+Urban Crackers,Snacks,Monsoon,0.10kg,18.71,10.71,3.09,564,32.66,2026-02-01
+Classic Chili,Spices,Winter,0.05kg,6.8,6.82,3.1,478,1.23,2027-10-01
+Classic Chili,Spices,Spring,0.05kg,6.8,6.82,3.1,441,3.08,2028-05-14
+Classic Chili,Spices,Summer,0.05kg,6.8,6.82,3.1,311,8.01,2026-06-02
+Classic Chili,Spices,Autumn,0.05kg,6.8,6.82,3.1,533,8.02,2027-04-14
+Classic Chili,Spices,Monsoon,0.05kg,6.8,6.82,3.1,608,6.0,2027-06-19
+Classic Chili,Spices,Winter,0.15kg,7.11,7.1,4.79,513,17.89,2026-12-18
+Classic Chili,Spices,Spring,0.15kg,7.11,7.1,4.79,308,7.36,2026-06-02
+Classic Chili,Spices,Summer,0.15kg,7.11,7.1,4.79,497,15.96,2027-09-10
+Classic Chili,Spices,Autumn,0.15kg,7.11,7.1,4.79,466,22.85,2026-07-23
+Classic Chili,Spices,Monsoon,0.15kg,7.11,7.1,4.79,525,10.43,2027-12-05
+Classic Chili,Spices,Winter,0.30kg,8.03,8.14,5.03,149,4.72,2027-01-30
+Classic Chili,Spices,Spring,0.30kg,8.03,8.14,5.03,566,30.67,2027-08-26
+Classic Chili,Spices,Summer,0.30kg,8.03,8.14,5.03,748,43.22,2026-06-08
+Classic Chili,Spices,Autumn,0.30kg,8.03,8.14,5.03,327,37.47,2028-01-05
+Classic Chili,Spices,Monsoon,0.30kg,8.03,8.14,5.03,599,37.11,2028-04-23
+Classic Pepper,Spices,Winter,0.05kg,9.22,6.29,5.37,442,4.33,2027-07-05
+Classic Pepper,Spices,Spring,0.05kg,9.22,6.29,5.37,291,6.89,2026-07-15
+Classic Pepper,Spices,Summer,0.05kg,9.22,6.29,5.37,308,8.82,2028-03-31
+Classic Pepper,Spices,Autumn,0.05kg,9.22,6.29,5.37,328,2.1,2028-04-14
+Classic Pepper,Spices,Monsoon,0.05kg,9.22,6.29,5.37,761,3.86,2026-07-22
+Classic Pepper,Spices,Winter,0.15kg,6.76,6.03,3.74,374,13.07,2026-12-24
+Classic Pepper,Spices,Spring,0.15kg,6.76,6.03,3.74,323,21.5,2028-01-01
+Classic Pepper,Spices,Summer,0.15kg,6.76,6.03,3.74,442,18.18,2027-01-15
+Classic Pepper,Spices,Autumn,0.15kg,6.76,6.03,3.74,535,10.57,2028-05-02
+Classic Pepper,Spices,Monsoon,0.15kg,6.76,6.03,3.74,262,17.49,2027-08-07
+Classic Pepper,Spices,Winter,0.30kg,6.79,8.19,4.42,429,21.46,2027-01-25
+Classic Pepper,Spices,Spring,0.30kg,6.79,8.19,4.42,261,31.05,2027-02-25
+Classic Pepper,Spices,Summer,0.30kg,6.79,8.19,4.42,834,53.66,2026-08-17
+Classic Pepper,Spices,Autumn,0.30kg,6.79,8.19,4.42,515,18.11,2027-02-04
+Classic Pepper,Spices,Monsoon,0.30kg,6.79,8.19,4.42,701,49.44,2027-02-02
+Essence Cumin,Spices,Winter,0.05kg,6.0,6.85,4.16,391,1.03,2027-03-08
+Essence Cumin,Spices,Spring,0.05kg,6.0,6.85,4.16,440,6.66,2026-10-17
+Essence Cumin,Spices,Summer,0.05kg,6.0,6.85,4.16,329,6.54,2027-10-07
+Essence Cumin,Spices,Autumn,0.05kg,6.0,6.85,4.16,244,0.97,2026-09-24
+Essence Cumin,Spices,Monsoon,0.05kg,6.0,6.85,4.16,659,1.3,2027-10-09
+Essence Cumin,Spices,Winter,0.15kg,6.25,5.56,3.32,436,10.5,2027-01-12
+Essence Cumin,Spices,Spring,0.15kg,6.25,5.56,3.32,296,2.73,2028-02-21
+Essence Cumin,Spices,Summer,0.15kg,6.25,5.56,3.32,489,12.56,2028-04-26
+Essence Cumin,Spices,Autumn,0.15kg,6.25,5.56,3.32,425,6.5,2027-06-28
+Essence Cumin,Spices,Monsoon,0.15kg,6.25,5.56,3.32,619,10.68,2026-06-22
+Essence Cumin,Spices,Winter,0.30kg,7.72,7.18,3.1,376,31.85,2026-06-15
+Essence Cumin,Spices,Spring,0.30kg,7.72,7.18,3.1,316,13.43,2026-10-06
+Essence Cumin,Spices,Summer,0.30kg,7.72,7.18,3.1,298,43.99,2027-03-10
+Essence Cumin,Spices,Autumn,0.30kg,7.72,7.18,3.1,446,27.2,2026-07-07
+Essence Cumin,Spices,Monsoon,0.30kg,7.72,7.18,3.1,607,38.41,2026-06-19
+Golden GaramMasala,Spices,Winter,0.05kg,6.77,5.48,5.11,279,2.45,2027-07-20
+Golden GaramMasala,Spices,Spring,0.05kg,6.77,5.48,5.11,543,2.47,2026-09-06
+Golden GaramMasala,Spices,Summer,0.05kg,6.77,5.48,5.11,296,8.38,2028-03-23
+Golden GaramMasala,Spices,Autumn,0.05kg,6.77,5.48,5.11,499,2.96,2028-01-02
+Golden GaramMasala,Spices,Monsoon,0.05kg,6.77,5.48,5.11,277,7.14,2027-02-04
+Golden GaramMasala,Spices,Winter,0.15kg,7.42,5.19,5.82,365,5.0,2028-01-14
+Golden GaramMasala,Spices,Spring,0.15kg,7.42,5.19,5.82,221,17.03,2027-05-19
+Golden GaramMasala,Spices,Summer,0.15kg,7.42,5.19,5.82,618,25.32,2026-09-02
+Golden GaramMasala,Spices,Autumn,0.15kg,7.42,5.19,5.82,409,24.9,2027-10-20
+Golden GaramMasala,Spices,Monsoon,0.15kg,7.42,5.19,5.82,314,12.19,2026-07-19
+Golden GaramMasala,Spices,Winter,0.30kg,8.04,7.89,4.81,210,40.92,2026-08-28
+Golden GaramMasala,Spices,Spring,0.30kg,8.04,7.89,4.81,267,41.24,2028-01-17
+Golden GaramMasala,Spices,Summer,0.30kg,8.04,7.89,4.81,475,39.27,2027-10-18
+Golden GaramMasala,Spices,Autumn,0.30kg,8.04,7.89,4.81,561,47.21,2027-08-18
+Golden GaramMasala,Spices,Monsoon,0.30kg,8.04,7.89,4.81,453,13.41,2028-02-21
+Organic Cumin,Spices,Winter,0.05kg,7.46,6.73,4.14,514,5.73,2027-07-20
+Organic Cumin,Spices,Spring,0.05kg,7.46,6.73,4.14,522,7.06,2028-04-24
+Organic Cumin,Spices,Summer,0.05kg,7.46,6.73,4.14,254,8.66,2026-11-19
+Organic Cumin,Spices,Autumn,0.05kg,7.46,6.73,4.14,300,5.82,2026-07-16
+Organic Cumin,Spices,Monsoon,0.05kg,7.46,6.73,4.14,314,3.65,2026-11-03
+Organic Cumin,Spices,Winter,0.15kg,6.98,7.48,3.65,568,16.97,2026-11-14
+Organic Cumin,Spices,Spring,0.15kg,6.98,7.48,3.65,701,11.0,2026-12-22
+Organic Cumin,Spices,Summer,0.15kg,6.98,7.48,3.65,850,15.77,2026-10-15
+Organic Cumin,Spices,Autumn,0.15kg,6.98,7.48,3.65,401,18.66,2027-11-30
+Organic Cumin,Spices,Monsoon,0.15kg,6.98,7.48,3.65,340,9.95,2028-01-19
+Organic Cumin,Spices,Winter,0.30kg,7.7,6.49,3.98,232,11.88,2027-10-25
+Organic Cumin,Spices,Spring,0.30kg,7.7,6.49,3.98,216,40.71,2027-03-28
+Organic Cumin,Spices,Summer,0.30kg,7.7,6.49,3.98,753,43.18,2027-01-24
+Organic Cumin,Spices,Autumn,0.30kg,7.7,6.49,3.98,405,28.58,2027-02-15
+Organic Cumin,Spices,Monsoon,0.30kg,7.7,6.49,3.98,723,33.06,2027-08-28
+Premium GaramMasala,Spices,Winter,0.05kg,8.31,9.9,5.28,392,2.46,2026-09-12
+Premium GaramMasala,Spices,Spring,0.05kg,8.31,9.9,5.28,485,6.5,2027-07-17
+Premium GaramMasala,Spices,Summer,0.05kg,8.31,9.9,5.28,284,8.27,2027-10-01
+Premium GaramMasala,Spices,Autumn,0.05kg,8.31,9.9,5.28,368,1.93,2026-12-08
+Premium GaramMasala,Spices,Monsoon,0.05kg,8.31,9.9,5.28,241,8.32,2026-10-26
+Premium GaramMasala,Spices,Winter,0.15kg,6.09,6.31,3.45,300,18.47,2027-12-03
+Premium GaramMasala,Spices,Spring,0.15kg,6.09,6.31,3.45,250,8.9,2026-07-01
+Premium GaramMasala,Spices,Summer,0.15kg,6.09,6.31,3.45,323,15.61,2028-03-23
+Premium GaramMasala,Spices,Autumn,0.15kg,6.09,6.31,3.45,278,18.69,2027-04-28
+Premium GaramMasala,Spices,Monsoon,0.15kg,6.09,6.31,3.45,621,10.04,2028-05-05
+Premium GaramMasala,Spices,Winter,0.30kg,7.42,5.53,3.39,359,43.76,2027-07-13
+Premium GaramMasala,Spices,Spring,0.30kg,7.42,5.53,3.39,448,26.68,2027-11-22
+Premium GaramMasala,Spices,Summer,0.30kg,7.42,5.53,3.39,640,18.27,2026-08-14
+Premium GaramMasala,Spices,Autumn,0.30kg,7.42,5.53,3.39,614,23.33,2028-01-02
+Premium GaramMasala,Spices,Monsoon,0.30kg,7.42,5.53,3.39,293,19.91,2027-03-27
+Premium Turmeric,Spices,Winter,0.05kg,8.59,5.94,3.21,189,4.8,2028-04-28
+Premium Turmeric,Spices,Spring,0.05kg,8.59,5.94,3.21,621,5.95,2026-05-21
+Premium Turmeric,Spices,Summer,0.05kg,8.59,5.94,3.21,945,3.17,2026-08-10
+Premium Turmeric,Spices,Autumn,0.05kg,8.59,5.94,3.21,631,5.79,2026-12-21
+Premium Turmeric,Spices,Monsoon,0.05kg,8.59,5.94,3.21,201,6.68,2028-04-24
+Premium Turmeric,Spices,Winter,0.15kg,5.16,7.86,3.71,549,6.87,2026-05-26
+Premium Turmeric,Spices,Spring,0.15kg,5.16,7.86,3.71,528,4.38,2027-03-31
+Premium Turmeric,Spices,Summer,0.15kg,5.16,7.86,3.71,800,21.6,2027-02-25
+Premium Turmeric,Spices,Autumn,0.15kg,5.16,7.86,3.71,454,17.15,2026-07-09
+Premium Turmeric,Spices,Monsoon,0.15kg,5.16,7.86,3.71,224,24.3,2027-10-08
+Premium Turmeric,Spices,Winter,0.30kg,6.53,9.0,5.53,239,28.35,2028-02-08
+Premium Turmeric,Spices,Spring,0.30kg,6.53,9.0,5.53,432,20.8,2027-05-05
+Premium Turmeric,Spices,Summer,0.30kg,6.53,9.0,5.53,431,42.94,2027-06-26
+Premium Turmeric,Spices,Autumn,0.30kg,6.53,9.0,5.53,189,19.35,2026-09-15
+Premium Turmeric,Spices,Monsoon,0.30kg,6.53,9.0,5.53,374,8.36,2028-02-18
+Royal Chili,Spices,Winter,0.05kg,8.73,8.79,4.81,388,5.42,2026-08-21
+Royal Chili,Spices,Spring,0.05kg,8.73,8.79,4.81,270,7.6,2028-01-11
+Royal Chili,Spices,Summer,0.05kg,8.73,8.79,4.81,365,7.56,2027-04-14
+Royal Chili,Spices,Autumn,0.05kg,8.73,8.79,4.81,399,3.95,2026-10-20
+Royal Chili,Spices,Monsoon,0.05kg,8.73,8.79,4.81,320,1.84,2026-05-17
+Royal Chili,Spices,Winter,0.15kg,6.8,6.93,5.23,345,21.42,2026-05-26
+Royal Chili,Spices,Spring,0.15kg,6.8,6.93,5.23,470,10.06,2026-08-14
+Royal Chili,Spices,Summer,0.15kg,6.8,6.93,5.23,836,26.97,2027-01-03
+Royal Chili,Spices,Autumn,0.15kg,6.8,6.93,5.23,538,18.94,2027-07-22
+Royal Chili,Spices,Monsoon,0.15kg,6.8,6.93,5.23,381,19.66,2027-11-13
+Royal Chili,Spices,Winter,0.30kg,7.23,5.42,3.79,473,30.67,2026-11-10
+Royal Chili,Spices,Spring,0.30kg,7.23,5.42,3.79,569,45.18,2026-08-10
+Royal Chili,Spices,Summer,0.30kg,7.23,5.42,3.79,907,13.38,2026-08-24
+Royal Chili,Spices,Autumn,0.30kg,7.23,5.42,3.79,604,12.83,2027-01-08
+Royal Chili,Spices,Monsoon,0.30kg,7.23,5.42,3.79,226,21.43,2027-06-06
+Savory Turmeric,Spices,Winter,0.05kg,9.27,9.98,4.27,409,3.46,2027-01-04
+Savory Turmeric,Spices,Spring,0.05kg,9.27,9.98,4.27,381,1.69,2026-07-12
+Savory Turmeric,Spices,Summer,0.05kg,9.27,9.98,4.27,270,7.54,2027-04-23
+Savory Turmeric,Spices,Autumn,0.05kg,9.27,9.98,4.27,231,5.55,2027-04-08
+Savory Turmeric,Spices,Monsoon,0.05kg,9.27,9.98,4.27,352,3.07,2026-12-19
+Savory Turmeric,Spices,Winter,0.15kg,8.97,5.45,4.68,320,3.57,2028-02-22
+Savory Turmeric,Spices,Spring,0.15kg,8.97,5.45,4.68,432,16.47,2027-01-10
+Savory Turmeric,Spices,Summer,0.15kg,8.97,5.45,4.68,585,14.44,2027-04-21
+Savory Turmeric,Spices,Autumn,0.15kg,8.97,5.45,4.68,605,2.64,2026-07-12
+Savory Turmeric,Spices,Monsoon,0.15kg,8.97,5.45,4.68,312,17.16,2028-01-16
+Savory Turmeric,Spices,Winter,0.30kg,6.03,9.07,3.69,286,19.38,2028-03-15
+Savory Turmeric,Spices,Spring,0.30kg,6.03,9.07,3.69,363,8.82,2027-11-25
+Savory Turmeric,Spices,Summer,0.30kg,6.03,9.07,3.69,745,28.99,2026-10-13
+Savory Turmeric,Spices,Autumn,0.30kg,6.03,9.07,3.69,647,20.38,2028-02-16
+Savory Turmeric,Spices,Monsoon,0.30kg,6.03,9.07,3.69,763,27.84,2026-12-31
+Supreme Turmeric,Spices,Winter,0.05kg,8.94,7.35,4.78,347,5.87,2027-02-23
+Supreme Turmeric,Spices,Spring,0.05kg,8.94,7.35,4.78,469,1.35,2027-01-12
+Supreme Turmeric,Spices,Summer,0.05kg,8.94,7.35,4.78,549,3.81,2026-08-15
+Supreme Turmeric,Spices,Autumn,0.05kg,8.94,7.35,4.78,652,3.28,2027-11-17
+Supreme Turmeric,Spices,Monsoon,0.05kg,8.94,7.35,4.78,537,4.84,2027-04-18
+Supreme Turmeric,Spices,Winter,0.15kg,9.93,9.21,5.35,156,3.2,2028-01-19
+Supreme Turmeric,Spices,Spring,0.15kg,9.93,9.21,5.35,736,7.6,2026-10-15
+Supreme Turmeric,Spices,Summer,0.15kg,9.93,9.21,5.35,876,25.59,2027-08-12
+Supreme Turmeric,Spices,Autumn,0.15kg,9.93,9.21,5.35,282,14.08,2027-11-14
+Supreme Turmeric,Spices,Monsoon,0.15kg,9.93,9.21,5.35,542,7.22,2027-01-06
+Supreme Turmeric,Spices,Winter,0.30kg,9.64,8.35,4.65,372,33.12,2027-11-20
+Supreme Turmeric,Spices,Spring,0.30kg,9.64,8.35,4.65,619,18.55,2027-06-04
+Supreme Turmeric,Spices,Summer,0.30kg,9.64,8.35,4.65,355,29.27,2027-06-06
+Supreme Turmeric,Spices,Autumn,0.30kg,9.64,8.35,4.65,540,42.67,2026-12-07
+Supreme Turmeric,Spices,Monsoon,0.30kg,9.64,8.35,4.65,553,11.56,2028-02-15
+Urban Cumin,Spices,Winter,0.05kg,9.74,5.89,3.9,360,2.34,2028-03-13
+Urban Cumin,Spices,Spring,0.05kg,9.74,5.89,3.9,305,3.46,2027-08-07
+Urban Cumin,Spices,Summer,0.05kg,9.74,5.89,3.9,485,4.98,2026-08-17
+Urban Cumin,Spices,Autumn,0.05kg,9.74,5.89,3.9,286,2.81,2027-06-12
+Urban Cumin,Spices,Monsoon,0.05kg,9.74,5.89,3.9,630,3.04,2027-01-05
+Urban Cumin,Spices,Winter,0.15kg,8.44,8.86,3.11,319,15.85,2027-01-22
+Urban Cumin,Spices,Spring,0.15kg,8.44,8.86,3.11,279,19.46,2027-05-13
+Urban Cumin,Spices,Summer,0.15kg,8.44,8.86,3.11,1076,22.07,2026-06-22
+Urban Cumin,Spices,Autumn,0.15kg,8.44,8.86,3.11,576,5.99,2026-07-15
+Urban Cumin,Spices,Monsoon,0.15kg,8.44,8.86,3.11,372,12.41,2028-03-27
+Urban Cumin,Spices,Winter,0.30kg,6.55,5.45,4.67,555,8.24,2028-02-15
+Urban Cumin,Spices,Spring,0.30kg,6.55,5.45,4.67,530,37.5,2026-09-08
+Urban Cumin,Spices,Summer,0.30kg,6.55,5.45,4.67,675,49.82,2028-04-03
+Urban Cumin,Spices,Autumn,0.30kg,6.55,5.45,4.67,585,17.66,2026-11-20
+Urban Cumin,Spices,Monsoon,0.30kg,6.55,5.45,4.67,731,10.45,2027-04-03
+Urban Turmeric,Spices,Winter,0.05kg,7.0,7.29,4.85,434,6.33,2027-03-28
+Urban Turmeric,Spices,Spring,0.05kg,7.0,7.29,4.85,554,7.9,2027-08-11
+Urban Turmeric,Spices,Summer,0.05kg,7.0,7.29,4.85,810,6.72,2026-09-12
+Urban Turmeric,Spices,Autumn,0.05kg,7.0,7.29,4.85,447,2.74,2028-05-15
+Urban Turmeric,Spices,Monsoon,0.05kg,7.0,7.29,4.85,630,3.42,2027-11-10
+Urban Turmeric,Spices,Winter,0.15kg,9.52,9.44,5.75,293,16.01,2028-04-05
+Urban Turmeric,Spices,Spring,0.15kg,9.52,9.44,5.75,290,12.73,2026-09-03
+Urban Turmeric,Spices,Summer,0.15kg,9.52,9.44,5.75,426,13.54,2026-11-05
+Urban Turmeric,Spices,Autumn,0.15kg,9.52,9.44,5.75,592,4.46,2026-11-29
+Urban Turmeric,Spices,Monsoon,0.15kg,9.52,9.44,5.75,801,24.56,2027-11-14
+Urban Turmeric,Spices,Winter,0.30kg,9.12,6.66,5.2,196,23.38,2026-10-18
+Urban Turmeric,Spices,Spring,0.30kg,9.12,6.66,5.2,400,27.92,2027-03-20
+Urban Turmeric,Spices,Summer,0.30kg,9.12,6.66,5.2,434,13.13,2027-11-29
+Urban Turmeric,Spices,Autumn,0.30kg,9.12,6.66,5.2,536,45.76,2027-02-04
+Urban Turmeric,Spices,Monsoon,0.30kg,9.12,6.66,5.2,743,40.21,2027-06-29

@@ -1,0 +1,101 @@
+Product_Name,Category,Profit_Per_Unit,Sales_Last_30_Days,Season_Used,Width_cm,Height_cm,Manufacturing_Date,Expiry_Date
+Paperboat Tea 300g,Beverages,48.61,805,Monsoon,12.9,20.8,11-11-2024,03-08-2025
+Red Bull Tea 250g,Beverages,42.92,317,Spring,10.8,10,04-11-2024,14-10-2025
+Tata Tea Soft Drink 100g,Beverages,9.04,732,Summer,6,20.5,17-01-2025,19-04-2025
+Parle Namkeen 300g,Snacks,22.3,262,Winter,19.8,23.6,22-08-2024,29-03-2025
+Amul Yogurt 100g,Dairy,42.66,246,Spring,10.7,16.5,25-12-2024,02-06-2025
+Britannia Chips 450g,Snacks,10.6,840,Summer,5.3,8.2,06-03-2025,11-07-2025
+Lizol Air Freshener 300g,Household,13.14,954,Winter,17.6,1.6,11-02-2025,07-06-2025
+Haldiram's Chips 50g,Snacks,22.78,834,Winter,18,3,24-05-2024,21-09-2024
+Parle Biscuits 500g,Snacks,9.44,665,Winter,17.5,3.4,16-06-2024,16-11-2024
+Haldiram's Biscuits 150g,Snacks,41.26,990,Spring,5.3,14,04-08-2024,01-03-2025
+Amul Milk 200g,Dairy,12,359,Winter,7.4,27.1,29-05-2024,03-10-2024
+Red Bull Soft Drink 500g,Beverages,46.12,915,Summer,2.5,5.6,30-06-2024,19-04-2025
+Dove Soap 350g,Personal Care,18.73,509,Summer,16,18.8,27-08-2024,18-08-2025
+Paperboat Juice 100g,Beverages,7.38,669,Monsoon,5.3,14.2,27-02-2025,16-11-2025
+Britannia Cookies 150g,Snacks,6.28,862,Spring,16.2,27.1,10-01-2025,29-10-2025
+Haldiram's Cookies 300g,Snacks,18.29,212,Winter,2,24.7,13-01-2025,09-10-2025
+Colgate Toothpaste 450g,Personal Care,16.22,349,Winter,19.6,10.3,21-02-2025,23-05-2025
+Paperboat Juice 250g,Beverages,48.5,584,Spring,13.1,15,07-02-2025,19-09-2025
+Dove Toothpaste 300g,Personal Care,39.91,593,Monsoon,9.3,5.7,16-12-2024,12-07-2025
+Surf Excel Dishwash Liquid 100g,Household,40.55,10,Autumn,19,7.2,18-07-2024,26-02-2025
+Parle Namkeen 450g,Snacks,41.98,42,Spring,13.7,21.9,07-04-2025,17-09-2025
+Bru Soft Drink 300g,Beverages,13.44,456,Summer,15.4,17.6,02-04-2025,21-02-2026
+Haldiram's Biscuits 450g,Snacks,26.69,865,Winter,10.8,6.6,28-10-2024,19-06-2025
+Dove Toothpaste 450g,Personal Care,28.57,865,Autumn,14.7,18.9,16-10-2024,04-10-2025
+Paperboat Tea 150g,Beverages,23.8,895,Spring,12.3,18.6,10-06-2024,05-03-2025
+Vim Detergent Powder 450g,Household,30.82,104,Monsoon,5,11.2,11-06-2024,15-12-2024
+Patanjali Soap 500g,Personal Care,46.36,879,Spring,18,2.3,23-08-2024,07-06-2025
+Haldiram's Biscuits 300g,Snacks,22.94,699,Summer,3.3,19.5,05-07-2024,30-03-2025
+Harpic Air Freshener 350g,Household,41.42,874,Summer,12,4,19-05-2024,16-01-2025
+Parle Namkeen 250g,Snacks,31.27,563,Winter,11.6,13.6,25-03-2025,25-10-2025
+Lizol Floor Cleaner 350g,Household,29.36,993,Autumn,17.4,15.5,03-06-2024,09-03-2025
+Colgate Face Wash 400g,Personal Care,25.47,196,Summer,17.2,4.9,06-02-2025,22-06-2025
+Dove Face Wash 400g,Personal Care,14,608,Spring,7.5,19.6,07-12-2024,29-11-2025
+Amul Butter 150g,Dairy,18.22,249,Winter,8.8,5,28-01-2025,12-06-2025
+Red Bull Juice 250g,Beverages,26.9,159,Autumn,10.2,2.4,23-10-2024,10-03-2025
+Vim Floor Cleaner 250g,Household,5.13,187,Summer,3.5,9.7,16-02-2025,28-07-2025
+Tata Tea Juice 150g,Beverages,15,28,Winter,4.7,9,05-04-2025,16-02-2026
+Red Bull Energy Drink 200g,Beverages,33.89,447,Spring,14.7,22.6,05-02-2025,09-07-2025
+Surf Excel Air Freshener 450g,Household,32.71,207,Winter,14.4,10.3,22-03-2025,08-08-2025
+Dove Shampoo 200g,Personal Care,21.9,665,Spring,10.6,7.1,05-09-2024,09-08-2025
+Surf Excel Toilet Cleaner 150g,Household,35.74,177,Summer,3.4,23.4,28-02-2025,10-06-2025
+Amul Cheese 250g,Dairy,43.94,781,Spring,6.3,10.8,07-08-2024,14-11-2024
+Himalaya Toothpaste 500g,Personal Care,6.67,562,Spring,6.6,26.8,01-11-2024,10-03-2025
+Amul Yogurt 500g,Dairy,16.39,537,Monsoon,19.1,8.5,21-07-2024,11-06-2025
+Dove Shampoo 300g,Personal Care,19.77,15,Winter,7.8,28.3,11-01-2025,10-05-2025
+Mother Dairy Yogurt 450g,Dairy,31.79,968,Winter,4.8,19.8,03-08-2024,03-11-2024
+Tata Tea Soft Drink 300g,Beverages,6.34,258,Monsoon,5.5,2.6,27-03-2025,19-09-2025
+Himalaya Shampoo 300g,Personal Care,42.15,28,Spring,16.7,15.2,19-03-2025,10-09-2025
+Lizol Toilet Cleaner 250g,Household,8.55,328,Monsoon,18.1,5.3,13-07-2024,23-11-2024
+Himalaya Face Wash 400g,Personal Care,45.74,926,Winter,19.5,2.3,03-07-2024,26-05-2025
+Haldiram's Chocolate 200g,Snacks,35.88,343,Winter,3.7,11.1,13-09-2024,15-05-2025
+Bru Energy Drink 450g,Beverages,41.41,111,Autumn,8.9,24.1,10-11-2024,03-08-2025
+Vim Detergent Powder 300g,Household,33.49,945,Spring,6.2,5.3,18-03-2025,13-10-2025
+Surf Excel Toilet Cleaner 200g,Household,27.8,251,Summer,8.7,28.7,14-07-2024,22-03-2025
+Bru Energy Drink 400g,Beverages,17.8,885,Monsoon,10.6,19.7,12-02-2025,04-06-2025
+Surf Excel Air Freshener 150g,Household,23.36,221,Summer,18.1,27.7,17-10-2024,01-06-2025
+Lizol Dishwash Liquid 100g,Household,8.71,276,Spring,17,16.7,12-05-2024,14-11-2024
+Paperboat Coffee 250g,Beverages,22.09,339,Winter,6.2,23,03-03-2025,27-01-2026
+Haldiram's Namkeen 100g,Snacks,44.72,26,Monsoon,12.3,14.7,17-06-2024,21-12-2024
+Haldiram's Chips 300g,Snacks,32.09,703,Summer,18.4,12.8,29-06-2024,15-04-2025
+Vim Detergent Powder 500g,Household,48.28,959,Spring,14.3,23.7,02-04-2025,12-12-2025
+Vim Floor Cleaner 150g,Household,8.68,973,Spring,3.5,27,22-12-2024,17-06-2025
+Surf Excel Floor Cleaner 200g,Household,29.04,288,Winter,19,27.8,26-09-2024,11-01-2025
+Harpic Air Freshener 250g,Household,39.7,311,Summer,3.8,5.1,17-06-2024,17-03-2025
+Britannia Chocolate 350g,Snacks,36.65,777,Spring,5.5,14.1,22-07-2024,13-04-2025
+Haldiram's Biscuits 500g,Snacks,6.57,159,Monsoon,7.3,27.7,06-11-2024,24-09-2025
+Harpic Air Freshener 200g,Household,8.84,798,Summer,2.2,24.1,04-06-2024,31-05-2025
+Dove Body Lotion 350g,Personal Care,20.85,650,Spring,11.1,26,10-10-2024,30-08-2025
+Surf Excel Dishwash Liquid 50g,Household,29.9,919,Monsoon,7.9,23.2,11-05-2024,15-11-2024
+Himalaya Body Lotion 100g,Personal Care,36.84,590,Monsoon,16.5,28.9,30-12-2024,15-05-2025
+Patanjali Toothpaste 300g,Personal Care,25.06,615,Winter,7.6,10.7,11-08-2024,25-03-2025
+Lizol Toilet Cleaner 400g,Household,28.73,737,Winter,16.8,14.7,16-01-2025,11-10-2025
+Paperboat Coffee 150g,Beverages,18.6,965,Monsoon,18.1,17.7,14-06-2024,29-11-2024
+Tata Tea Energy Drink 200g,Beverages,24.88,994,Winter,16.3,16.9,28-10-2024,15-02-2025
+ITC Cookies 300g,Snacks,6.26,284,Summer,5.6,15.1,05-10-2024,24-04-2025
+Mother Dairy Butter 450g,Dairy,7.01,915,Monsoon,13.7,4.4,31-12-2024,18-04-2025
+Patanjali Face Wash 500g,Personal Care,46.54,469,Monsoon,7.7,21.5,21-01-2025,09-08-2025
+Harpic Toilet Cleaner 500g,Household,28.81,560,Spring,7.9,23.9,19-02-2025,09-10-2025
+Bru Tea 350g,Beverages,15.73,699,Monsoon,6.2,1.1,16-03-2025,01-03-2026
+Dove Face Wash 350g,Personal Care,13.59,619,Summer,9.1,17.1,14-03-2025,31-01-2026
+Red Bull Tea 150g,Beverages,27.5,66,Autumn,10.3,29.5,23-01-2025,30-09-2025
+Parle Chocolate 300g,Snacks,23.45,728,Autumn,18,27.2,18-12-2024,11-09-2025
+Amul Paneer 250g,Dairy,29.44,205,Autumn,6.6,26.2,28-08-2024,10-07-2025
+Parle Namkeen 100g,Snacks,13.09,459,Monsoon,13.7,24.1,26-02-2025,28-06-2025
+Mother Dairy Cheese 450g,Dairy,27.83,56,Winter,13.3,10.8,26-06-2024,25-01-2025
+Mother Dairy Milk 100g,Dairy,21.35,974,Monsoon,5.8,29.3,12-06-2024,23-09-2024
+Surf Excel Dishwash Liquid 500g,Household,18.75,695,Summer,8.5,19.9,30-06-2024,08-06-2025
+Lizol Detergent Powder 250g,Household,8.79,680,Summer,8.1,13.9,23-11-2024,28-04-2025
+Britannia Biscuits 250g,Snacks,18.22,775,Winter,14.6,3.5,09-03-2025,23-11-2025
+Parle Chips 300g,Snacks,9.61,720,Monsoon,11.4,18.8,04-06-2024,09-04-2025
+Lizol Dishwash Liquid 450g,Household,38.16,680,Spring,5.2,9.5,21-07-2024,13-11-2024
+Colgate Body Lotion 50g,Personal Care,40.07,188,Monsoon,2.2,7.8,04-01-2025,14-10-2025
+Harpic Air Freshener 300g,Household,49.84,56,Winter,12.7,21,31-12-2024,12-07-2025
+Britannia Cookies 250g,Snacks,11.65,908,Winter,15.2,23.5,25-08-2024,09-07-2025
+Patanjali Soap 100g,Personal Care,14.22,808,Winter,18.3,11.2,23-08-2024,12-07-2025
+Tata Tea Energy Drink 350g,Beverages,48.05,819,Summer,18.6,18,04-09-2024,09-05-2025
+Paperboat Juice 200g,Beverages,28.48,690,Autumn,12.7,14.3,11-11-2024,16-10-2025
+ITC Biscuits 350g,Snacks,17.45,92,Autumn,19.1,24.5,09-08-2024,11-04-2025
+Patanjali Face Wash 450g,Personal Care,30.58,305,Spring,14.1,27.5,16-11-2024,19-08-2025
+ITC Chips 350g,Snacks,44.61,854,Spring,7.4,1.7,25-11-2024,03-07-2025
