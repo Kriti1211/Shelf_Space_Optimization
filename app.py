@@ -28,7 +28,7 @@ current_page = st.session_state["current_page"]
 
 # ─── HOME / MENU ────────────────────────────────────────────────────
 if current_page == "home":
-    st.markdown("<h1 class='title'>🛍️ Retail Shelf Space Optimization System</h1><hr>",
+    st.markdown("<h1 class='title'>🛍️ Retail Shelf Optimization System</h1><hr>",
                 unsafe_allow_html=True)
     st.markdown('<div class="menu-container">', unsafe_allow_html=True)
     for key, label in MENU_ITEMS.items():
