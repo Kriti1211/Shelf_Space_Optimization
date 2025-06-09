@@ -6,3 +6,6 @@ scikit-learn
 plotly
 prophet
 pulp
+torch
+stable-baselines3
+gymnasium
